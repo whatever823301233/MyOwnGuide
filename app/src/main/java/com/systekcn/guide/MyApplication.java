@@ -70,6 +70,9 @@ public class MyApplication extends Application implements IConstants{
             return;
         }
         super.onCreate();
+        mServiceManager = new MediaServiceManager(getApplicationContext());
+
+
         /*
         //initialize and create the image loader logic
         DrawerImageLoader.init(new AbstractDrawerImageLoader() {

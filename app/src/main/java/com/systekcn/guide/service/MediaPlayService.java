@@ -100,10 +100,10 @@ public class MediaPlayService extends Service implements IConstants {
     }
 
     private void toNotifyAllDataChange() {
-        /*currentExhibit = application.currentExhibitBean;
+        currentExhibit = application.currentExhibitBean;
         if(application.currentExhibitBean!=null){
             play(application.currentExhibitBean);
-        }*/
+        }
     }
 
     public void onCreate() {
@@ -132,8 +132,8 @@ public class MediaPlayService extends Service implements IConstants {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-        handler.removeCallbacksAndMessages(null);
         unregisterReceiver(mReceiver);
+        handler.removeCallbacksAndMessages(null);
         super.onDestroy();
     }
 
@@ -161,7 +161,7 @@ public class MediaPlayService extends Service implements IConstants {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
 
-                        /*if (isPlaying&&hasPlay) {// TODO: 2015/11/9
+                        if (isPlaying&&hasPlay) {// TODO: 2015/11/9
                             hasPlay=false;
                             int index = application.currentExhibitBeanList.indexOf(currentExhibit) + 1;
                             if (index == application.currentExhibitBeanList.size()) {
@@ -176,7 +176,7 @@ public class MediaPlayService extends Service implements IConstants {
                             } catch (Exception e) {
                                 ExceptionUtil.handleException(e);
                             }
-                        }*/
+                        }
                     }
 
                 }
@@ -197,7 +197,7 @@ public class MediaPlayService extends Service implements IConstants {
     private boolean hasPlay;
 
     private void play(ExhibitBean bean) {
-       /* setCurrentExhibit(bean);
+        setCurrentExhibit(bean);
         isPlaying=false;
         mediaPlayer.reset();
         String url = "";
@@ -212,7 +212,7 @@ public class MediaPlayService extends Service implements IConstants {
         } else {
             url = localUrl;
             completePlay(bean, url);
-        }*/
+        }
     }
 
     private int errorCount;
@@ -225,7 +225,7 @@ public class MediaPlayService extends Service implements IConstants {
             if(Tools.isFileExist(url)){
                 mediaPlayer.setDataSource(url);
                 mediaPlayer.prepareAsync();
-                addRecord(bean);
+                //addRecord(bean);// TODO: 2015/12/31  
                 isPlaying = true;
                 hasPlay=true;
                 errorCount=0;

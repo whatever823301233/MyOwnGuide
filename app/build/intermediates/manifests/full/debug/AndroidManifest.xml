@@ -13,6 +13,8 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.systekcn.guide.MyApplication"
@@ -97,6 +99,25 @@
         <activity
             android:name="com.systekcn.guide.activity.TopicActivity"
             android:theme="@style/FullscreenTheme" />
+
+        <service
+            android:name="org.altbeacon.beacon.service.BeaconService"
+            android:enabled="true"
+            android:exported="false"
+            android:isolatedProcess="false"
+            android:label="beacon" />
+        <service
+            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" />
+        <service android:name="com.systekcn.guide.service.MuseumDownloadService" />
+        <service android:name="com.systekcn.guide.service.MediaPlayService" />
+
         <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
     </application>
 

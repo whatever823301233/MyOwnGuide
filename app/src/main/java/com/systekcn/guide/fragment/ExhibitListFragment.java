@@ -92,7 +92,7 @@ public class ExhibitListFragment extends Fragment implements IConstants {
                     ExhibitBean exhibitBean=application.currentExhibitBeanList.get(position);
                     application.currentExhibitBean=exhibitBean;
                     application.mServiceManager.notifyAllDataChange();
-                    /*Intent intent=new Intent(activity, PlayActivity.class);
+                   /* Intent intent=new Intent(activity, PlayActivity.class);
                     activity.startActivity(intent);*/// TODO: 2015/12/31
                 }
             }

@@ -30,6 +30,7 @@ public class BeginActivity extends BaseActivity {
         NetworkUtil.checkNet(this);
         setContentView(view);
         bluetoothManager=BluetoothManager.newInstance(this);
+        bluetoothManager.initBeaconSearcher();
         bluetoothManager.setGetBeaconCallBack(getBeaconCallBack);
         initData();
     }

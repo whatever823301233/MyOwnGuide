@@ -1,17 +1,46 @@
 package com.systekcn.guide.service;
 
+import android.app.IntentService;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.lidroid.xutils.DbUtils;
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.DbException;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
+import com.systekcn.guide.IConstants;
+import com.systekcn.guide.biz.BizFactory;
+import com.systekcn.guide.biz.DownloadBiz;
+import com.systekcn.guide.entity.BeaconBean;
+import com.systekcn.guide.entity.ExhibitBean;
+import com.systekcn.guide.entity.LabelBean;
+import com.systekcn.guide.entity.MapBean;
+import com.systekcn.guide.utils.ExceptionUtil;
+import com.systekcn.guide.utils.LogUtil;
+import com.systekcn.guide.utils.Tools;
+
+import java.util.List;
+import java.util.Vector;
+
 /**
  * Created by Qiang on 2015/10/28.
  */
-public class MuseumDownloadService  {//extends IntentService implements IConstants
+public class MuseumDownloadService  extends IntentService implements IConstants {
 
-    /* 资源集合 *//*
+     //资源集合
     private Vector<String> assetsList;
-    *//* 判断assets是否下载完毕 *//*
+     //判断assets是否下载完毕
     public static boolean isDownloadOver;
-    *//* 下载状态监听器 *//*
+     //下载状态监听器
     DownloadStateReceiver downloadStateReceiver;
-    *//** 详细信息资源集合 *//*
+    //* 详细信息资源集合
     private List<BeaconBean> beaconList;
     private List<LabelBean> labelList;
     private List<ExhibitBean> exhibitList;
@@ -48,9 +77,9 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
         try {
             String assetsJson = intent.getStringExtra(DOWNLOAD_ASSETS_KEY);
             museumId = intent.getStringExtra(DOWNLOAD_MUSEUMID_KEY);
-            *//**将展品详细信息保存至数据库*//*
+           // *将展品详细信息保存至数据库
             saveAllJson(museumId);
-			*//** 创建下载业务对象，并开始下载 *//*
+			//* 创建下载业务对象，并开始下载
             downloadBiz = (DownloadBiz) BizFactory.getDownloadBiz(getApplicationContext());
             assetsList = downloadBiz.parseAssetsJson(assetsJson);
             downloadBiz.count = assetsList.size();
@@ -75,7 +104,7 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
     }
     private void sendProgress() {
         while(!isDownloadOver){
-            *//* 当下载未完成时，每秒发送一条广播以更新进度条 *//*
+             //当下载未完成时，每秒发送一条广播以更新进度条
             int progress;
             progress = (assetsList.size() + 1 - downloadBiz.count) * 100 / assetsList.size();
             Intent in = new Intent();
@@ -88,12 +117,12 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
                 ExceptionUtil.handleException(e);
             }
         }
-        *//**下载完毕，存储状态*//*
+        //*下载完毕，存储状态
         Tools.saveValue(this, museumId, "true");
         LogUtil.i("ZHANG","下载状态已保存");
     }
 
-    *//** 获取博物馆所有展品的详细信息的json *//*
+    //* 获取博物馆所有展品的详细信息的json
     private void getJsonForDetailMuseum(String museumId) {
 
         HttpUtils http = new HttpUtils();
@@ -204,7 +233,7 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
         });
     }
 
-    *//** 保存所有详细信息至数据库 *//*
+    //* 保存所有详细信息至数据库
     private void saveAllAssetsList() {
 
         DbUtils db = DbUtils.create(this);
@@ -222,18 +251,18 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
         LogUtil.i("ZHANG", "json已保存至数据库");
     }
 
-    *//* 广播接收器，用于接收用户操控下载状态 *//*
+     //广播接收器，用于接收用户操控下载状态
     private class DownloadStateReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
 
             String action = intent.getAction();
-			*//* 继续 *//*
+			// 继续
             if (action.equals(ACTION_DOWNLOAD_CONTINUE)) {
                 String id=intent.getStringExtra(ACTION_DOWNLOAD_CONTINUE);
                 downloadBiz.downloadAssets(assetsList, assetsList.size() - downloadBiz.count, assetsList.size(),id);
-				*//* 暂停 *//*
+				// 暂停
             } else if (action.equals(ACTION_DOWNLOAD_PAUSE)) {
                 for (int i = 0; i < downloadBiz.httpHandlerList.size(); i++) {
                     if (downloadBiz.httpHandlerList.get(i) != null
@@ -243,5 +272,5 @@ public class MuseumDownloadService  {//extends IntentService implements IConstan
                 }
             }
         }
-    }*/
+    }
 }

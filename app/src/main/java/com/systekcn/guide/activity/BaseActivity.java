@@ -17,10 +17,11 @@ public class BaseActivity extends AppCompatActivity {
      * 类唯一标记
      */
     private String TAG = getClass().getSimpleName();
-
+    MyApplication application;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        application=MyApplication.get();
         try {
             MyApplication.listActivity.add(this);
         } catch (Exception e) {
