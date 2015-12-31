@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.systekcn.guide">
+    package="com.systekcn.guide" >
 
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,74 +9,76 @@
         android:name=".CustomApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name">
+        android:label="@string/app_name" >
 
         <!-- android:supportsRtl="true" -->
         <activity
-            android:name=".activity.DrawerActivity"
+            android:name=".activity.model.DrawerActivity"
             android:label="@string/app_name"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus">
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" >
         </activity>
         <activity
-            android:name=".activity.CompactHeaderDrawerActivity"
+            android:name=".activity.model.CompactHeaderDrawerActivity"
             android:label="@string/app_name"
             android:theme="@style/CustomTheme" />
         <activity
-            android:name=".activity.PersistentDrawerActivity"
+            android:name=".activity.model.PersistentDrawerActivity"
             android:label="@string/app_name"
             android:theme="@style/MaterialDrawerTheme.Light.TranslucentStatus" />
         <activity
-            android:name=".activity.ActionBarActivity"
+            android:name=".activity.model.ActionBarActivity"
             android:theme="@style/MaterialDrawerTheme.ActionBar" />
         <activity
-            android:name=".activity.MenuDrawerActivity"
+            android:name=".activity.model.MenuDrawerActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
         <activity
-            android:name=".activity.NonTranslucentDrawerActivity"
+            android:name=".activity.model.NonTranslucentDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name=".activity.MultiDrawerActivity"
+            android:name=".activity.model.MultiDrawerActivity"
             android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
         <activity
-            android:name=".activity.AdvancedActivity"
+            android:name=".activity.model.AdvancedActivity"
             android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
         <activity
-            android:name=".activity.KeyboardUtilActivity"
+            android:name=".activity.model.KeyboardUtilActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.EmbeddedDrawerActivity"
+            android:name=".activity.model.EmbeddedDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name=".activity.MiniDrawerActivity"
+            android:name=".activity.model.MiniDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name=".activity.FullscreenDrawerActivity"
+            android:name=".activity.model.FullscreenDrawerActivity"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".activity.CustomContainerActivity"
+            android:name=".activity.model.CustomContainerActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
         <activity
-            android:name=".activity.FragmentActivity"
+            android:name=".activity.model.FragmentActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
         <activity
-            android:name=".activity.CollapsingToolbarActivity"
+            android:name=".activity.model.CollapsingToolbarActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
         <activity
-            android:name=".activity.CrossfadeDrawerLayoutActvitiy"
+            android:name=".activity.model.CrossfadeDrawerLayoutActvitiy"
             android:theme="@style/MaterialDrawerTheme" />
-
-
-        <activity android:name=".activity.BeginActivity"
-            android:theme="@style/FullscreenTheme">
+        <activity
+            android:name=".activity.BeginActivity"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CityChooseActivity"
-            android:theme="@style/FullscreenTheme">
+        <activity
+            android:name=".activity.CityChooseActivity"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity android:name=".activity.MuseumHOmeActivity" >
         </activity>
     </application>
 

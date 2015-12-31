@@ -8,9 +8,8 @@ try {
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-
     defaultConfig {
-        applicationId "com.mikepenz.materialdrawer.app"
+        applicationId 'com.systekcn.guide'
         minSdkVersion 10
         targetSdkVersion 23
         versionCode 462
@@ -45,6 +44,8 @@ android {
     }
     lintOptions {
         abortOnError false
+    }
+    productFlavors {
     }
 }
 
