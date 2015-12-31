@@ -82,4 +82,9 @@ public interface IConstants {
     /**欢迎界面图片路径*/
     String WELCOME_IMAGES="welcome_images";
 
+
+    int MSG_WHAT_UPDATE_DATA_SUCCESS = 1;
+    int MSG_WHAT_UPDATE_DATA_FAIL = 2;
+
+
 }

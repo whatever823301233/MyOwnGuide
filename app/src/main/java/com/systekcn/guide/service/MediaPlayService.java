@@ -13,7 +13,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.widget.Toast;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.MuseumBean;

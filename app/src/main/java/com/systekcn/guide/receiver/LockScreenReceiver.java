@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.utils.LogUtil;
 
 /**

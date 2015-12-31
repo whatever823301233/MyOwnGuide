@@ -1,13 +1,34 @@
 package com.systekcn.guide.manager;
 
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+import android.content.Intent;
+
 import com.systekcn.guide.IConstants;
+import com.systekcn.guide.MyApplication;
+import com.systekcn.guide.beacon.BeaconForSort;
+import com.systekcn.guide.beacon.BeaconSearcher;
+import com.systekcn.guide.beacon.NearestBeacon;
+import com.systekcn.guide.beacon.NearestBeaconListener;
+import com.systekcn.guide.biz.BeansManageBiz;
+import com.systekcn.guide.biz.BizFactory;
+import com.systekcn.guide.entity.BeaconBean;
+import com.systekcn.guide.entity.ExhibitBean;
+import com.systekcn.guide.utils.ExceptionUtil;
+import com.systekcn.guide.utils.LogUtil;
+
+import org.altbeacon.beacon.Beacon;
+import org.altbeacon.beacon.Identifier;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Qiang on 2015/12/11.
  */
 public class BluetoothManager implements IConstants {
 
-    /*private Context context;
+    private Context context;
     private MyApplication application;
     private static BluetoothManager bluetoothManager;
     private NearestBeaconListener nearestBeaconListener;
@@ -22,8 +43,8 @@ public class BluetoothManager implements IConstants {
 
     private GetBeaconCallBack getBeaconCallBack;
 
-    *//**蓝牙扫描对象*//*
-    private  BeaconSearcher mBeaconSearcher;
+    /*蓝牙扫描对象*/
+    private BeaconSearcher mBeaconSearcher;
 
     private BluetoothManager(Context context) {
         this.context = context;
@@ -78,14 +99,13 @@ public class BluetoothManager implements IConstants {
             }
         }
     }
-    *//**
-     * 实现beacon搜索监听，或得BeaconSearcher搜索到的beacon对象
-     *//*
+    /**实现beacon搜索监听，或得BeaconSearcher搜索到的beacon对象*/
+
     private BeaconSearcher.OnNearestBeaconListener onNearestBeaconListener=new BeaconSearcher.OnNearestBeaconListener(){
 
         BeansManageBiz biz = (BeansManageBiz) BizFactory.getBeansManageBiz(context);
 
-        *//**此方法为自动切换展品，暂时已不用*//*
+        /*此方法为自动切换展品，暂时已不用*/
         @Override
         public void getNearestBeacon(int type,Beacon beacon) {
             if (beacon != null) {
@@ -110,7 +130,7 @@ public class BluetoothManager implements IConstants {
                                     application.currentExhibitBeanList=nearlyExhibitsList;
                                     application.currentExhibitBean=nearlyExhibitsList.get(0);
                                     application.refreshData();
-                                    application.dataFrom=application.DATA_FROM_BEACON;// TODO: 2015/11/3
+                                    //application.dataFrom=application.DATA_FROM_BEACON;// TODO: 2015/11/3
                                     Intent intent =new Intent();
                                     intent.setAction(ACTION_NOTIFY_CURRENT_EXHIBIT_CHANGE);
                                     context.sendBroadcast(intent);
@@ -128,7 +148,7 @@ public class BluetoothManager implements IConstants {
         List<ExhibitBean> exhibitBeansList;
         long recordTime=0;
         int count=0;
-        *//**当接受到多个beacon时，根据beacon查找展品，更新附近列表*//*
+        /*当接受到多个beacon时，根据beacon查找展品，更新附近列表*/
         @Override
         public void getNearestBeacons(int type, List<BeaconForSort> beaconsForSortList) {
             if(System.currentTimeMillis()-recordTime<2000){return;}
@@ -138,9 +158,9 @@ public class BluetoothManager implements IConstants {
             exhibitBeansList=new ArrayList<>();
             for (int i = 0; i < beaconsForSortList.size(); i++) {
                 Beacon beacon = beaconsForSortList.get(i).getBeacon();
-                       *//* if(i==0){
-                            LogUtil.i("ZHANG",beacon.getId3());
-                        }*//*
+                        if(i==0){
+                            LogUtil.i("ZHANG", beacon.getId3());
+                        }
                 double distance=beaconsForSortList.get(i).getDistance();
                 Identifier major = beacon.getId2();
                 Identifier minor = beacon.getId3();
@@ -179,5 +199,4 @@ public class BluetoothManager implements IConstants {
     public interface GetBeaconCallBack{
         String getMuseumByBeaconCallBack(BeaconBean beaconBean);
     }
-*/
 }

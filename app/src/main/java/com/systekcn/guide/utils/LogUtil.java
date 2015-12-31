@@ -2,7 +2,7 @@ package com.systekcn.guide.utils;
 
 import android.util.Log;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 
 
 /**

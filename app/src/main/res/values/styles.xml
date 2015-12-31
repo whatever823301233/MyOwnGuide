@@ -45,13 +45,38 @@
         <item name="android:scaleType">fitXY</item>
     </style>
 
-    <!--标题 text view -->
-    <style name="text_view_title_bar">
-        <item name="android:textColor">@color/md_white_1000</item>
-        <item name="android:textSize">@dimen/titleBar_textSize</item>
+
+    <style name="base_text_view">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="normal_text_view" parent="base_text_view">
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:textSize">@dimen/normal_textSize</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!--标题 text view -->
+    <style name="text_view_title_bar">
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">@dimen/normal_textSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+    <!--tv_home_menu -->
+    <style name="tv_home_menu" >
+        <item name="android:textSize">@dimen/normal_textSize</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 
 </resources>

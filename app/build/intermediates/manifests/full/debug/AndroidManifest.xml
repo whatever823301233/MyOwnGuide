@@ -5,71 +5,73 @@
     android:versionName="4.6.2-DEBUG" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="19"
         android:targetSdkVersion="23" />
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.systekcn.guide.CustomApplication"
+        android:name="com.systekcn.guide.MyApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/iv_app_logo"
         android:label="@string/app_name" >
 
         <!-- android:supportsRtl="true" -->
         <activity
-            android:name="com.systekcn.guide.activity.DrawerActivity"
+            android:name="com.systekcn.guide.activity.model.DrawerActivity"
             android:label="@string/app_name"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" >
-        </activity>
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.CompactHeaderDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.CompactHeaderDrawerActivity"
             android:label="@string/app_name"
             android:theme="@style/CustomTheme" />
         <activity
-            android:name="com.systekcn.guide.activity.PersistentDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.PersistentDrawerActivity"
             android:label="@string/app_name"
             android:theme="@style/MaterialDrawerTheme.Light.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.ActionBarActivity"
+            android:name="com.systekcn.guide.activity.model.ActionBarActivity"
             android:theme="@style/MaterialDrawerTheme.ActionBar" />
         <activity
-            android:name="com.systekcn.guide.activity.MenuDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.MenuDrawerActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.NonTranslucentDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.NonTranslucentDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name="com.systekcn.guide.activity.MultiDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.MultiDrawerActivity"
             android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.AdvancedActivity"
+            android:name="com.systekcn.guide.activity.model.AdvancedActivity"
             android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.KeyboardUtilActivity"
+            android:name="com.systekcn.guide.activity.model.KeyboardUtilActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.systekcn.guide.activity.EmbeddedDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.EmbeddedDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name="com.systekcn.guide.activity.MiniDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.MiniDrawerActivity"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
-            android:name="com.systekcn.guide.activity.FullscreenDrawerActivity"
+            android:name="com.systekcn.guide.activity.model.FullscreenDrawerActivity"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name="com.systekcn.guide.activity.CustomContainerActivity"
+            android:name="com.systekcn.guide.activity.model.CustomContainerActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
         <activity
-            android:name="com.systekcn.guide.activity.FragmentActivity"
+            android:name="com.systekcn.guide.activity.model.FragmentActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
         <activity
-            android:name="com.systekcn.guide.activity.CollapsingToolbarActivity"
+            android:name="com.systekcn.guide.activity.model.CollapsingToolbarActivity"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
         <activity
-            android:name="com.systekcn.guide.activity.CrossfadeDrawerLayoutActvitiy"
+            android:name="com.systekcn.guide.activity.model.CrossfadeDrawerLayoutActvitiy"
             android:theme="@style/MaterialDrawerTheme" />
         <activity
             android:name="com.systekcn.guide.activity.BeginActivity"
@@ -82,8 +84,19 @@
         </activity>
         <activity
             android:name="com.systekcn.guide.activity.CityChooseActivity"
-            android:theme="@style/FullscreenTheme" >
-        </activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.MuseumListActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.MuseumHomeActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.ListAndMapActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.TopicActivity"
+            android:theme="@style/FullscreenTheme" />
         <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
     </application>
 

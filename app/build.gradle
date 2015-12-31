@@ -10,7 +10,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId 'com.systekcn.guide'
-        minSdkVersion 10
+        minSdkVersion 19
         targetSdkVersion 23
         versionCode 462
         versionName "4.6.2"

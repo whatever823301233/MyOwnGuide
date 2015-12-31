@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\values-v23\\values-v23.xml",
+        "outputFile": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\values-v23\\values-v23.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 102
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.mikepenz\\materialize\\0.5.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.mikepenz\\materialize\\0.5.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 237
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 312
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 399
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -88,7 +88,7 @@
                     "endOffset": 957
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -109,7 +109,7 @@
                     "endOffset": 1527
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -129,7 +129,7 @@
                     "endOffset": 1632
                 },
                 "from": {
-                    "file": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
+                    "file": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v23\\values-v23.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,

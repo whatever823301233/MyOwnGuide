@@ -1,6 +1,6 @@
 package com.systekcn.guide.utils;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

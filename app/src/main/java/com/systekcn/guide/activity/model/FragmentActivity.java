@@ -9,8 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.systekcn.guide.R;
-import com.systekcn.guide.fragment.DrawerFragment;
-import com.systekcn.guide.fragment.SecondDrawerFragment;
+import com.systekcn.guide.fragment.model.DrawerFragment;
+import com.systekcn.guide.fragment.model.SecondDrawerFragment;
 
 public class FragmentActivity extends AppCompatActivity {
 

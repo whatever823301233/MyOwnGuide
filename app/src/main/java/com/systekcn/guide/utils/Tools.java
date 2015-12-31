@@ -11,7 +11,7 @@ import android.os.Vibrator;
 import android.util.Base64;
 import android.widget.Toast;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.entity.CityBean;
 import com.systekcn.guide.entity.ExhibitBean;

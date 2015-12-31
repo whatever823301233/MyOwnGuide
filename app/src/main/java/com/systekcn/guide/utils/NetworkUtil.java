@@ -4,7 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.IConstants;
 
 /**

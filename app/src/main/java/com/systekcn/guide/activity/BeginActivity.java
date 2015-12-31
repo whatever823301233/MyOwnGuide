@@ -6,16 +6,31 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
+import com.systekcn.guide.IConstants;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
+import com.systekcn.guide.biz.BeansManageBiz;
+import com.systekcn.guide.biz.BizFactory;
+import com.systekcn.guide.entity.BeaconBean;
+import com.systekcn.guide.entity.MuseumBean;
+import com.systekcn.guide.manager.BluetoothManager;
+import com.systekcn.guide.utils.NetworkUtil;
 
 public class BeginActivity extends BaseActivity {
 
     private View view;
     private Class<?> targetClass;
+    private MyApplication application;
+    private BluetoothManager bluetoothManager;
+
     @Override
     protected void initialize(Bundle savedInstanceState) {
         view = View.inflate(this, R.layout.activity_begin, null);
+        application=MyApplication.get();
+        NetworkUtil.checkNet(this);
         setContentView(view);
+        bluetoothManager=BluetoothManager.newInstance(this);
+        bluetoothManager.setGetBeaconCallBack(getBeaconCallBack);
         initData();
     }
     private void initData() {
@@ -46,7 +61,7 @@ public class BeginActivity extends BaseActivity {
     }
 
 
-  /*  private String museumId;
+    private String museumId;
     private BluetoothManager.GetBeaconCallBack getBeaconCallBack=new BluetoothManager.GetBeaconCallBack() {
 
         int count ;
@@ -59,13 +74,18 @@ public class BeginActivity extends BaseActivity {
                 museumId=beaconBean.getMuseumId();
                 BeansManageBiz biz= (BeansManageBiz) BizFactory.getBeansManageBiz(BeginActivity.this);
                 application.currentMuseum= (MuseumBean) biz.getBeanById(IConstants.URL_TYPE_GET_MUSEUM_BY_ID,museumId);
-
                 targetClass=MuseumHomeActivity.class;
-                //targetClass=CityChooseActivity.class;
             }
             return museumId;
         }
-    };*/
+    };
 
 
+    @Override
+    protected void onDestroy() {
+        if(bluetoothManager!=null){
+            bluetoothManager.disConnectBluetoothService();
+        }
+        super.onDestroy();
+    }
 }

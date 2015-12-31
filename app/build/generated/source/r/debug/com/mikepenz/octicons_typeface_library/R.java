@@ -8,10 +8,10 @@ package com.mikepenz.octicons_typeface_library;
 
 public final class R {
 	public static final class attr {
-		public static final int iiv_color = 0x7f01006e;
-		public static final int iiv_icon = 0x7f01006d;
-		public static final int iiv_padding = 0x7f010070;
-		public static final int iiv_size = 0x7f01006f;
+		public static final int iiv_color = 0x7f010070;
+		public static final int iiv_icon = 0x7f01006f;
+		public static final int iiv_padding = 0x7f010072;
+		public static final int iiv_size = 0x7f010071;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f050015;
@@ -30,7 +30,7 @@ public final class R {
 		public static final int library_AndroidIconics_year = 0x7f050112;
 	}
 	public static final class styleable {
-		public static final int[] IconicsImageView = { 0x7f01006d, 0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074 };
+		public static final int[] IconicsImageView = { 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076 };
 		public static final int IconicsImageView_iiv_color = 1;
 		public static final int IconicsImageView_iiv_icon = 0;
 		public static final int IconicsImageView_iiv_padding = 3;

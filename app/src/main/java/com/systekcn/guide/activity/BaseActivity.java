@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-import com.MyApplication;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.utils.ExceptionUtil;
 
 /**

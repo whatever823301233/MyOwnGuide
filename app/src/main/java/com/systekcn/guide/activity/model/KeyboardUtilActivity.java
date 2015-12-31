@@ -16,7 +16,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.mikepenz.materialdrawer.util.KeyboardUtil;
 import com.systekcn.guide.R;
-import com.systekcn.guide.fragment.DemoFragment;
+import com.systekcn.guide.fragment.model.DemoFragment;
 
 public class KeyboardUtilActivity extends AppCompatActivity {
 
