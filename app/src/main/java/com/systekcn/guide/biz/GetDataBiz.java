@@ -42,6 +42,14 @@ public class GetDataBiz implements IConstants {
         }
         return list;
     }
+    public List<?> getAllBeansFromNet(int type,String id){
+        List<?> list = null;
+        if (MyApplication.currentNetworkType == INTERNET_TYPE_NONE) return null;
+        setIGetBeanBiz(new GetBeansFromNet());
+        String url= Tools.checkTypeForNetUrl(type);
+        list = iGetBeanBiz.getAllBeans(type, url,id);
+        return list;
+    }
 
     public  boolean saveAllBeans(Context context,List<?> list) {
         boolean isSuccess=false;

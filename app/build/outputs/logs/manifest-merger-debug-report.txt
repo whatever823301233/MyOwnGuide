@@ -1,301 +1,317 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-118:12
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-125:12
 	package
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:3:5-33
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:5:5-68
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:5:5-68
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:5:22-65
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:5:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:6:5-74
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:6:5-74
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:6:22-71
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:6:22-71
 uses-permission#android.permission.DISABLE_KEYGUARD
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:7:5-75
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:7:5-75
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:7:22-72
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:7:22-72
 uses-permission#android.permission.INTERNET
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:8:5-67
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:8:22-64
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:9:5-79
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:9:22-76
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:10:22-77
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:11:5-81
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:11:22-78
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:11:22-78
 application
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:13:5-116:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.mikepenz:aboutlibraries:5.3.5] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:11:5-13:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.mikepenz:google-material-typeface:2.2.0.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\google-material-typeface\2.2.0.1\AndroidManifest.xml:27:5-20
-MERGED from [com.mikepenz:octicons-typeface:3.0.0.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\octicons-typeface\3.0.0.1\AndroidManifest.xml:27:5-20
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:14:5-123:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.mikepenz:aboutlibraries:5.3.5] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:11:5-13:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.mikepenz:google-material-typeface:2.2.0.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\google-material-typeface\2.2.0.1\AndroidManifest.xml:27:5-20
+MERGED from [com.mikepenz:octicons-typeface:3.0.0.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\octicons-typeface\3.0.0.1\AndroidManifest.xml:27:5-20
 	android:label
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:18:9-41
 	android:allowBackup
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:16:9-35
 	android:icon
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:16:9-45
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:17:9-45
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:14:9-38
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:15:9-38
 activity#com.systekcn.guide.activity.model.DrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:20:9-23:94
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:21:9-24:94
 	android:label
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:22:13-45
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:23:13-45
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:23:13-91
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:24:13-91
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:21:13-58
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:22:13-58
 activity#com.systekcn.guide.activity.model.CompactHeaderDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:24:9-27:50
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:25:9-28:50
 	android:label
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:27:13-45
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:27:13-47
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:28:13-47
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:25:13-71
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:26:13-71
 activity#com.systekcn.guide.activity.model.PersistentDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:28:9-31:82
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:29:9-32:82
 	android:label
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:30:13-45
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:31:13-45
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:31:13-79
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:32:13-79
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:29:13-68
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:30:13-68
 activity#com.systekcn.guide.activity.model.ActionBarActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:32:9-34:68
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:33:9-35:68
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:34:13-65
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:35:13-65
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:33:13-61
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:34:13-61
 activity#com.systekcn.guide.activity.model.MenuDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:35:9-37:94
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:36:9-38:94
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:37:13-91
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:38:13-91
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:36:13-62
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:37:13-62
 activity#com.systekcn.guide.activity.model.NonTranslucentDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:38:9-40:58
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:39:9-41:58
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:40:13-55
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:41:13-55
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:39:13-72
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:40:13-72
 activity#com.systekcn.guide.activity.model.MultiDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:41:9-43:76
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:42:9-44:76
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:43:13-73
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:44:13-73
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:42:13-63
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:43:13-63
 activity#com.systekcn.guide.activity.model.AdvancedActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:44:9-46:76
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:45:9-47:76
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:46:13-73
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:47:13-73
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:45:13-60
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:46:13-60
 activity#com.systekcn.guide.activity.model.KeyboardUtilActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:47:9-50:57
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:48:9-51:57
 	android:windowSoftInputMode
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:50:13-54
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:51:13-54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:49:13-91
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:50:13-91
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:48:13-64
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:49:13-64
 activity#com.systekcn.guide.activity.model.EmbeddedDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:51:9-53:58
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:52:9-54:58
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:53:13-55
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:54:13-55
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:52:13-66
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:53:13-66
 activity#com.systekcn.guide.activity.model.MiniDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:54:9-56:58
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:55:9-57:58
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:56:13-55
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:57:13-55
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:55:13-62
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:56:13-62
 activity#com.systekcn.guide.activity.model.FullscreenDrawerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:57:9-59:54
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:58:9-60:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:59:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:60:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:58:13-68
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:59:13-68
 activity#com.systekcn.guide.activity.model.CustomContainerActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:60:9-62:76
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:61:9-63:76
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:62:13-73
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:63:13-73
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:61:13-67
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:62:13-67
 activity#com.systekcn.guide.activity.model.FragmentActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:63:9-65:76
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:64:9-66:76
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:65:13-73
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:66:13-73
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:64:13-60
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:65:13-60
 activity#com.systekcn.guide.activity.model.CollapsingToolbarActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:66:9-68:94
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:67:9-69:94
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:68:13-91
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:69:13-91
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:67:13-69
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:68:13-69
 activity#com.systekcn.guide.activity.model.CrossfadeDrawerLayoutActvitiy
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:69:9-71:58
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:70:9-72:58
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:71:13-55
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:72:13-55
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:70:13-73
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:71:13-73
 activity#com.systekcn.guide.activity.BeginActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:72:9-80:20
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:73:9-81:20
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:74:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:75:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:73:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:74:13-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:75:13-79:29
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:76:13-80:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:76:17-69
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:77:17-69
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:76:25-66
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:77:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:78:17-77
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:79:17-77
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:78:27-74
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:79:27-74
 activity#com.systekcn.guide.activity.CityChooseActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:81:9-83:54
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:82:9-84:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:83:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:84:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:82:13-56
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:83:13-56
 activity#com.systekcn.guide.activity.MuseumListActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:84:9-86:54
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:85:9-87:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:86:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:87:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:85:13-56
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:86:13-56
 activity#com.systekcn.guide.activity.MuseumHomeActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:87:9-89:54
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:88:9-90:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:89:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:90:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:88:13-56
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:89:13-56
 activity#com.systekcn.guide.activity.ListAndMapActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:90:9-92:54
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:91:9-93:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:92:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:93:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:91:13-56
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:92:13-56
 activity#com.systekcn.guide.activity.TopicActivity
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:93:9-94:53
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:94:9-96:54
 	android:theme
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:94:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:96:13-51
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:93:19-57
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:95:13-51
+activity#com.systekcn.guide.activity.PlayActivity
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:97:9-99:54
+	android:theme
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:99:13-51
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:98:13-50
 service#org.altbeacon.beacon.service.BeaconService
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:97:9-102:38
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:101:9-106:38
 	android:enabled
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:99:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:103:13-35
 	android:label
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:102:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:106:13-35
 	android:exported
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:100:13-37
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:104:13-37
 	android:isolatedProcess
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:101:13-44
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:105:13-44
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:98:13-70
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:102:13-70
 service#org.altbeacon.beacon.BeaconIntentProcessor
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:103:9-106:40
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:107:9-110:40
 	android:enabled
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:105:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:109:13-35
 	android:exported
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:106:13-37
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:110:13-37
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:104:13-70
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:108:13-70
 service#com.baidu.location.f
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:107:9-111:41
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:111:9-115:41
 	android:enabled
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:109:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:113:13-35
 	android:process
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:111:13-38
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:115:13-38
 	android:permission
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:110:13-75
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:114:13-75
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:108:13-48
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:112:13-48
 service#com.systekcn.guide.service.MuseumDownloadService
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:112:9-66
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:9-66
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:112:18-63
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:18-63
 service#com.systekcn.guide.service.MediaPlayService
-ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:113:9-61
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:9-61
 	android:name
-		ADDED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml:113:18-58
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:18-58
+activity#com.systekcn.guide.activity.LockScreenActivity
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:119:9-121:54
+	android:theme
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:121:13-51
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:120:13-56
+activity#com.systekcn.guide.activity.WelcomeActivity
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:9-71
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:19-59
 uses-sdk
-INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [MyOwnGuide:library:unspecified] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\MyOwnGuide\library\unspecified\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.mikepenz:materialize:0.5.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\materialize\0.5.1\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz:iconics-core:2.5.2] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.5.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.mikepenz:aboutlibraries:5.3.5] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.mikepenz:iconics-core:2.5.2] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.5.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.mikepenz:crossfader:1.3.2] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\crossfader\1.3.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz:crossfadedrawerlayout:0.0.2] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\crossfadedrawerlayout\0.0.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz:google-material-typeface:2.2.0.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\google-material-typeface\2.2.0.1\AndroidManifest.xml:23:5-25:41
-MERGED from [com.mikepenz:fontawesome-typeface:4.4.0.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\fontawesome-typeface\4.4.0.1\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz:octicons-typeface:3.0.0.1] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\octicons-typeface\3.0.0.1\AndroidManifest.xml:23:5-25:41
+INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [MyOwnGuide:library:unspecified] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\MyOwnGuide\library\unspecified\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.mikepenz:materialize:0.5.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\materialize\0.5.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:iconics-core:2.5.2] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.5.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.mikepenz:aboutlibraries:5.3.5] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.mikepenz:iconics-core:2.5.2] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.5.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.mikepenz:crossfader:1.3.2] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\crossfader\1.3.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:crossfadedrawerlayout:0.0.2] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\crossfadedrawerlayout\0.0.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:google-material-typeface:2.2.0.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\google-material-typeface\2.2.0.1\AndroidManifest.xml:23:5-25:41
+MERGED from [com.mikepenz:fontawesome-typeface:4.4.0.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\fontawesome-typeface\4.4.0.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:octicons-typeface:3.0.0.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\octicons-typeface\3.0.0.1\AndroidManifest.xml:23:5-25:41
 	android:targetSdkVersion
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
 activity#com.mikepenz.aboutlibraries.ui.LibsActivity
-ADDED from [com.mikepenz:aboutlibraries:5.3.5] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:12:9-80
+ADDED from [com.mikepenz:aboutlibraries:5.3.5] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:12:9-80
 	android:name
-		ADDED from [com.mikepenz:aboutlibraries:5.3.5] D:\Android\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:12:19-77
+		ADDED from [com.mikepenz:aboutlibraries:5.3.5] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.mikepenz\aboutlibraries\5.3.5\AndroidManifest.xml:12:19-77

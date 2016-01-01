@@ -18,6 +18,7 @@ import android.widget.ListView;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
+import com.systekcn.guide.activity.PlayActivity;
 import com.systekcn.guide.adapter.NearlyExhibitAdapter;
 import com.systekcn.guide.entity.ExhibitBean;
 
@@ -92,8 +93,8 @@ public class ExhibitListFragment extends Fragment implements IConstants {
                     ExhibitBean exhibitBean=application.currentExhibitBeanList.get(position);
                     application.currentExhibitBean=exhibitBean;
                     application.mServiceManager.notifyAllDataChange();
-                   /* Intent intent=new Intent(activity, PlayActivity.class);
-                    activity.startActivity(intent);*/// TODO: 2015/12/31
+                    Intent intent=new Intent(activity, PlayActivity.class);
+                    activity.startActivity(intent);// TODO: 2015/12/31
                 }
             }
         });

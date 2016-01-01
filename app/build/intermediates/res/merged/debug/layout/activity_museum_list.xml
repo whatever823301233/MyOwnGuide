@@ -7,7 +7,6 @@
     tools:context="com.systekcn.guide.activity.MuseumListActivity">
 
     <include layout="@layout/layout_title_bar"/>
-
     <ListView
         android:id="@+id/museumListView"
         android:layout_width="match_parent"

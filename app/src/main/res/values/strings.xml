@@ -49,4 +49,27 @@
     <string name="drawer_item_contact">Contact</string>
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+    <string name="activity_collection_has_choose">已选择</string>
+    <string name="activity_collection_years">年代</string>
+    <string name="activity_collection_material">材质</string>
+    <!--专题标签 -->
+    <string name="label_activity_collection_dongwei">东魏</string>
+    <string name="label_activity_collection_beiqi">北齐</string>
+    <string name="label_activity_collection_beiwei">北魏</string>
+    <string name="label_activity_collection_xizhou">西周</string>
+    <string name="label_activity_collection_shang">商</string>
+    <string name="label_activity_collection_sui">隋</string>
+    <string name="label_activity_collection_tang">唐代</string>
+    <string name="label_activity_collection_han">汉代</string>
+    <string name="label_activity_collection_chunqiu">春秋</string>
+    <string name="label_activity_collection_zhanguo">战国</string>
+    <string name="label_activity_collection_qing">清</string>
+
+    <string name="label_activity_collection_shixiang">石像</string>
+    <string name="label_activity_collection_qingtong">青铜</string>
+    <string name="label_activity_collection_tongqi">铜器</string>
+    <string name="label_activity_collection_shike">石刻</string>
+
+
 </resources>

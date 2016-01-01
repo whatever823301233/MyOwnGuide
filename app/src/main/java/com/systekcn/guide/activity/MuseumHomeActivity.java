@@ -145,6 +145,15 @@ public class MuseumHomeActivity extends BaseActivity implements IConstants {
             showToast("抱歉，数据获取失败！");
             ExceptionUtil.handleException(e);
         }
+
+        new Thread(){
+            @Override
+            public void run() {
+
+            }
+        }.start();
+
+
     }
 
 

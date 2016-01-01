@@ -1,6 +1,5 @@
 package com.systekcn.guide.service;
 
-import android.app.KeyguardManager;
 import android.app.Service;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -13,13 +12,14 @@ import android.os.IBinder;
 import android.os.Message;
 import android.widget.Toast;
 
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.IConstants;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.receiver.LockScreenReceiver;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
+import com.systekcn.guide.utils.MyHttpUtil;
 import com.systekcn.guide.utils.Tools;
 
 import java.io.File;
@@ -57,7 +57,6 @@ public class MediaPlayService extends Service implements IConstants {
     private int duration;
     private DownloadAudioTask downloadAudioTask;
     private LockScreenReceiver mReceiver;
-    private KeyguardManager.KeyguardLock kl;
 
     public static final String ACTION_UPDATE_PROGRESS = "com.systekcn.guide.UPDATE_PROGRESS";
     public static final String ACTION_UPDATE_DURATION = "com.systekcn.guide.UPDATE_DURATION";
@@ -88,7 +87,6 @@ public class MediaPlayService extends Service implements IConstants {
             intent.putExtra(ACTION_UPDATE_PROGRESS, progress);
             sendBroadcast(intent);
             handler.sendEmptyMessageDelayed(updateProgress, 1000);
-            //System.gc();
         }
     }
 
@@ -110,13 +108,8 @@ public class MediaPlayService extends Service implements IConstants {
         super.onCreate();
         application= (MyApplication) getApplication();
         initMediaPlayer();
-        // 禁用系统锁屏页
-        KeyguardManager km = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
-        kl = km.newKeyguardLock("IN");
-        kl.disableKeyguard();
         /**锁屏广播接收器*/
         IntentFilter filter = new IntentFilter();
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
         filter.addAction(Intent.ACTION_SCREEN_ON);
         mReceiver = new LockScreenReceiver();
         registerReceiver(mReceiver, filter);
@@ -253,7 +246,7 @@ public class MediaPlayService extends Service implements IConstants {
             String audioName=params[1];
             String saveDir=application.getCurrentAudioDir();
             try {
-                Tools.downLoadFromUrl(audioUrl,audioName,saveDir);
+                MyHttpUtil.downLoadFromUrl(audioUrl, audioName, saveDir);
             } catch (IOException e) {
                 ExceptionUtil.handleException(e);
             }

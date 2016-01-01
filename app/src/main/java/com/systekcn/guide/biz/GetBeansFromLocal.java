@@ -14,13 +14,15 @@ import java.util.List;
  */
 public class GetBeansFromLocal implements IGetBeanBiz {
 
+
+
     @Override
     public <T> List<T> getAllBeans(Context context, int type, String url, String Id) {
         Class clazz= Tools.checkTypeForClass(type);
         DbUtils db=DbUtils.create(context);
         List<T> list=null;
         try {
-            list=db.findAll(clazz);
+            list= db.findAll(clazz);
         } catch (DbException e) {
             ExceptionUtil.handleException(e);
         }finally{

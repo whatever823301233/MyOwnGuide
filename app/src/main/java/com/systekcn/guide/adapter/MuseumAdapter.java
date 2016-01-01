@@ -72,8 +72,16 @@ public class MuseumAdapter extends BaseAdapter implements IConstants {
         // 取数据
         MuseumBean museumBean = museumList.get(position);
         viewHolder.museumName.setText(museumBean.getName());
-        viewHolder.museumAddress.setText(museumBean.getAddress());
-        viewHolder.museumListOpenTime.setText(museumBean.getOpentime());
+        String address=museumBean.getAddress();
+        if(address.length()>10){
+            address=address.substring(0,10)+"...";
+        }
+        viewHolder.museumAddress.setText(address);
+        String openTime=museumBean.getOpentime();
+        if(openTime.length()>10){
+            openTime=openTime.substring(0,10)+"...";
+        }
+        viewHolder.museumListOpenTime.setText(openTime);
         // 显示图片
         String imageUrl = museumBean.getIconUrl();
         //每个博物馆的资源以ID为目录

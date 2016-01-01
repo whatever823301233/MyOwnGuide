@@ -14,20 +14,20 @@ public final class R {
 		public static final int iiv_size = 0x7f010071;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f050015;
-		public static final int define_AndroidIconics = 0x7f050019;
-		public static final int define_font_fontawesome = 0x7f05001c;
-		public static final int library_AndroidIconics_author = 0x7f050108;
-		public static final int library_AndroidIconics_authorWebsite = 0x7f050109;
-		public static final int library_AndroidIconics_isOpenSource = 0x7f05010a;
-		public static final int library_AndroidIconics_libraryDescription = 0x7f05010b;
-		public static final int library_AndroidIconics_libraryName = 0x7f05010c;
-		public static final int library_AndroidIconics_libraryVersion = 0x7f05010d;
-		public static final int library_AndroidIconics_libraryWebsite = 0x7f05010e;
-		public static final int library_AndroidIconics_licenseId = 0x7f05010f;
-		public static final int library_AndroidIconics_owner = 0x7f050110;
-		public static final int library_AndroidIconics_repositoryLink = 0x7f050111;
-		public static final int library_AndroidIconics_year = 0x7f050112;
+		public static final int app_name = 0x7f050018;
+		public static final int define_AndroidIconics = 0x7f05001c;
+		public static final int define_font_fontawesome = 0x7f05001f;
+		public static final int library_AndroidIconics_author = 0x7f05011a;
+		public static final int library_AndroidIconics_authorWebsite = 0x7f05011b;
+		public static final int library_AndroidIconics_isOpenSource = 0x7f05011c;
+		public static final int library_AndroidIconics_libraryDescription = 0x7f05011d;
+		public static final int library_AndroidIconics_libraryName = 0x7f05011e;
+		public static final int library_AndroidIconics_libraryVersion = 0x7f05011f;
+		public static final int library_AndroidIconics_libraryWebsite = 0x7f050120;
+		public static final int library_AndroidIconics_licenseId = 0x7f050121;
+		public static final int library_AndroidIconics_owner = 0x7f050122;
+		public static final int library_AndroidIconics_repositoryLink = 0x7f050123;
+		public static final int library_AndroidIconics_year = 0x7f050124;
 	}
 	public static final class styleable {
 		public static final int[] IconicsImageView = { 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076 };

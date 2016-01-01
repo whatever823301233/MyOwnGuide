@@ -120,7 +120,7 @@ public class BeansManageBiz implements IConstants {
         }
         if(beaconBeans==null||beaconBeans.size()<=0){
             String url=URL_ALL_BEACON_LIST + "?minor=" + minor + "&major=" + major;
-            String response= MyHttpUtil.get(url);
+            String response= MyHttpUtil.sendGet(url);
             beaconBeans=JSON.parseArray(response, BeaconBean.class);
             b=beaconBeans.get(0);
         }else{

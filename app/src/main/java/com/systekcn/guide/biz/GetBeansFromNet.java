@@ -29,6 +29,8 @@ public class GetBeansFromNet implements IGetBeanBiz {
         final Class clazz = Tools.checkTypeForClass(type);
         HttpUtils http = new HttpUtils();
         url=url+id;
+
+
         http.send(HttpRequest.HttpMethod.GET, url, new RequestCallBack<String>() {
 
             @Override
@@ -67,7 +69,7 @@ public class GetBeansFromNet implements IGetBeanBiz {
 
     public List<?> getAllBeans(int type, String url, String id) {
         Class clazz = Tools.checkTypeForClass(type);
-        String response= MyHttpUtil.get(url + id);
+        String response= MyHttpUtil.sendGet(url + id);
         list = JSON.parseArray(response, clazz);
         return list;
     }

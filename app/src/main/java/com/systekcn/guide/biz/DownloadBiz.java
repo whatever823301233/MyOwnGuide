@@ -11,10 +11,10 @@ import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
-import com.lidroid.xutils.http.client.HttpRequest;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.service.MuseumDownloadService;
 import com.systekcn.guide.utils.LogUtil;
+import com.systekcn.guide.utils.MyHttpUtil;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -75,22 +75,11 @@ public class DownloadBiz implements IConstants {
     /** 获得assets资源json */
     private String getAssetsJSON(String id) {
 
-        LogUtil.i("ZHANG", "getAssetsJSO开始执行");
-        HttpUtils http = new HttpUtils();
         long startTime=System.currentTimeMillis();
-        http.send(HttpRequest.HttpMethod.GET, URL_ALL_MUSEUM_ASSETS + id, new RequestCallBack<String>() {
-            @Override
-            public void onSuccess(ResponseInfo<String> responseInfo) {
-                assetsJson = responseInfo.result;
-            }
-
-            @Override
-            public void onFailure(HttpException error, String msg) {
-                LogUtil.i("getAssetsJSON失败" + error.toString(), msg);
-            }
-        });
+        assetsJson=MyHttpUtil.sendGet(URL_ALL_MUSEUM_ASSETS + id);
         while (assetsJson == null) {
-            if(System.currentTimeMillis()-startTime>15000){
+            if(System.currentTimeMillis()-startTime>8000){
+                LogUtil.i("ZHANG","getAssetsJSON失败");
                 break;
             }
         }

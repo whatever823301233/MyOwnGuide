@@ -8,7 +8,10 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="simple_4dp">4dp</dimen>
+    <dimen name="simple_10dp">10dp</dimen>
+    <dimen name="simple38dp">38dp</dimen>
     <dimen name="simple40dp">40dp</dimen>
+    <dimen name="simple_48dp">48dp</dimen>
     <dimen name="largest_icon_height">188dp</dimen>//app 中最大图片的高度
 
     <dimen name="dialog_content_textSize">11sp</dimen>//对话框中内容字体的大小
@@ -19,9 +22,11 @@
     <dimen name="dialog_title_textSize">14sp</dimen>//对话框中标题字体的大小
     <dimen name="dialog_button_textSize">13sp</dimen>//对话框中内容字体的大小
     <dimen name="normal_textSize">10sp</dimen>
+    <dimen name="topic_label_textSize">12sp</dimen>
 
     <!--展品item -->
     <dimen name="height_exhibit_item">94dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+
 
 </resources>

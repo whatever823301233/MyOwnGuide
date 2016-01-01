@@ -293,7 +293,7 @@ public class MapFragment extends Fragment implements IConstants, MapEventsListen
 
     //绘制可扩展的地图对象
     private void addScalableMapObject(int x, int y, Layer layer) {
-        Drawable drawable = getResources().getDrawable(R.drawable.maps_blue_dot);
+        // TODO: 2016/1/1  
         MapObject object1 = new MapObject(Integer.valueOf(nextObjectId),
                 drawable,
                 x,

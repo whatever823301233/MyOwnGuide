@@ -29,11 +29,11 @@ import java.security.MessageDigest;
 
 public class Tools implements IConstants{
 
-	/**震动时间*/
+	/**震动时间
 	public static void virbate(long time) {
 		Vibrator vibrator = (Vibrator) MyApplication.get().getSystemService(Context.VIBRATOR_SERVICE);
 		vibrator.vibrate(time);
-	}
+	}*/
 
 
 	/**
@@ -202,15 +202,6 @@ public class Tools implements IConstants{
 		return file.exists();
 	}
 
-	/**
-	 * @param context
-	 *            上下文
-	 * @param string
-	 *            吐司要出来的内容
-	 */
-	public static void showMessage(Context context, String string) {
-		Toast.makeText(context, string, Toast.LENGTH_SHORT).show();
-	}
 
 	/**
 	 *
@@ -243,48 +234,6 @@ public class Tools implements IConstants{
 		return hexValue.toString();
 	}
 
-	/**
-	 * 显示对话框
-	 *
-	 * @param context
-	 * @param message
-	 *            要显示的内容
-	 * @param positive
-	 *            点击确定的按钮的名字
-	 * @param negative
-	 *            点击取消按钮的名字
-	 * @param listener
-	 *            对按钮的监听事件
-	 */
-	public static void showDialog(Context context, String message,
-								  String positive, String negative,
-								  DialogInterface.OnClickListener listener) {
-		try {
-			AlertDialog alertDialog = new AlertDialog.Builder(context).create();
-			alertDialog.setMessage(message);
-			alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, positive, listener);
-			alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, negative, listener);
-			alertDialog.show();
-		} catch (Exception e) {
-			ExceptionUtil.handleException(e);
-		}
-	}
-
-	/**
-	 * jeno_spf 用来存储保存的信息 这个方法是用来判断是否登录 其中isLogin 和 OK 当换成别的 根据自己来进行设置
-	 * 当登录成功后把这个存入进去。
-	 *
-	 * @return
-	 */
-	public static boolean isLogin() {
-		try {
-			SharedPreferences sp = MyApplication.getAppContext().getSharedPreferences(APP_SETTING, Context.MODE_PRIVATE);
-			return sp.contains("isLongin") && sp.contains("OK");
-		} catch (Exception e) {
-			ExceptionUtil.handleException(e);
-			return false;
-		}
-	}
 
 	/**
 	 * 清空
@@ -381,57 +330,6 @@ public class Tools implements IConstants{
 			return false;
 		}
 
-	}
-
-
-	public static void  downLoadFromUrl(String urlStr,String fileName,String savePath) throws IOException{
-		URL url = new URL(urlStr);
-		HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-		//设置超时间为10秒
-		conn.setRequestMethod("GET");
-		conn.setReadTimeout(5000);
-		conn.setConnectTimeout(10*1000);
-		//防止屏蔽程序抓取而返回403错误
-		conn.setRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 6.3; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0");
-		if (conn.getResponseCode() == 200) {
-			//得到输入流
-			InputStream inputStream = conn.getInputStream();
-			//获取自己数组
-			byte[] getData = readInputStream(inputStream);
-			//文件保存位置
-			File saveDir = new File(savePath);
-			if(!saveDir.exists()){
-				saveDir.mkdir();
-			}
-			File file = new File(saveDir+File.separator+fileName);
-			FileOutputStream fos = new FileOutputStream(file);
-			fos.write(getData);
-			if(fos!=null){
-				fos.close();
-			}
-			if(inputStream!=null){
-				inputStream.close();
-			}
-			LogUtil.i("ZHANG","文件保存成功");
-		}
-
-	}
-
-	/**
-	 * 从输入流中获取字节数组
-	 * @param inputStream
-	 * @return
-	 * @throws IOException
-	 */
-	private static  byte[] readInputStream(InputStream inputStream) throws IOException {
-		byte[] buffer = new byte[8192];
-		int len = 0;
-		ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		while((len = inputStream.read(buffer)) != -1) {
-			bos.write(buffer, 0, len);
-		}
-		bos.close();
-		return bos.toByteArray();
 	}
 
 }

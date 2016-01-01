@@ -56,12 +56,20 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_divider.xml"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_image.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\fragment_image.xml"
+    },
+    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_exhibit_list.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\fragment_exhibit_list.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_city.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\item_city.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_multi_angle_img.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\item_multi_angle_img.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
@@ -92,12 +100,12 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_persistent_drawer.xml",
@@ -120,6 +128,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_sample_collapsing_toolbar.xml"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_drawer.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\layout_drawer.xml"
+    },
+    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_compact_header.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_compact_header.xml"
     },
@@ -128,12 +140,20 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sample_nontranslucent.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_sample_nontranslucent.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_toggle.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_toggle.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\line_lyric.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\line_lyric.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
@@ -180,12 +200,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_sample_dark_toolbar.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mini_drawer.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_mini_drawer.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_embedded.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_embedded.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mini_drawer.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_mini_drawer.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
@@ -228,6 +248,10 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\layout_drawer.xml"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lock_screen.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_lock_screen.xml"
+    },
+    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_snackbar.xml"
     },
@@ -244,12 +268,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\item_list_exhibit.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_profile_setting.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_profile_setting.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sample_custom_container_dark_toolbar.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_sample_custom_container_dark_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_profile_setting.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_profile_setting.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -294,6 +318,10 @@
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header_museum_list.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\header_museum_list.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_opensource.xml",
@@ -462,6 +490,10 @@
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_play.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_play.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_title_bar.xml",
@@ -798,6 +830,10 @@
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_nearly_gallery.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\item_nearly_gallery.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_museum_list.xml",

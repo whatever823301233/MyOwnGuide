@@ -45,7 +45,6 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
         initData();
         adddListener();
         initDrawer();
-
     }
 
     private void initDrawer() {
@@ -72,7 +71,7 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
         museumListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MuseumBean museumBean=museumList.get(position);
+                MuseumBean museumBean=museumList.get(position-1);
                 application.currentMuseum=museumBean;
                 Intent intent =new Intent(MuseumListActivity.this,MuseumHomeActivity.class);
                 startActivity(intent);
@@ -85,7 +84,7 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
             @Override
             public void run() {
                 GetDataBiz biz= (GetDataBiz) BizFactory.getDataBiz();
-                museumList= (List<MuseumBean>) biz.getAllBeans(MuseumListActivity.this, URL_TYPE_GET_MUSEUM_LIST,"");
+                museumList= (List<MuseumBean>) biz.getAllBeansFromNet(URL_TYPE_GET_MUSEUM_LIST, "");
                 if(museumList!=null){
                     handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
                     LogUtil.i("ZHANG","数据获取成功");
@@ -100,6 +99,8 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
 
     private void initView() {
         museumListView=(ListView)findViewById(R.id.museumListView);
+        View header=getLayoutInflater().inflate(R.layout.header_museum_list,null);
+        museumListView.addHeaderView(header);
         museumList=new ArrayList<>();
         adapter=new MuseumAdapter(this,museumList);
         museumListView.setAdapter(adapter);
@@ -117,6 +118,8 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
             if (msg.what == MSG_WHAT_UPDATE_DATA_SUCCESS) {
                 if(museumList==null||museumList.size()==0){return;}
                 adapter.updateData(museumList);
+            }else if(msg.what==MSG_WHAT_UPDATE_DATA_FAIL){
+                showToast("数据获取失败，请检查网络...");
             }
         }
     }

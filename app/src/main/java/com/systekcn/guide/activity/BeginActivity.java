@@ -6,13 +6,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
-import com.systekcn.guide.biz.BeansManageBiz;
-import com.systekcn.guide.biz.BizFactory;
-import com.systekcn.guide.entity.BeaconBean;
-import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.manager.BluetoothManager;
 import com.systekcn.guide.utils.NetworkUtil;
 
@@ -29,14 +24,15 @@ public class BeginActivity extends BaseActivity {
         application=MyApplication.get();
         NetworkUtil.checkNet(this);
         setContentView(view);
-        bluetoothManager=BluetoothManager.newInstance(this);
+       /* bluetoothManager=BluetoothManager.newInstance(this);
         bluetoothManager.initBeaconSearcher();
-        bluetoothManager.setGetBeaconCallBack(getBeaconCallBack);
+        bluetoothManager.setGetBeaconCallBack(getBeaconCallBack);*/
         initData();
     }
     private void initData() {
         /*默认跳转界面为城市选择*/
-        targetClass=CityChooseActivity.class;
+        targetClass=MuseumListActivity.class;
+
         AlphaAnimation startAnimation = new AlphaAnimation(1.0f, 1.0f);
         startAnimation.setDuration(2500);
         view.startAnimation(startAnimation);
@@ -62,7 +58,7 @@ public class BeginActivity extends BaseActivity {
     }
 
 
-    private String museumId;
+    /*private String museumId;
     private BluetoothManager.GetBeaconCallBack getBeaconCallBack=new BluetoothManager.GetBeaconCallBack() {
 
         int count ;
@@ -79,14 +75,14 @@ public class BeginActivity extends BaseActivity {
             }
             return museumId;
         }
-    };
+    };*/
 
 
     @Override
     protected void onDestroy() {
-        if(bluetoothManager!=null){
+        /*if(bluetoothManager!=null){
             bluetoothManager.disConnectBluetoothService();
-        }
+        }*/
         super.onDestroy();
     }
 }
