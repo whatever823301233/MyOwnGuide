@@ -15,14 +15,13 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.NearlyGalleryAdapter;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.TimeUtil;
 import com.systekcn.guide.utils.Tools;
 
-public class LockScreenActivity extends BaseActivity implements IConstants{
+public class LockScreenActivity extends BaseActivity {
 
 
     private ImageView fullscreenImage;
@@ -97,7 +96,7 @@ public class LockScreenActivity extends BaseActivity implements IConstants{
             if(Tools.isFileExist(localPath)){
                 ImageLoaderUtil.displaySdcardImage(this, localPath, fullscreenImage);
             }else{
-                ImageLoaderUtil.displayNetworkImage(this, BASEURL + imgUrl, fullscreenImage);
+                ImageLoaderUtil.displayNetworkImage(this, BASE_URL + imgUrl, fullscreenImage);
             }
         }
     }

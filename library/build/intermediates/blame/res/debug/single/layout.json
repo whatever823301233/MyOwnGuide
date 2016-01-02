@@ -64,12 +64,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_mini_profile.xml",
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_mini_profile.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_divider.xml",

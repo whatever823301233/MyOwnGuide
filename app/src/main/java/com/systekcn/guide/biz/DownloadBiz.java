@@ -121,15 +121,15 @@ public class DownloadBiz implements IConstants {
             str = assetsList.get(i);
             if (str.endsWith(".jpg")||str.endsWith(".png")) {
                 savePath = LOCAL_ASSETS_PATH +id+"/"+LOCAL_FILE_TYPE_IMAGE+"/"+ str.replaceAll("/","_");
-                final String url = BASEURL + assetsList.get(i);
+                final String url = BASE_URL + assetsList.get(i);
                 downloadFile(http, savePath, url);
             } else if (str.endsWith(".lrc")) {
                 savePath = LOCAL_ASSETS_PATH+id+"/" +LOCAL_FILE_TYPE_LYRIC+"/"+ str.replaceAll("/", "_");
-                final String url = BASEURL + assetsList.get(i);
+                final String url = BASE_URL + assetsList.get(i);
                 downloadFile(http, savePath, url);
             } else if (str.endsWith(".mp3") || str.endsWith(".wav")) {
                 savePath = LOCAL_ASSETS_PATH+id+"/" +LOCAL_FILE_TYPE_AUDIO+"/"+ str.replaceAll("/","_");
-                final String url = BASEURL + assetsList.get(i);
+                final String url = BASE_URL + assetsList.get(i);
                 downloadFile(http, savePath, url);
             } else {
                 LogUtil.i("文件后缀异常", "----------------------------");

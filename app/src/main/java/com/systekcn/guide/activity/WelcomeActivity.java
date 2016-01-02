@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.base.ViewPagerAdapter;
 import com.systekcn.guide.custom.Dot;
@@ -18,7 +17,7 @@ import com.systekcn.guide.utils.ExceptionUtil;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageChangeListener,IConstants {
+public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
 
     private int lastPage = 0;
     private int dotWidth = 40;
@@ -41,12 +40,11 @@ public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageCha
         } catch (IOException e) {
             ExceptionUtil.handleException(e);
         }
-
         // 设置page切换监听
         viewPager.addOnPageChangeListener(this);
         // 遍历图片数组
         ArrayList<BaseFragment> baseFragments = new ArrayList<>();
-        for (int i = 0; i < list_image.length; i++) {
+        for (String aList_image : list_image) {
             Dot dot = new Dot(this);
             int unSelectColorResId = android.R.color.darker_gray;
             int selectColorResId = android.R.color.white;
@@ -54,7 +52,7 @@ public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageCha
             dot.setLayoutParams(new LinearLayout.LayoutParams(dotWidth, dotHeight));
             mDots.add(dot);
             linearLayout_dots.addView(dot);
-            baseFragments.add(ImageFragment.newInstance(list_image[i]));
+            baseFragments.add(ImageFragment.newInstance(aList_image));
         }
         // 设置适配器
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(), baseFragments));

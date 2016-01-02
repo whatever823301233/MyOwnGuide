@@ -199,7 +199,7 @@ public class MediaPlayService extends Service implements IConstants {
         String localUrl = LOCAL_ASSETS_PATH +application.getCurrentMuseumId() + "/"+LOCAL_FILE_TYPE_AUDIO+"/"+ localName;
         File file = new File(localUrl);
         if (!file.exists()) {
-            url = BASEURL + exURL;
+            url = BASE_URL + exURL;
             downloadAudioTask=new DownloadAudioTask();
             downloadAudioTask.execute(url,localName);
         } else {
@@ -275,7 +275,7 @@ public class MediaPlayService extends Service implements IConstants {
             if (file.exists()) {
                 url = localUrl;
             } else {
-                url = BASEURL + exURL;
+                url = BASE_URL + exURL;
             }
             mediaPlayer.setDataSource(url);
             mediaPlayer.prepare();

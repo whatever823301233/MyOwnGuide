@@ -274,7 +274,7 @@ public class MapFragment extends Fragment implements IConstants, MapEventsListen
 
         // Getting the drawable of the map object
         //获取地图对象的绘制
-        Drawable drawable = getResources().getDrawable(R.drawable.icon_map_object);
+        Drawable drawable = getResources().getDrawable(R.drawable.icon_map_object);// TODO: 2016/1/1
         // Creating the map object
         MapObject object1 = new MapObject(Integer.valueOf(nextObjectId), // id, will be passed to the listener when user clicks on it
                 drawable,
@@ -293,7 +293,7 @@ public class MapFragment extends Fragment implements IConstants, MapEventsListen
 
     //绘制可扩展的地图对象
     private void addScalableMapObject(int x, int y, Layer layer) {
-        // TODO: 2016/1/1  
+        Drawable drawable = getResources().getDrawable(R.drawable.maps_blue_dot);
         MapObject object1 = new MapObject(Integer.valueOf(nextObjectId),
                 drawable,
                 x,

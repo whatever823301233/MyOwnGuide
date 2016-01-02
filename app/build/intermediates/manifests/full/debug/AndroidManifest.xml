@@ -103,6 +103,12 @@
         <activity
             android:name="com.systekcn.guide.activity.PlayActivity"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.LockScreenActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.WelcomeActivity"
+            android:theme="@style/FullscreenTheme" />
 
         <service
             android:name="org.altbeacon.beacon.service.BeaconService"
@@ -122,10 +128,6 @@
         <service android:name="com.systekcn.guide.service.MuseumDownloadService" />
         <service android:name="com.systekcn.guide.service.MediaPlayService" />
 
-        <activity
-            android:name="com.systekcn.guide.activity.LockScreenActivity"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name="com.systekcn.guide.activity.WelcomeActivity" />
         <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
     </application>
 

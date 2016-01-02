@@ -2,8 +2,6 @@ package com.systekcn.guide.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -17,6 +15,7 @@ import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.systekcn.guide.IConstants;
+import com.systekcn.guide.R;
 
 public class ImageLoaderUtil implements IConstants{
 	private static ImageLoaderConfiguration configuration;
@@ -29,7 +28,7 @@ public class ImageLoaderUtil implements IConstants{
 			configuration = new ImageLoaderConfiguration
 					.Builder(context)
 					.memoryCacheExtraOptions(480, 800) // max width, max height，即保存的每个缓存文件的最大长宽
-							//  .discCacheExtraOptions(480, 800, CompressFormat.JPEG, 75, null) // Can slow ImageLoader, use it carefully (Better don't use it)/设置缓存的详细信息，最好不要设置这个
+					//.discCacheExtraOptions(480, 800, CompressFormat.JPEG, 75, null) // Can slow ImageLoader, use it carefully (Better don't use it)/设置缓存的详细信息，最好不要设置这个
 					.threadPoolSize(3)//线程池内加载的数量
 					.threadPriority(Thread.NORM_PRIORITY - 2)
 					.denyCacheImageMultipleSizesInMemory()
@@ -59,29 +58,26 @@ public class ImageLoaderUtil implements IConstants{
 
 				@Override
 				public void onLoadingStarted(String imageUri, View view) {
-					// TODO Auto-generated method stub
-
+					//imageView.setImageResource(R.drawable.loading);
 				}
 
 				@Override
-				public void onLoadingFailed(String imageUri, View view,
-											FailReason failReason) {
-					// TODO Auto-generated method stub
+				public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+					imageView.setImageResource(R.drawable.emotionstore_progresscancelbtn);
 					LogUtil.i("图片加载失败",failReason.toString());
 				}
 
 				@Override
 				public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-					// TODO 此处可存储图片至本地sdcard
-					LogUtil.i("ZHANG", "onLoadingComplete");
+					imageView.setImageBitmap(loadedImage);
+					/*LogUtil.i("ZHANG", "onLoadingComplete");
 					String path=imageUri.substring(imageUri.indexOf("182.92.82.70/") + 12);
 					String name=Tools.changePathToName(path);
-					LogUtil.i("ZHANG",name);
+					LogUtil.i("ZHANG",name);*/
 				}
 
 				@Override
 				public void onLoadingCancelled(String imageUri, View view) {
-					// TODO Auto-generated method stub
 					LogUtil.i("图片加载取消",imageUri);
 				}
 			});
@@ -95,31 +91,6 @@ public class ImageLoaderUtil implements IConstants{
 		configuration=newConfiguration(context);
 		imageLoader.init(configuration);
 		imageLoader.displayImage("file:///"+filePathName, ivImage);
-	}
-
-	public static void displayMyImage(Context context, String filePathName, ImageView ivImage){
-		ImageLoader imageLoader=ImageLoader.getInstance();
-		configuration=newConfiguration(context);
-		imageLoader.init(configuration);
-		String localPath="file:///"+filePathName;
-		if(Tools.isFileExist(localPath)){
-			imageLoader.displayImage(localPath,ivImage);
-		}else{
-			imageLoader.displayImage(filePathName, ivImage);
-		}
-	}
-
-
-	public static void releaseImageViewResouce(ImageView imageView) {
-		if (imageView == null) return;
-		Drawable drawable = imageView.getDrawable();
-		if (drawable != null && drawable instanceof BitmapDrawable) {
-			BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
-			Bitmap bitmap = bitmapDrawable.getBitmap();
-			if (bitmap != null && !bitmap.isRecycled()) {
-				bitmap.recycle();
-			}
-		}
 	}
 
 }

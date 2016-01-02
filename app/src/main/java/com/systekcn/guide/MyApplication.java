@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
+import android.content.IntentFilter;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.text.TextUtils;
@@ -17,6 +18,7 @@ import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.manager.MediaServiceManager;
+import com.systekcn.guide.receiver.NetworkStateChangedReceiver;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
 
@@ -71,24 +73,11 @@ public class MyApplication extends Application implements IConstants{
         }
         super.onCreate();
         mServiceManager = new MediaServiceManager(getApplicationContext());
+        initDrawerImageLoader();
+        registerNetWorkReceiver();
+    }
 
-
-        /*
-        //initialize and create the image loader logic
-        DrawerImageLoader.init(new AbstractDrawerImageLoader() {
-            @Override
-            public void set(ImageView imageView, Uri uri, Drawable placeholder) {
-                Picasso.with(imageView.getContext()).load(uri).placeholder(placeholder).into(imageView);
-            }
-
-            @Override
-            public void cancel(ImageView imageView) {
-                Picasso.with(imageView.getContext()).cancelRequest(imageView);
-            }
-        });
-        */
-
-        //initialize and create the image loader logic
+    private void initDrawerImageLoader() {
         DrawerImageLoader.init(new AbstractDrawerImageLoader() {
             @Override
             public void set(ImageView imageView, Uri uri, Drawable placeholder) {
@@ -112,10 +101,8 @@ public class MyApplication extends Application implements IConstants{
                 } else if ("customUrlItem".equals(tag)) {
                     return new IconicsDrawable(ctx).iconText(" ").backgroundColorRes(R.color.md_red_500).sizeDp(56);
                 }
-
                 //we use the default one for
                 //DrawerImageLoader.Tags.PROFILE_DRAWER_ITEM.name()
-
                 return super.placeholder(ctx, tag);
             }
         });
@@ -137,9 +124,9 @@ public class MyApplication extends Application implements IConstants{
     public void refreshData(){
         if(currentExhibitBean!=null){
             currentExhibitId=currentExhibitBean.getId();
+            currentMuseumId=currentExhibitBean.getMuseumId();
+            currentBeaconId=currentExhibitBean.getBeaconId();
         }
-        currentMuseumId=currentExhibitBean.getMuseumId();
-        currentBeaconId=currentExhibitBean.getBeaconId();
     }
 
     public  String getCurrentLyricDir(){
@@ -160,6 +147,12 @@ public class MyApplication extends Application implements IConstants{
         return LOCAL_ASSETS_PATH+currentExhibitBean.getMuseumId()+"/"+LOCAL_FILE_TYPE_IMAGE+"/";
     }
 
+    public void registerNetWorkReceiver(){
+        NetworkStateChangedReceiver networkStateChangedReceiver = new NetworkStateChangedReceiver();
+        IntentFilter intentFilter=new IntentFilter();
+        intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
+        registerReceiver(networkStateChangedReceiver,intentFilter);
+    }
 
     /**
      * 判断是否为相同app名
@@ -200,8 +193,8 @@ public class MyApplication extends Application implements IConstants{
             ExceptionUtil.handleException(e);
         }
     }
-    /*退出程序 */
-    public  void exit() {
+    /*退出程序*/
+    public static void exit() {
         for (Activity activity : listActivity) {
             if(activity!=null){
                 try {
@@ -212,9 +205,6 @@ public class MyApplication extends Application implements IConstants{
                 }
             }
         }
-        /*if(bluetoothManager!=null){
-            bluetoothManager.disConnectBluetoothService();
-        }*/
         System.exit(0);
     }
 
@@ -226,4 +216,5 @@ public class MyApplication extends Application implements IConstants{
     public static MyApplication get() {
         return myApplication;
     }
+
 }

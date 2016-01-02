@@ -45,7 +45,7 @@ public class LyricDownloadManager implements IConstants {
         BufferedReader br = null;
         StringBuilder content = null;
         String temp = null;
-        String lyricURL = BASEURL+lyricName;
+        String lyricURL = BASE_URL +lyricName;
         Log.i(TAG, "歌词的真实下载地址:" + lyricURL);
         try {
             mUrl = new URL(lyricURL);

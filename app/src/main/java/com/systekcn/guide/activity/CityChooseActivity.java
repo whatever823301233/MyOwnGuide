@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CityChooseActivity extends BaseActivity implements IConstants {
+public class CityChooseActivity extends BaseActivity{
 
     private Drawer result;
 

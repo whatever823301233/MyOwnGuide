@@ -100,7 +100,7 @@ public class NearlyExhibitAdapter extends BaseAdapter implements IConstants {
             ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, viewHolder.ivExhibitIcon);
         } else {
             // 服务器上存的imageUrl有域名如http://www.systek.com.cn/1.png
-            iconUrl = BASEURL+ iconUrl;
+            iconUrl = BASE_URL + iconUrl;
             ImageLoaderUtil.displayNetworkImage(context, iconUrl, viewHolder.ivExhibitIcon);
         }
         return convertView;

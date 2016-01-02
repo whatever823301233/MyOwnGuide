@@ -72,7 +72,7 @@ public class NearlyGalleryAdapter extends RecyclerView.Adapter<NearlyGalleryAdap
         if(Tools.isFileExist(imgLocalUrl)){
             ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, holder.mImg);
         }else{
-            ImageLoaderUtil.displayNetworkImage(context,BASEURL+path,holder.mImg);
+            ImageLoaderUtil.displayNetworkImage(context, BASE_URL +path,holder.mImg);
         }
 
         holder.mTxt.setText(exhibitBean.getName());

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-125:12
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-131:12
 	package
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
@@ -42,7 +42,7 @@ ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:11:22-78
 application
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:14:5-123:19
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:14:5-129:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -175,105 +175,107 @@ ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:70:9-72:58
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:71:13-73
 activity#com.systekcn.guide.activity.BeginActivity
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:73:9-81:20
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:76:9-84:20
 	android:theme
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:75:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:78:13-51
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:74:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:77:13-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:76:13-80:29
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:79:13-83:29
 action#android.intent.action.MAIN
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:77:17-69
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:80:17-69
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:77:25-66
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:80:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:79:17-77
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:82:17-77
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:79:27-74
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:82:27-74
 activity#com.systekcn.guide.activity.CityChooseActivity
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:82:9-84:54
-	android:theme
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:84:13-51
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:83:13-56
-activity#com.systekcn.guide.activity.MuseumListActivity
 ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:85:9-87:54
 	android:theme
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:87:13-51
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:86:13-56
-activity#com.systekcn.guide.activity.MuseumHomeActivity
+activity#com.systekcn.guide.activity.MuseumListActivity
 ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:88:9-90:54
 	android:theme
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:90:13-51
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:89:13-56
-activity#com.systekcn.guide.activity.ListAndMapActivity
+activity#com.systekcn.guide.activity.MuseumHomeActivity
 ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:91:9-93:54
 	android:theme
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:93:13-51
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:92:13-56
-activity#com.systekcn.guide.activity.TopicActivity
+activity#com.systekcn.guide.activity.ListAndMapActivity
 ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:94:9-96:54
 	android:theme
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:96:13-51
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:95:13-51
-activity#com.systekcn.guide.activity.PlayActivity
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:95:13-56
+activity#com.systekcn.guide.activity.TopicActivity
 ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:97:9-99:54
 	android:theme
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:99:13-51
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:98:13-50
-service#org.altbeacon.beacon.service.BeaconService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:101:9-106:38
-	android:enabled
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:103:13-35
-	android:label
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:106:13-35
-	android:exported
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:104:13-37
-	android:isolatedProcess
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:105:13-44
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:102:13-70
-service#org.altbeacon.beacon.BeaconIntentProcessor
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:107:9-110:40
-	android:enabled
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:109:13-35
-	android:exported
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:110:13-37
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:108:13-70
-service#com.baidu.location.f
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:111:9-115:41
-	android:enabled
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:113:13-35
-	android:process
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:115:13-38
-	android:permission
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:114:13-75
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:112:13-48
-service#com.systekcn.guide.service.MuseumDownloadService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:9-66
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:18-63
-service#com.systekcn.guide.service.MediaPlayService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:9-61
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:18-58
-activity#com.systekcn.guide.activity.LockScreenActivity
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:119:9-121:54
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:98:13-51
+activity#com.systekcn.guide.activity.PlayActivity
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:100:9-102:54
 	android:theme
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:121:13-51
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:102:13-51
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:120:13-56
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:101:13-50
+activity#com.systekcn.guide.activity.LockScreenActivity
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:103:9-105:54
+	android:theme
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:105:13-51
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:104:13-56
 activity#com.systekcn.guide.activity.WelcomeActivity
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:9-71
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:106:9-108:53
+	android:theme
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:108:13-51
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:19-59
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:107:13-53
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:110:9-115:38
+	android:enabled
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:112:13-35
+	android:label
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:115:13-35
+	android:exported
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:113:13-37
+	android:isolatedProcess
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:114:13-44
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:111:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:9-119:40
+	android:enabled
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:118:13-35
+	android:exported
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:119:13-37
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:13-70
+service#com.baidu.location.f
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:120:9-124:41
+	android:enabled
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:13-35
+	android:process
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:124:13-38
+	android:permission
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:123:13-75
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:121:13-48
+service#com.systekcn.guide.service.MuseumDownloadService
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:125:9-66
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:125:18-63
+service#com.systekcn.guide.service.MediaPlayService
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:126:9-61
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:126:18-58
 uses-sdk
 INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [MyOwnGuide:library:unspecified] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\MyOwnGuide\library\unspecified\AndroidManifest.xml:8:5-10:41

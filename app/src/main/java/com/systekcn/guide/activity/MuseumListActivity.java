@@ -1,6 +1,9 @@
 package com.systekcn.guide.activity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,21 +15,20 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MuseumAdapter;
-import com.systekcn.guide.biz.BizFactory;
-import com.systekcn.guide.biz.GetDataBiz;
+import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.MuseumBean;
+import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MuseumListActivity extends BaseActivity implements IConstants {
+public class MuseumListActivity extends BaseActivity {
 
-
+    private boolean isDataShow;
     private ListView museumListView;
     /*当前所在城市*/
     private String city;
@@ -45,6 +47,14 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
         initData();
         adddListener();
         initDrawer();
+        addReceiver();
+    }
+
+    private void addReceiver() {
+        Receiver receiver=new Receiver();
+        IntentFilter filter=new IntentFilter(ACTION_NET_IS_COMMING);
+        filter.addAction(ACTION_NET_IS_OUT);
+        registerReceiver(receiver,filter);
     }
 
     private void initDrawer() {
@@ -71,30 +81,43 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
         museumListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MuseumBean museumBean=museumList.get(position-1);
-                application.currentMuseum=museumBean;
-                Intent intent =new Intent(MuseumListActivity.this,MuseumHomeActivity.class);
+                MuseumBean museumBean = museumList.get(position - 1);
+                application.currentMuseum = museumBean;
+                Intent intent = new Intent(MuseumListActivity.this, MuseumHomeActivity.class);
                 startActivity(intent);
             }
         });
     }
 
     private void initData() {
+
         new Thread(){
             @Override
             public void run() {
-                GetDataBiz biz= (GetDataBiz) BizFactory.getDataBiz();
-                museumList= (List<MuseumBean>) biz.getAllBeansFromNet(URL_TYPE_GET_MUSEUM_LIST, "");
-                if(museumList!=null){
-                    handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
-                    LogUtil.i("ZHANG","数据获取成功");
-                }else{
-                    handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_FAIL);
-                    LogUtil.i("ZHANG", "数据获取失败");
+                try{
+                    if(application.currentNetworkType!=INTERNET_TYPE_NONE){
+                        museumList=DataBiz.getEntityListFromNet(MuseumBean.class,URL_MUSEUM_LIST);
+                    }
+                    if(museumList!=null&&museumList.size()>0){
+                        LogUtil.i("ZHANG", "数据获取成功");
+                        boolean isSaveTrue=DataBiz.deleteSQLiteDataFromClass(MuseumBean.class);
+                        LogUtil.i("ZHANG","数据删除"+isSaveTrue);
+                        boolean isSaveTrue2=DataBiz.saveListToSQLite(museumList);
+                        LogUtil.i("ZHANG","数据保存"+isSaveTrue2);
+                    }else{
+                        museumList=DataBiz.getEntityListLocal(MuseumBean.class);
+                    }
+                }catch (Exception e){
+                    ExceptionUtil.handleException(e);
+                }finally {
+                    if(museumList==null||museumList.size()==0){
+                        onDataError();
+                    }else{
+                        handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
+                    }
                 }
             }
         }.start();
-
     }
 
     private void initView() {
@@ -118,13 +141,24 @@ public class MuseumListActivity extends BaseActivity implements IConstants {
             if (msg.what == MSG_WHAT_UPDATE_DATA_SUCCESS) {
                 if(museumList==null||museumList.size()==0){return;}
                 adapter.updateData(museumList);
+                isDataShow=true;
             }else if(msg.what==MSG_WHAT_UPDATE_DATA_FAIL){
                 showToast("数据获取失败，请检查网络...");
+            }else if(msg.what==MSG_WHAT_REFRESH_DATA){
+                initData();
             }
         }
     }
 
+    class Receiver extends BroadcastReceiver{
 
-
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action=intent.getAction();
+            if(action.equals(ACTION_NET_IS_COMMING)){
+                handler.sendEmptyMessage(MSG_WHAT_REFRESH_DATA);
+            }
+        }
+    }
 
 }

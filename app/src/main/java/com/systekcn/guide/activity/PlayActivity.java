@@ -12,7 +12,6 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MultiAngleImgAdapter;
 import com.systekcn.guide.entity.MultiAngleImg;
@@ -29,7 +28,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayActivity extends BaseActivity implements IConstants{
+public class PlayActivity extends BaseActivity {
 
     private ListView lvLyric;
     private ImageView imgExhibitIcon;
@@ -83,7 +82,7 @@ public class PlayActivity extends BaseActivity implements IConstants{
             ImageLoaderUtil.displaySdcardImage(this, imgLocalUrl, imgExhibitIcon);
         } else {
             // 服务器上存的imageUrl有域名如http://www.systek.com.cn/1.png
-            iconUrl = BASEURL+ iconUrl;
+            iconUrl = BASE_URL + iconUrl;
             ImageLoaderUtil.displayNetworkImage(this, iconUrl, imgExhibitIcon);
         }}
 
@@ -247,7 +246,7 @@ public class PlayActivity extends BaseActivity implements IConstants{
                         iv_frag_largest_img.setTag(imgLocalPath);
                         ImageLoaderUtil.displaySdcardImage(activity, imgLocalPath, iv_frag_largest_img);
                     } else {
-                        String httpPath = BASEURL + imgPath;
+                        String httpPath = BASE_URL + imgPath;
                         iv_frag_largest_img.setTag(httpPath);
                         ImageLoaderUtil.displayNetworkImage(activity, httpPath, iv_frag_largest_img);
                     }

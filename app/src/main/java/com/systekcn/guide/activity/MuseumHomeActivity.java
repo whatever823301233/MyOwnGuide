@@ -18,19 +18,14 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
-import com.systekcn.guide.biz.BizFactory;
-import com.systekcn.guide.biz.GetDataBiz;
-import com.systekcn.guide.entity.ExhibitBean;
-import com.systekcn.guide.utils.ExceptionUtil;
+import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.utils.ImageLoaderUtil;
+import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.Tools;
 
-import java.util.List;
-
-public class MuseumHomeActivity extends BaseActivity implements IConstants {
+public class MuseumHomeActivity extends BaseActivity {
 
     /*抽屉*/
     private Drawer result;
@@ -123,33 +118,21 @@ public class MuseumHomeActivity extends BaseActivity implements IConstants {
     };
 
     private void initData() {
-
-        try{
-            new Thread(){
-                @Override
-                public void run() {
-                    if(application.currentMuseum!=null){
-                        currentMuseumId=application.currentMuseum.getId();
-                        handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA);
-                    }
-                    GetDataBiz biz= (GetDataBiz) BizFactory.getDataBiz();
-                    List<ExhibitBean> exhibitBeans= (List<ExhibitBean>) biz.getAllBeans(MuseumHomeActivity.this,
-                            IConstants.URL_TYPE_GET_EXHIBITS_BY_MUSEUM_ID, "deadccf89ef8412a9c8a2628cee28e18");
-                    if(exhibitBeans!=null&&exhibitBeans.size()>0){
-                        application.totalExhibitBeanList=exhibitBeans;
-                    }
-                }
-            }.start();
-
-        }catch (Exception e) {
-            showToast("抱歉，数据获取失败！");
-            ExceptionUtil.handleException(e);
-        }
-
         new Thread(){
             @Override
             public void run() {
-
+                if(application.currentMuseum!=null){
+                    currentMuseumId=application.currentMuseum.getId();
+                    handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA);
+                }
+                if(currentMuseumId==null){return;}
+                LogUtil.i("ZHANG",currentMuseumId);
+                boolean flag=DataBiz.saveAllJsonData(currentMuseumId);
+                if(flag){
+                    LogUtil.i("ZHANG","DataBiz.saveAllJsonData 数据保存成功");
+                }else{
+                    showToast("抱歉，数据获取失败！");
+                }
             }
         }.start();
 
@@ -201,7 +184,7 @@ public class MuseumHomeActivity extends BaseActivity implements IConstants {
                     ImageLoaderUtil.displaySdcardImage(this, localPath, iv);
                 } else {
                     if (MyApplication.currentNetworkType != INTERNET_TYPE_NONE) {
-                        ImageLoaderUtil.displayNetworkImage(this, BASEURL + imgUrl, iv);
+                        ImageLoaderUtil.displayNetworkImage(this, BASE_URL + imgUrl, iv);
                     }
                 }
             }

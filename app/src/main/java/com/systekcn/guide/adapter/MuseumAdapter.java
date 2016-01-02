@@ -95,7 +95,7 @@ public class MuseumAdapter extends BaseAdapter implements IConstants {
             ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, viewHolder.museumListIcon);
         } else {
             // 服务器上存的imageUrl有域名如http://www.systek.com.cn/1.png
-            imageUrl = BASEURL + imageUrl;
+            imageUrl = BASE_URL + imageUrl;
             ImageLoaderUtil.displayNetworkImage(context, imageUrl, viewHolder.museumListIcon);
         }
         return convertView;

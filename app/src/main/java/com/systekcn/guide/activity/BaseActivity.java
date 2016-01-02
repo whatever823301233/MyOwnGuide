@@ -6,29 +6,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
+import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.utils.ExceptionUtil;
 
 /**
  * Created by Qiang on 2015/12/30.
  */
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity implements IConstants{
     /**
      * 类唯一标记
      */
     private String TAG = getClass().getSimpleName();
+    public int netState;
     MyApplication application;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        application=MyApplication.get();
         try {
+            application=MyApplication.get();
+            netState=MyApplication.currentNetworkType;
             MyApplication.listActivity.add(this);
         } catch (Exception e) {
             ExceptionUtil.handleException(e);
         }
         initialize(savedInstanceState);
     }
+
+    public int getNetState(){
+        return MyApplication.currentNetworkType;
+    }
+
     /**
      * 初始化控件
      */
@@ -58,8 +66,14 @@ public class BaseActivity extends AppCompatActivity {
      * @param msg
      *            toast内容
      */
-    public void showToast(String msg) {
-        Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
+    public void showToast(final String msg) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
@@ -67,9 +81,9 @@ public class BaseActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-        /*
-        * 响应后退按键
-        */
+    /*
+    * 响应后退按键
+    */
     public void keyBack() {
         finish();
     }
@@ -86,6 +100,11 @@ public class BaseActivity extends AppCompatActivity {
                 break;
         }
         return onKey;
+    }
+
+
+    public void onDataError(){
+        showToast("数据获取失败，请检查网络状态...");
     }
 
 }

@@ -52,7 +52,7 @@ public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdap
             if (Tools.isFileExist(path)) {
                 ImageLoaderUtil.displaySdcardImage(context, path, holder.ivMultiAngle);
             } else {
-                ImageLoaderUtil.displayNetworkImage(context, BASEURL + url, holder.ivMultiAngle);
+                ImageLoaderUtil.displayNetworkImage(context, BASE_URL + url, holder.ivMultiAngle);
             }
         }
     }

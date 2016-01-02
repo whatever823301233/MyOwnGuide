@@ -125,7 +125,6 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
     //* 获取博物馆所有展品的详细信息的json
     private void getJsonForDetailMuseum(String museumId) {
 
-        HttpUtils http = new HttpUtils();
         DbUtils db=DbUtils.create(this);
         try {
             beaconList=db.findAll(BeaconBean.class);
@@ -163,8 +162,8 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
                 db.close();
             }
         }
-
-        http.send(HttpRequest.HttpMethod.GET,BEACON_URL + museumId , new RequestCallBack<String>() {
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.GET, URL_BEACON_LIST + museumId , new RequestCallBack<String>() {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
@@ -177,10 +176,10 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
             }
             @Override
             public void onFailure(HttpException error, String msg) {
-                LogUtil.i("下载JSON-BEACON_URL-获取失败" + error.toString(), msg);
+                LogUtil.i("下载JSON-URL_BEACON_LIST-获取失败" + error.toString(), msg);
             }
         });
-        http.send(HttpRequest.HttpMethod.GET, LABELS_URL + museumId, new RequestCallBack<String>() {
+        http.send(HttpRequest.HttpMethod.GET, URL_LABELS_LIST + museumId, new RequestCallBack<String>() {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
@@ -194,10 +193,10 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
 
             @Override
             public void onFailure(HttpException error, String msg) {
-                LogUtil.i("下载JSON-LABELS_URL-获取失败" + error.toString(), msg);
+                LogUtil.i("下载JSON-URL_LABELS_LIST-获取失败" + error.toString(), msg);
             }
         });
-        http.send(HttpRequest.HttpMethod.GET, EXHIBIT_LIST_URL + museumId, new RequestCallBack<String>() {
+        http.send(HttpRequest.HttpMethod.GET, URL_EXHIBIT_LIST + museumId, new RequestCallBack<String>() {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
@@ -214,7 +213,7 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
                 LogUtil.i("下载JSON-EXHIBIT_URL-获取失败" + error.toString(), msg);
             }
         });
-        http.send(HttpRequest.HttpMethod.GET, MUSEUM_MAP_URL + museumId, new RequestCallBack<String>() {
+        http.send(HttpRequest.HttpMethod.GET, URL_MUSEUM_MAP_LIST + museumId, new RequestCallBack<String>() {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
@@ -228,7 +227,7 @@ public class MuseumDownloadService  extends IntentService implements IConstants 
 
             @Override
             public void onFailure(HttpException error, String msg) {
-                LogUtil.i("下载JSON-MUSEUM_MAP_URL-获取失败" + error.toString(), msg);
+                LogUtil.i("下载JSON-URL_MUSEUM_MAP_LIST-获取失败" + error.toString(), msg);
             }
         });
     }

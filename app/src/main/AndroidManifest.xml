@@ -70,6 +70,9 @@
         <activity
             android:name=".activity.model.CrossfadeDrawerLayoutActvitiy"
             android:theme="@style/MaterialDrawerTheme" />
+
+
+
         <activity
             android:name=".activity.BeginActivity"
             android:theme="@style/FullscreenTheme">
@@ -97,6 +100,12 @@
         <activity
             android:name=".activity.PlayActivity"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".activity.LockScreenActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/FullscreenTheme"/>
 
         <service
             android:name="org.altbeacon.beacon.service.BeaconService"
@@ -116,10 +125,7 @@
         <service android:name=".service.MuseumDownloadService" />
         <service android:name=".service.MediaPlayService" />
 
-        <activity
-            android:name=".activity.LockScreenActivity"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name=".activity.WelcomeActivity"></activity>
+
     </application>
 
 </manifest>

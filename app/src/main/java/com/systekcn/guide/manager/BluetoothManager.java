@@ -4,6 +4,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 
+import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.beacon.BeaconForSort;
@@ -188,6 +189,10 @@ public class BluetoothManager implements IConstants {
                     exhibitBeansList.removeAll(list);
                     exhibitBeansList.addAll(list);
                 }
+            }
+            if(exhibitBeansList.size()>0){
+                String json=JSON.toJSONString(exhibitBeansList);
+                LogUtil.i("ZHANG",json);
             }
             application.currentExhibitBeanList=exhibitBeansList;
             Intent intent =new Intent();
