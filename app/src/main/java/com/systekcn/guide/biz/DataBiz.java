@@ -63,7 +63,7 @@ public class DataBiz implements IConstants{
         boolean isSuccess=true;
         DbUtils db=DbUtils.create(MyApplication.get());
         try {
-            db.delete(clazz, WhereBuilder.b(ID,LIKE,"%"+id+"%"));
+            db.delete(clazz, WhereBuilder.b(ID, LIKE, "%" + id + "%"));
         } catch (DbException e) {
             ExceptionUtil.handleException(e);
             isSuccess=false;
@@ -81,7 +81,7 @@ public class DataBiz implements IConstants{
         List<T> listWithoutDup= new ArrayList<>(new HashSet<>(list)) ;
         DbUtils db=DbUtils.create(MyApplication.get());
         try {
-            db.saveAll(listWithoutDup);
+            db.saveOrUpdateAll(listWithoutDup);
         } catch (Exception e) {
             ExceptionUtil.handleException(e);
             isSuccess=false;
@@ -140,9 +140,18 @@ public class DataBiz implements IConstants{
         List<ExhibitBean> exhibitList = getEntityListFromNet(ExhibitBean.class, URL_EXHIBIT_LIST + museumID);
         if(beaconList == null || labelList == null || exhibitList == null //|| mapList == null//|| mapList.size() == 0
                 || beaconList.size() == 0 || labelList.size() == 0 || exhibitList.size() == 0 ){return false;}
-        deleteOldJsonData(museumID);
+        //deleteOldJsonData(museumID);
         return saveListToSQLite(beaconList) && saveListToSQLite(labelList) && saveListToSQLite(exhibitList);// && saveEntityToSQLite(mapList)
 
     }
-
+    public  static<T>  List<T> getLocalListById(Class<T> clazz, String museumID) {
+        DbUtils db=DbUtils.create(MyApplication.get());
+        List<T>list=null;
+        try {
+            list =db.findAll(Selector.from(clazz).where(MUSEUM_ID,LIKE,"%"+museumID+"%"));
+        } catch (DbException e) {
+            ExceptionUtil.handleException(e);
+        }
+        return list;
+    }
 }

@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/largest_icon_height">
                 <LinearLayout
-                    android:id="@+id/ll_museum_largest_icon"
+                    android:id="@+id/llMuseumLargestIcon"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"/>
@@ -32,7 +32,7 @@
                 android:paddingBottom="5dp"
                 android:orientation="horizontal">
                 <RelativeLayout
-                    android:id="@+id/rl_guide_home"
+                    android:id="@+id/rlGuideHome"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
@@ -66,7 +66,7 @@
                         android:layout_below="@id/iv_home_circle_map"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/rl_topic_home"
+                    android:id="@+id/rlTopicHome"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
@@ -195,18 +195,19 @@
                     android:textSize="11dp" />
 
                 <ImageView
+                    android:id="@+id/ivPlayStateCtrl"
                     style="@style/normal_image_view"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginEnd="@dimen/activity_horizontal_margin"
-                    android:src="@drawable/iv_sound_close"/>
+                    android:src="@drawable/iv_sound_open"/>
 
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/tv_museum_introduce"
+                android:id="@+id/tvMuseumIntroduce"
                 android:layout_width="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"

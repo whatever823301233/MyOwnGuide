@@ -19,7 +19,7 @@ import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.activity.PlayActivity;
-import com.systekcn.guide.adapter.NearlyExhibitAdapter;
+import com.systekcn.guide.adapter.ExhibitAdapter;
 import com.systekcn.guide.entity.ExhibitBean;
 
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class ExhibitListFragment extends Fragment implements IConstants {
     private Activity activity;
     private ListView listView;
     private MyApplication application;
-    private NearlyExhibitAdapter nearlyExhibitAdapter;
+    private ExhibitAdapter exhibitAdapter;
     private Handler handler;
     private static ExhibitListFragment exhibitListFragment;
     private ListChangeReceiver listChangeReceiver;
@@ -76,11 +76,11 @@ public class ExhibitListFragment extends Fragment implements IConstants {
     private void initData() {
 
         if(application.currentExhibitBeanList!=null){
-            nearlyExhibitAdapter=new NearlyExhibitAdapter(activity,application.currentExhibitBeanList);
+            exhibitAdapter =new ExhibitAdapter(activity,application.currentExhibitBeanList);
         }else{
-            nearlyExhibitAdapter=new NearlyExhibitAdapter(activity,new ArrayList<ExhibitBean>());
+            exhibitAdapter =new ExhibitAdapter(activity,new ArrayList<ExhibitBean>());
         }
-        listView.setAdapter(nearlyExhibitAdapter);
+        listView.setAdapter(exhibitAdapter);
     }
 
     private void initView(View view) {
@@ -133,8 +133,8 @@ public class ExhibitListFragment extends Fragment implements IConstants {
         @Override
         public void handleMessage(Message msg) {
             if(msg.what==MSG_WHAT_UPDATE_DATA_SUCCESS){
-                if(nearlyExhibitAdapter!=null&&application.currentExhibitBeanList.size()>0){
-                    nearlyExhibitAdapter.updateData(application.currentExhibitBeanList);
+                if(exhibitAdapter !=null&&application.currentExhibitBeanList.size()>0){
+                    exhibitAdapter.updateData(application.currentExhibitBeanList);
                 }
             }
         }

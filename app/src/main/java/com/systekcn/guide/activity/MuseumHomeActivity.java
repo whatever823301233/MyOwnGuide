@@ -2,9 +2,12 @@ package com.systekcn.guide.activity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.PersistableBundle;
+import android.text.TextUtils;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
@@ -21,9 +25,13 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.biz.DataBiz;
+import com.systekcn.guide.entity.MuseumBean;
+import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.Tools;
+
+import java.io.IOException;
 
 public class MuseumHomeActivity extends BaseActivity {
 
@@ -31,29 +39,32 @@ public class MuseumHomeActivity extends BaseActivity {
     private Drawer result;
     /*当前博物馆ID*/
     private String currentMuseumId;
+    private MuseumBean currentMuseum;
     /*当前屏幕宽度*/
     private int screenWidth;
     /*对话框*/
     private AlertDialog progressDialog;
-    private ImageView iv_Drawer;
-    private TextView title_bar_topic;
+    private ImageView titleBarDrawer;
+    private TextView titleBarTopic;
 
-    private final int MSG_WHAT_UPDATE_DATA=1;
-    private LinearLayout ll_museum_largest_icon;
-    private TextView tv_museum_introduce;
-    private RelativeLayout rl_guide_home;
-    private RelativeLayout rl_topic_home;
-    private MyApplication application;
+    private LinearLayout llMuseumLargestIcon;
+    private TextView tvMuseumIntroduce;
+    private RelativeLayout rlGuideHome;
+    private RelativeLayout rlTopicHome;
     private Handler handler;
+    private String currentMuseumStr;
+    private MediaPlayer mediaPlayer;
+    private ImageView ivPlayStateCtrl;
 
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
         setContentView(R.layout.activity_museum_home);
-        application=MyApplication.get();
         initDrawer();
-        //application.mServiceManager.connectService();/**启动播放服务*/
-        currentMuseumId = application.currentMuseum.getId(); //intent.getStringExtra(INTENT_MUSEUM_ID);
+        Intent intent =getIntent();
+        currentMuseumStr=intent.getStringExtra(INTENT_MUSEUM);
+        initData();
+        // TODO: 2016/1/3
         application.currentMuseumId=currentMuseumId;
         WindowManager windowManager = getWindowManager();
         Display display = windowManager.getDefaultDisplay();
@@ -63,7 +74,6 @@ public class MuseumHomeActivity extends BaseActivity {
         addListener();
         /**数据初始化好之前显示加载对话框*/
         showProgressDialog();
-        initData();
 
     }
 
@@ -87,17 +97,26 @@ public class MuseumHomeActivity extends BaseActivity {
         result.setSelection(5, false);
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        initAudio();
+        refreshPlayState();
+    }
 
+    private void refreshPlayState() {
+        if(mediaPlayer!=null&&mediaPlayer.isPlaying()){
+            setPlayStateImageToOpen();
+        }else{
+            setPlayStateImageToOpen();
+        }
+    }
 
     private void addListener() {
-        rl_guide_home.setOnClickListener(onClickListener);
-        rl_topic_home.setOnClickListener(onClickListener);
-        iv_Drawer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        rlGuideHome.setOnClickListener(onClickListener);
+        rlTopicHome.setOnClickListener(onClickListener);
+        titleBarDrawer.setOnClickListener(onClickListener);
+        ivPlayStateCtrl.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener=new View.OnClickListener() {
@@ -105,40 +124,72 @@ public class MuseumHomeActivity extends BaseActivity {
         public void onClick(View v) {
             Intent intent=null;
             switch (v.getId()){
-                case R.id.rl_guide_home:
+                case R.id.rlGuideHome:
                     intent=new Intent(MuseumHomeActivity.this,ListAndMapActivity.class);
                     startActivity(intent);
                     break;
-                case R.id.rl_topic_home:
+                case R.id.rlTopicHome:
                     intent=new Intent(MuseumHomeActivity.this,TopicActivity.class);
+                    intent.putExtra(MUSEUM_ID,currentMuseumId);
                     startActivity(intent);
+                    break;
+                case R.id.titleBarDrawer:
+                    if (result.isDrawerOpen()) {
+                        result.closeDrawer();
+                    } else {
+                        result.openDrawer();
+                    }
+                    break;
+                case R.id.ivPlayStateCtrl:
+                    if(mediaPlayer!=null){
+                        if(mediaPlayer.isPlaying()){
+                            mediaPlayer.pause();
+                            setPlayStateImageToClose();
+                        }else{
+                            if(application.mServiceManager!=null&&application.mServiceManager.isPlaying()){
+                                application.mServiceManager.pause();
+                            }
+                            mediaPlayer.start();
+                            setPlayStateImageToOpen();
+                        }
+                    }
                     break;
             }
         }
     };
 
+    private void setPlayStateImageToClose() {
+        if(ivPlayStateCtrl==null){return;}
+        ivPlayStateCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_sound_close));
+    }
+    private void setPlayStateImageToOpen() {
+        if(ivPlayStateCtrl==null){return;}
+        ivPlayStateCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_sound_open));
+    }
+
     private void initData() {
         new Thread(){
             @Override
             public void run() {
-                if(application.currentMuseum!=null){
-                    currentMuseumId=application.currentMuseum.getId();
-                    handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA);
+                if(!TextUtils.isEmpty(currentMuseumStr)){
+                    currentMuseum=JSON.parseObject(currentMuseumStr, MuseumBean.class);
+                    currentMuseumId=currentMuseum.getId();
+                    if(handler!=null){
+                        handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
+                    }
                 }
-                if(currentMuseumId==null){return;}
+                if(TextUtils.isEmpty(currentMuseumId)){return;}
                 LogUtil.i("ZHANG",currentMuseumId);
                 boolean flag=DataBiz.saveAllJsonData(currentMuseumId);
                 if(flag){
-                    LogUtil.i("ZHANG","DataBiz.saveAllJsonData 数据保存成功");
+                    LogUtil.i("ZHANG","DataBiz.saveAllJsonData 数据更新成功");
                 }else{
                     showToast("抱歉，数据获取失败！");
                 }
             }
         }.start();
 
-
     }
-
 
     private void showProgressDialog() {
        /* progressDialog = new AlertDialog.Builder(MuseumHomeActivity.this).create();
@@ -150,26 +201,24 @@ public class MuseumHomeActivity extends BaseActivity {
     }
 
     private void initView() {
-
-        iv_Drawer = (ImageView) findViewById(R.id.title_bar_more);
-        title_bar_topic = (TextView) findViewById(R.id.title_bar_topic);
-        ll_museum_largest_icon = (LinearLayout) findViewById(R.id.ll_museum_largest_icon);
-        tv_museum_introduce = (TextView) findViewById(R.id.tv_museum_introduce);
-        rl_guide_home = (RelativeLayout) findViewById(R.id.rl_guide_home);
-        rl_topic_home = (RelativeLayout) findViewById(R.id.rl_topic_home);
-
-
+        titleBarDrawer = (ImageView) findViewById(R.id.titleBarDrawer);
+        ivPlayStateCtrl = (ImageView) findViewById(R.id.ivPlayStateCtrl);
+        titleBarTopic = (TextView) findViewById(R.id.titleBarTopic);
+        llMuseumLargestIcon = (LinearLayout) findViewById(R.id.llMuseumLargestIcon);
+        tvMuseumIntroduce = (TextView) findViewById(R.id.tvMuseumIntroduce);
+        rlGuideHome = (RelativeLayout) findViewById(R.id.rlGuideHome);
+        rlTopicHome = (RelativeLayout) findViewById(R.id.rlTopicHome);
     }
 
 
     private void showData(){
-        if(application.currentMuseum!=null){
-            title_bar_topic.setText(application.currentMuseum.getName());
+        if(currentMuseum!=null){
+            titleBarTopic.setText(currentMuseum.getName());
             /**加载博物馆介绍*/
-            tv_museum_introduce.setText("      "+application.currentMuseum.getTextUrl());
-            //initAudio();
+            tvMuseumIntroduce.setText("      " + currentMuseum.getTextUrl());
+            initAudio();
             /*加载多个Icon图片*/
-            String imgStr = application.currentMuseum.getImgUrl();
+            String imgStr = currentMuseum.getImgUrl();
             String[] imgs = imgStr.split(",");
             for (int i = 0; i < imgs.length; i++) {
                 String imgUrl = imgs[i];
@@ -179,7 +228,7 @@ public class MuseumHomeActivity extends BaseActivity {
                 ImageView iv = new ImageView(this);
                 iv.setLayoutParams(new LinearLayout.LayoutParams(screenWidth, ViewGroup.LayoutParams.MATCH_PARENT));
                 iv.setScaleType(ImageView.ScaleType.FIT_XY);
-                ll_museum_largest_icon.addView(iv);
+                llMuseumLargestIcon.addView(iv);
                 if (flag) {
                     ImageLoaderUtil.displaySdcardImage(this, localPath, iv);
                 } else {
@@ -188,6 +237,57 @@ public class MuseumHomeActivity extends BaseActivity {
                     }
                 }
             }
+        }
+    }
+
+    private void initAudio() {
+        new Thread(){
+            @Override
+            public void run() {
+                mediaPlayer=new MediaPlayer();
+                String audioPath = currentMuseum.getAudioUrl();
+                String audioName = Tools.changePathToName(audioPath);
+                String audioUrl = LOCAL_ASSETS_PATH + currentMuseumId + "/" + LOCAL_FILE_TYPE_AUDIO + "/"+ audioName;
+                String dataUrl="";
+                // 判断sdcard上有没有图片
+                if (Tools.isFileExist(audioUrl)) {
+                    dataUrl=audioUrl;
+                } else {
+                    dataUrl = BASE_URL + audioPath;
+                }
+                try {
+                    mediaPlayer.setDataSource(dataUrl);
+                    mediaPlayer.setOnPreparedListener(mediaListener);
+                    mediaPlayer.prepareAsync();
+                } catch (IllegalStateException | IOException e) {
+                    ExceptionUtil.handleException(e);
+                }
+            }
+        }.start();
+    }
+
+    MediaPlayer.OnPreparedListener mediaListener=new MediaPlayer.OnPreparedListener() {
+        @Override
+        public void onPrepared(MediaPlayer mp) {
+            if(application.mServiceManager==null){
+                mp.start();
+            }
+        }
+    };
+
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(mediaPlayer!=null&&mediaPlayer.isPlaying()){
+            mediaPlayer.stop();
+            setPlayStateImageToClose();
         }
     }
 
@@ -200,7 +300,7 @@ public class MuseumHomeActivity extends BaseActivity {
     class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
-            if (msg.what == MSG_WHAT_UPDATE_DATA) {
+            if (msg.what == MSG_WHAT_UPDATE_DATA_SUCCESS) {
                 showData();
             }
         }

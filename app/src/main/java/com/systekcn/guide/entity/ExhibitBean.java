@@ -23,31 +23,9 @@ public class ExhibitBean extends BaseEntity {
     private int version;
     private int priority;
     private double distance;
+    private boolean isSaveForPerson;
 
     public ExhibitBean(){}
-
-    public ExhibitBean(String id, String name, String museumId, String beaconId, String introduce, String address, float mapx, float mapy, int floor, String iconurl, String imgsurl, String audiourl, String texturl, String labels, String lexhibit, String rexhibit, int version, int priority, double distance) {
-        this.id = id;
-        this.name = name;
-        this.museumId = museumId;
-        this.beaconId = beaconId;
-        this.introduce = introduce;
-        this.address = address;
-        this.mapx = mapx;
-        this.mapy = mapy;
-        this.floor = floor;
-        this.iconurl = iconurl;
-        this.imgsurl = imgsurl;
-        this.audiourl = audiourl;
-        this.texturl = texturl;
-        this.labels = labels;
-        this.lexhibit = lexhibit;
-        this.rexhibit = rexhibit;
-        this.version = version;
-        this.priority = priority;
-        this.distance = distance;
-    }
-
 
     public String getId() {
         return id;
@@ -199,6 +177,14 @@ public class ExhibitBean extends BaseEntity {
 
     public void setDistance(double distance) {
         this.distance = distance;
+    }
+
+    public boolean isSaveForPerson() {
+        return isSaveForPerson;
+    }
+
+    public void setIsSaveForPerson(boolean isSaveForPerson) {
+        this.isSaveForPerson = isSaveForPerson;
     }
 
     @Override

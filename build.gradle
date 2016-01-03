@@ -2,7 +2,8 @@
 
 buildscript {
     repositories {
-        mavenCentral()
+        //mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
@@ -18,8 +19,9 @@ ext {
 
 allprojects {
     repositories {
-        mavenCentral()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+        //mavenCentral()
+        //maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 }
 

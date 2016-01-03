@@ -26,20 +26,30 @@ public interface IConstants {
     int MSG_WHAT_UPDATE_DATA_FAIL = 2;
     int MSG_WHAT_REFRESH_DATA = 3;
 
-
-
     String ACTION_NET_IS_COMMING ="net_is_comming";
     String ACTION_NET_IS_OUT ="net_is_out";
+
+
+    String INTENT_CITY="intent_city";
 
     int INTERNET_TYPE_WIFI=1;//网络状态--WIFI
     int INTERNET_TYPE_MOBILE=2;//网络状态--数据网络
     int INTERNET_TYPE_NONE=3;//网络状态--无网络
 
+    String INTENT_MUSEUM="intent_museum";
+
+    /*用于标记Activity间跳转至主页所传数据*/
+    String INTENT_MUSEUM_ID="intent_museum_id";
     String SDCARD_ROOT= Environment.getExternalStorageDirectory().getAbsolutePath();//存储至本地sdcard位置
     String LOCAL_ASSETS_PATH=SDCARD_ROOT+"/Guide/";//sdcard存储图片的位置*/
     String LOCAL_FILE_TYPE_IMAGE="image";
     String LOCAL_FILE_TYPE_AUDIO="audio";
     String LOCAL_FILE_TYPE_LYRIC="lyric";
+
+
+
+
+
 
     /*用于下载后传递数据*/
     String DOWNLOAD_ASSETS_KEY="download_assets_key";
@@ -68,8 +78,6 @@ public interface IConstants {
     String EXHIBIT_ID="exhibitId";
     String ID="id";
     String LIKE="like";
-    /*用于标记Activity间跳转至主页所传数据*/
-    String INTENT_MUSEUM_ID="intent_museum_id";
     /*用于APP配置信息存储*/
     String GUIDE_MODEL_KEY="guide_model_key";
 

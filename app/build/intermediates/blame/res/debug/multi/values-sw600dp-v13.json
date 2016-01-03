@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+        "outputFile": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 189
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 339
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 398
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 537
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 607
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 678
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 750
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 808
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 866
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 972
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1036
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1100
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1155
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.mikepenz\\materialize\\0.5.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.mikepenz\\materialize\\0.5.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1210
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1273
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -354,7 +354,7 @@
                     "endOffset": 1455
                 },
                 "from": {
-                    "file": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,

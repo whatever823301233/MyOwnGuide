@@ -1,17 +1,12 @@
 package com.systekcn.guide.utils;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Vibrator;
 import android.util.Base64;
-import android.widget.Toast;
 
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.entity.CityBean;
 import com.systekcn.guide.entity.ExhibitBean;
@@ -120,7 +115,6 @@ public class Tools implements IConstants{
 
 	/**
 	 * 计算图片的缩放值
-	 * 
 	 * @param options
 	 * @param reqWidth
 	 * @param reqHeight
@@ -132,41 +126,32 @@ public class Tools implements IConstants{
 		final int height = options.outHeight;
 		final int width = options.outWidth;
 		int inSampleSize = 1;
-
 		if (height > reqHeight || width > reqWidth) {
-
 			// Calculate ratios of height and width to requested height and
 			// width
-			final int heightRatio = Math.round((float) height
-					/ (float) reqHeight);
+			final int heightRatio = Math.round((float) height/(float) reqHeight);
 			final int widthRatio = Math.round((float) width / (float) reqWidth);
-
 			// Choose the smallest ratio as inSampleSize value, this will
 			// guarantee
 			// a final image with both dimensions larger than or equal to the
 			// requested height and width.
 			inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
 		}
-
 		return inSampleSize;
 	}
 
 	/**
 	 * 根据路径获得突破并压缩返回bitmap用于显示
-	 * 
 	 * @return
 	 */
 	public static Bitmap getSmallBitmap(String filePath,int width,int height) {
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds = true;
 		BitmapFactory.decodeFile(filePath, options);
-
 		// Calculate inSampleSize
 		options.inSampleSize = calculateInSampleSize(options, width,height);
-
 		// Decode bitmap with inSampleSize set
 		options.inJustDecodeBounds = false;
-
 		return BitmapFactory.decodeFile(filePath, options);
 	}
 
@@ -201,10 +186,7 @@ public class Tools implements IConstants{
 		File file =new File(path);
 		return file.exists();
 	}
-
-
 	/**
-	 *
 	 * @param str
 	 *            密码字符串
 	 * @return 加密后的字符串
@@ -237,13 +219,11 @@ public class Tools implements IConstants{
 
 	/**
 	 * 清空
-	 *
 	 * @param context
 	 */
 	public static void clearValues(Context context) {
 		try {
-			SharedPreferences sp = context.getSharedPreferences("jeno_spf",
-					Context.MODE_PRIVATE);
+			SharedPreferences sp = context.getSharedPreferences("museum",Context.MODE_PRIVATE);
 			SharedPreferences.Editor editor = sp.edit();
 			editor.clear();
 			editor.commit();
@@ -254,12 +234,9 @@ public class Tools implements IConstants{
 
 	/**
 	 * 向SP文件存储数据
-	 *
 	 * @param context
-	 * @param key
-	 *            键名
-	 * @param value
-	 *            键值
+	 * @param key  键名
+	 * @param value  键值
 	 */
 	public static void saveValue(Context context, String key, Object value) {
 		try {
@@ -272,7 +249,7 @@ public class Tools implements IConstants{
 			} else if (value instanceof Boolean) {
 				editor.putBoolean(key, (Boolean) value);
 			}
-			editor.commit();
+			editor.apply();
 		} catch (Exception e) {
 			ExceptionUtil.handleException(e);
 		}
@@ -280,22 +257,15 @@ public class Tools implements IConstants{
 
 	/**
 	 * 从SP文件中读取指定Key的值
-	 *
 	 * type=1/数值 defValue=-1 | type=2/字符串 defValue=null | type=3/布尔
 	 * defValue=false
-	 *
 	 * @param context
-	 * @param key
-	 *            键名
-	 * @param type
-	 *            数据存储类型
+	 * @param key  键名
 	 * @return 键值
 	 */
 	public static Object getValue(Context context, String key, Object defaultObject) {
-		Object object = null;
 		try {
 			SharedPreferences sp = context.getApplicationContext().getSharedPreferences("museum", Context.MODE_PRIVATE);
-			object = null;
 			if (defaultObject instanceof Integer) {
 				return sp.getInt(key, (Integer) defaultObject);
 			} else if (defaultObject instanceof String) {
@@ -306,23 +276,20 @@ public class Tools implements IConstants{
 		} catch (Exception e) {
 			ExceptionUtil.handleException(e);
 		}
-		return object;
+		return null;
 	}
 
 	/**
 	 * 将数据保存到内存中。
-	 *
 	 * @param context  上下文
 	 * @param fileName 文件的名字
 	 * @param content  保存在文件中的内容
 	 * @return
 	 */
-	public static boolean saveValue2Phone(Context context, String fileName,
-										  String content) {
+	public static boolean saveValue2Phone(Context context, String fileName, String content) {
 
 		try {
-			FileOutputStream fos = new FileOutputStream(context.getFilesDir()
-					+ fileName);
+			FileOutputStream fos = new FileOutputStream(context.getFilesDir() + fileName);
 			fos.write(content.getBytes());
 			return true;
 		} catch (Exception e) {

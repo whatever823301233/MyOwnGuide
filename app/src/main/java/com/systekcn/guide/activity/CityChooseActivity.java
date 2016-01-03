@@ -199,7 +199,7 @@ public class CityChooseActivity extends BaseActivity{
         pinyinComparator = new PinyinComparator();
         sideBar = (SideBar) findViewById(R.id.sidrbar);
         dialog = (TextView) findViewById(R.id.dialog);
-        title_bar_topic = (TextView) findViewById(R.id.title_bar_topic);
+        title_bar_topic = (TextView) findViewById(R.id.titleBarTopic);
         sideBar.setTextView(dialog);
         cityListView = (ListView) findViewById(R.id.country_lvcountry);
         mClearEditText = (ClearEditText) findViewById(R.id.filter_edit);

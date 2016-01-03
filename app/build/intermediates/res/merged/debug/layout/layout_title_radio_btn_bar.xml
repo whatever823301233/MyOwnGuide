@@ -9,7 +9,7 @@
             android:layout_alignParentBottom="true"
             android:layout_height="48dp">
             <ImageView
-                android:id="@+id/title_bar_more"
+                android:id="@+id/titleBarDrawer"
                 style="@style/normal_image_view"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
@@ -25,7 +25,7 @@
 
                 <RadioButton
                     android:id="@+id/radioButtonList"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/btn_guide_left_selector"
@@ -34,11 +34,11 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:text="列表"
                     android:textColor="@drawable/text_color_guide_map_selector"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <RadioButton
                     android:id="@+id/radioButtonMap"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/btn_map_right_selector"
@@ -46,7 +46,7 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:text="地图"
                     android:textColor="@drawable/text_color_guide_map_selector"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
             </RadioGroup>
             <ImageView
                 android:id="@+id/title_bar_search"

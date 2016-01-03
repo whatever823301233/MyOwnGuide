@@ -7,15 +7,17 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MuseumAdapter;
 import com.systekcn.guide.biz.DataBiz;
@@ -35,23 +37,23 @@ public class MuseumListActivity extends BaseActivity {
     private List<MuseumBean> museumList;
     private MuseumAdapter adapter;
     private Handler handler;
-    MyApplication application;
     private Drawer result;
+    private Receiver receiver;
+    private TextView titleBarTopic;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
         setContentView(R.layout.activity_museum_list);
         handler=new MyHandler();
-        application=MyApplication.get();
         initView();
         initData();
-        adddListener();
+        addListener();
         initDrawer();
         addReceiver();
     }
 
     private void addReceiver() {
-        Receiver receiver=new Receiver();
+        receiver=new Receiver();
         IntentFilter filter=new IntentFilter(ACTION_NET_IS_COMMING);
         filter.addAction(ACTION_NET_IS_OUT);
         registerReceiver(receiver,filter);
@@ -77,20 +79,27 @@ public class MuseumListActivity extends BaseActivity {
         //result.setSelection(5, false);
     }
 
-    private void adddListener() {
+    private void addListener() {
         museumListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MuseumBean museumBean = museumList.get(position - 1);
-                application.currentMuseum = museumBean;
                 Intent intent = new Intent(MuseumListActivity.this, MuseumHomeActivity.class);
+                String museumStr=JSON.toJSONString(museumBean);
+                intent.putExtra(INTENT_MUSEUM,museumStr);
                 startActivity(intent);
             }
         });
     }
 
     private void initData() {
-
+        Intent intent=getIntent();
+        city=intent.getStringExtra(INTENT_CITY);
+        if(!TextUtils.isEmpty(city)){
+            titleBarTopic.setText(city);
+        }else{
+            titleBarTopic.setText("北京市");
+        }
         new Thread(){
             @Override
             public void run() {
@@ -121,6 +130,7 @@ public class MuseumListActivity extends BaseActivity {
     }
 
     private void initView() {
+        titleBarTopic=(TextView)findViewById(R.id.titleBarTopic);
         museumListView=(ListView)findViewById(R.id.museumListView);
         View header=getLayoutInflater().inflate(R.layout.header_museum_list,null);
         museumListView.addHeaderView(header);
@@ -131,6 +141,7 @@ public class MuseumListActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
+        unregisterReceiver(receiver);
         handler.removeCallbacksAndMessages(null);
         super.onDestroy();
     }

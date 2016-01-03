@@ -6,6 +6,14 @@ try {
 }
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('D:/Android/apk_key.jks')
+            storePassword 'android'
+        }
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
@@ -14,7 +22,6 @@ android {
         targetSdkVersion 23
         versionCode 462
         versionName "4.6.2"
-
         applicationVariants.all { variant ->
             variant.outputs.each { output ->
                 def file = output.outputFile
@@ -22,6 +29,7 @@ android {
                 output.outputFile = new File(file.parentFile, fileName)
             }
         }
+        signingConfig signingConfigs.config
     }
     buildTypes {
         debug {
@@ -32,6 +40,7 @@ android {
             } catch (ex) {
             }
             minifyEnabled false
+            signingConfig signingConfigs.config
         }
         release {
             try {
@@ -39,7 +48,8 @@ android {
             } catch (ex) {
             }
             zipAlignEnabled true
-            minifyEnabled false
+            minifyEnabled true
+            signingConfig signingConfigs.config
         }
     }
     lintOptions {

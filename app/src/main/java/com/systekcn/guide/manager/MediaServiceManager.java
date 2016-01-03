@@ -62,7 +62,7 @@ public class MediaServiceManager implements IConstants {
     }
 
     public boolean isPlaying() {
-        return mediaServiceBinder.isPlaying();
+        return mediaServiceBinder != null && mediaServiceBinder.isPlaying();
     }
 
     public boolean pause() {
