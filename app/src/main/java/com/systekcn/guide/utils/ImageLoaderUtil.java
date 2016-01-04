@@ -2,6 +2,7 @@ package com.systekcn.guide.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -16,6 +17,9 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
+import com.systekcn.guide.biz.DataBiz;
+
+import java.io.File;
 
 public class ImageLoaderUtil implements IConstants{
 	private static ImageLoaderConfiguration configuration;
@@ -58,7 +62,6 @@ public class ImageLoaderUtil implements IConstants{
 
 				@Override
 				public void onLoadingStarted(String imageUri, View view) {
-					//imageView.setImageResource(R.drawable.loading);
 				}
 
 				@Override
@@ -70,16 +73,25 @@ public class ImageLoaderUtil implements IConstants{
 				@Override
 				public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
 					imageView.setImageBitmap(loadedImage);
-					/*LogUtil.i("ZHANG", "onLoadingComplete");
-					String path=imageUri.substring(imageUri.indexOf("182.92.82.70/") + 12);
-					String name=Tools.changePathToName(path);
-					LogUtil.i("ZHANG",name);*/
+                    try{
+                        if(!imageUri.startsWith(BASE_URL)){return;}
+                        String path=imageUri.substring(imageUri.indexOf("182.92.82.70/") + 12);
+                        String name=Tools.changePathToName(path);
+                        String museumId=DataBiz.getCurrentMuseumId();
+                        if(TextUtils.isEmpty(museumId)){return;}
+                        String savePath=APP_ASSETS_PATH+museumId+"/"+LOCAL_FILE_TYPE_IMAGE;
+                        File dir=new File(savePath);
+                        if(!dir.exists()){
+                            dir.mkdirs();
+                        }
+                        boolean isSave=DataBiz.saveBitmap(savePath,name,loadedImage);
+                        LogUtil.i("ZHANG","onLoadingComplete 存储结果"+isSave);
+                    }catch (Exception e){ExceptionUtil.handleException(e);}
 				}
-
 				@Override
 				public void onLoadingCancelled(String imageUri, View view) {
-					LogUtil.i("图片加载取消",imageUri);
-				}
+					LogUtil.i("图片加载取消", imageUri);
+                }
 			});
 		} catch (Exception e) {
 			ExceptionUtil.handleException(e);

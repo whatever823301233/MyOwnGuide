@@ -49,7 +49,7 @@
                     android:textSize="11sp" />
             </RadioGroup>
             <ImageView
-                android:id="@+id/title_bar_search"
+                android:id="@+id/titleBarRightImg"
                 style="@style/normal_image_view"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"

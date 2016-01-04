@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.systekcn.guide.debug"
+    package="com.systekcn.guide"
     android:versionCode="462"
-    android:versionName="4.6.2-DEBUG" >
+    android:versionName="4.6.2" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
         android:name="com.systekcn.guide.MyApplication"
@@ -108,6 +109,12 @@
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.WelcomeActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.CollectionActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.SearchActivity"
             android:theme="@style/FullscreenTheme" />
 
         <service

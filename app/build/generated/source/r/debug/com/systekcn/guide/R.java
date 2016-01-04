@@ -3092,17 +3092,17 @@ containing a value of this type.
         public static final int tv_bg_topic_label=0x7f020090;
     }
     public static final class id {
-        public static final int aaa=0x7f0b00dd;
-        public static final int aboutDescription=0x7f0b00ed;
-        public static final int aboutDivider=0x7f0b00ec;
-        public static final int aboutIcon=0x7f0b00e5;
-        public static final int aboutName=0x7f0b00e6;
-        public static final int aboutSpecial1=0x7f0b00e9;
-        public static final int aboutSpecial2=0x7f0b00ea;
-        public static final int aboutSpecial3=0x7f0b00eb;
-        public static final int aboutSpecialContainer=0x7f0b00e8;
-        public static final int aboutVersion=0x7f0b00e7;
-        public static final int action0=0x7f0b0110;
+        public static final int aaa=0x7f0b00e1;
+        public static final int aboutDescription=0x7f0b00f1;
+        public static final int aboutDivider=0x7f0b00f0;
+        public static final int aboutIcon=0x7f0b00e9;
+        public static final int aboutName=0x7f0b00ea;
+        public static final int aboutSpecial1=0x7f0b00ed;
+        public static final int aboutSpecial2=0x7f0b00ee;
+        public static final int aboutSpecial3=0x7f0b00ef;
+        public static final int aboutSpecialContainer=0x7f0b00ec;
+        public static final int aboutVersion=0x7f0b00eb;
+        public static final int action0=0x7f0b0114;
         public static final int action_bar=0x7f0b0065;
         public static final int action_bar_activity_content=0x7f0b0000;
         public static final int action_bar_container=0x7f0b0064;
@@ -3111,53 +3111,54 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0b0046;
         public static final int action_bar_title=0x7f0b0045;
         public static final int action_context_bar=0x7f0b0066;
-        public static final int action_divider=0x7f0b0114;
+        public static final int action_divider=0x7f0b0118;
         public static final int action_menu_divider=0x7f0b0002;
         public static final int action_menu_presenter=0x7f0b0003;
         public static final int action_mode_bar=0x7f0b0062;
         public static final int action_mode_bar_stub=0x7f0b0061;
         public static final int action_mode_close_button=0x7f0b0047;
-        public static final int action_settings=0x7f0b0128;
+        public static final int action_settings=0x7f0b012c;
         public static final int activity_chooser_view_content=0x7f0b0048;
         public static final int alertTitle=0x7f0b0054;
         public static final int always=0x7f0b003d;
-        public static final int appbar=0x7f0b009d;
-        public static final int backdrop=0x7f0b009f;
+        public static final int appbar=0x7f0b009f;
+        public static final int backdrop=0x7f0b00a1;
         public static final int beginning=0x7f0b003b;
         public static final int bottom=0x7f0b0027;
-        public static final int btn_into_app=0x7f0b00b9;
+        public static final int btn_into_app=0x7f0b00bc;
         public static final int buttonPanel=0x7f0b004f;
-        public static final int cancel_action=0x7f0b0111;
-        public static final int cardListView=0x7f0b00c9;
+        public static final int cancel_action=0x7f0b0115;
+        public static final int cardListView=0x7f0b00cc;
         public static final int center=0x7f0b0028;
         public static final int center_horizontal=0x7f0b0029;
         public static final int center_vertical=0x7f0b002a;
         public static final int checkbox=0x7f0b005d;
-        public static final int chronometer=0x7f0b0117;
+        public static final int chronometer=0x7f0b011b;
         public static final int circle=0x7f0b0014;
         public static final int clip_horizontal=0x7f0b0036;
         public static final int clip_vertical=0x7f0b0037;
         public static final int collapseActionView=0x7f0b003e;
-        public static final int collapsing_toolbar=0x7f0b009e;
-        public static final int content=0x7f0b00be;
+        public static final int collapsing_toolbar=0x7f0b00a0;
+        public static final int collectionListView=0x7f0b0079;
+        public static final int content=0x7f0b00c1;
         public static final int contentPanel=0x7f0b0055;
-        public static final int content_layout=0x7f0b010f;
+        public static final int content_layout=0x7f0b0113;
         public static final int country_lvcountry=0x7f0b0076;
-        public static final int crossfade_content=0x7f0b0083;
+        public static final int crossfade_content=0x7f0b0084;
         public static final int custom=0x7f0b005b;
         public static final int customPanel=0x7f0b005a;
         public static final int decor_content_parent=0x7f0b0063;
         public static final int default_activity_button=0x7f0b004b;
-        public static final int design_menu_item_action_area=0x7f0b00c5;
-        public static final int design_menu_item_action_area_stub=0x7f0b00c4;
-        public static final int design_menu_item_text=0x7f0b00c3;
-        public static final int design_navigation_view=0x7f0b00c2;
+        public static final int design_menu_item_action_area=0x7f0b00c8;
+        public static final int design_menu_item_action_area_stub=0x7f0b00c7;
+        public static final int design_menu_item_text=0x7f0b00c6;
+        public static final int design_navigation_view=0x7f0b00c5;
         public static final int dialog=0x7f0b0077;
         public static final int disableHome=0x7f0b0019;
-        public static final int drawer_container=0x7f0b00a1;
+        public static final int drawer_container=0x7f0b00a3;
         public static final int edit_query=0x7f0b0067;
         public static final int end=0x7f0b002b;
-        public static final int end_padder=0x7f0b011c;
+        public static final int end_padder=0x7f0b0120;
         public static final int enterAlways=0x7f0b0020;
         public static final int enterAlwaysCollapsed=0x7f0b0021;
         public static final int exitUntilCollapsed=0x7f0b0022;
@@ -3167,151 +3168,154 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0b0039;
         public static final int fill_vertical=0x7f0b002c;
         public static final int filter_edit=0x7f0b0075;
-        public static final int first=0x7f0b00bc;
+        public static final int first=0x7f0b00bf;
         public static final int fixed=0x7f0b0042;
-        public static final int floating_action_button=0x7f0b00a0;
-        public static final int fragment_container=0x7f0b00a2;
-        public static final int frame_container=0x7f0b007a;
-        public static final int fullscreenImage=0x7f0b0080;
-        public static final int hidePersonLayer=0x7f0b012c;
+        public static final int floating_action_button=0x7f0b00a2;
+        public static final int fragment_container=0x7f0b00a4;
+        public static final int frame_container=0x7f0b007b;
+        public static final int fullscreenImage=0x7f0b0081;
+        public static final int hidePersonLayer=0x7f0b0130;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b001a;
         public static final int icon=0x7f0b004d;
         public static final int iconics_tag_id=0x7f0b0005;
         public static final int ifRoom=0x7f0b003f;
         public static final int image=0x7f0b004a;
-        public static final int imageView=0x7f0b00c7;
-        public static final int imgExhibitIcon=0x7f0b0094;
-        public static final int imgWordCtrl=0x7f0b009a;
-        public static final int info=0x7f0b011b;
-        public static final int itemCityAlpha=0x7f0b00cb;
-        public static final int itemCityName=0x7f0b00cc;
-        public static final int item_delete=0x7f0b011d;
+        public static final int imageView=0x7f0b00ca;
+        public static final int imgExhibitIcon=0x7f0b0096;
+        public static final int imgWordCtrl=0x7f0b009c;
+        public static final int info=0x7f0b011f;
+        public static final int itemCityAlpha=0x7f0b00ce;
+        public static final int itemCityName=0x7f0b00cf;
+        public static final int item_delete=0x7f0b0121;
         public static final int item_touch_helper_previous_elevation=0x7f0b0006;
         public static final int ivBeginImg=0x7f0b0074;
-        public static final int ivExhibitIcon=0x7f0b00cd;
-        public static final int ivMultiAngle=0x7f0b00d3;
-        public static final int ivPlayCtrl=0x7f0b0082;
-        public static final int ivPlayStateCtrl=0x7f0b0091;
-        public static final int iv_exhibit_sound=0x7f0b00d2;
-        public static final int iv_home_circle_collect=0x7f0b008d;
-        public static final int iv_home_circle_essence=0x7f0b008b;
-        public static final int iv_home_circle_guide=0x7f0b0086;
-        public static final int iv_home_circle_map=0x7f0b0088;
-        public static final int iv_home_circle_nearly=0x7f0b008c;
-        public static final int iv_home_circle_producer=0x7f0b008f;
-        public static final int iv_home_circle_ticket=0x7f0b008e;
-        public static final int iv_home_circle_title=0x7f0b008a;
-        public static final int iv_item_nearly_exhibit=0x7f0b00db;
+        public static final int ivCollection=0x7f0b00d2;
+        public static final int ivExhibitIcon=0x7f0b00d0;
+        public static final int ivMultiAngle=0x7f0b00d7;
+        public static final int ivPlayCtrl=0x7f0b0083;
+        public static final int ivPlayStateCtrl=0x7f0b0093;
+        public static final int iv_exhibit_sound=0x7f0b00d6;
+        public static final int iv_home_circle_collect=0x7f0b008f;
+        public static final int iv_home_circle_essence=0x7f0b008c;
+        public static final int iv_home_circle_guide=0x7f0b0087;
+        public static final int iv_home_circle_map=0x7f0b0089;
+        public static final int iv_home_circle_nearly=0x7f0b008d;
+        public static final int iv_home_circle_producer=0x7f0b0091;
+        public static final int iv_home_circle_ticket=0x7f0b0090;
+        public static final int iv_home_circle_title=0x7f0b008b;
+        public static final int iv_item_nearly_exhibit=0x7f0b00df;
         public static final int left=0x7f0b002d;
-        public static final int libraryBottomContainer=0x7f0b00f3;
-        public static final int libraryBottomDivider=0x7f0b00f2;
-        public static final int libraryCreator=0x7f0b00ef;
-        public static final int libraryDescription=0x7f0b00f1;
-        public static final int libraryDescriptionDivider=0x7f0b00f0;
-        public static final int libraryLicense=0x7f0b00f5;
-        public static final int libraryName=0x7f0b00ee;
-        public static final int libraryVersion=0x7f0b00f4;
-        public static final int line1=0x7f0b0115;
-        public static final int line3=0x7f0b0119;
-        public static final int linearlayout_dots=0x7f0b00b8;
+        public static final int libraryBottomContainer=0x7f0b00f7;
+        public static final int libraryBottomDivider=0x7f0b00f6;
+        public static final int libraryCreator=0x7f0b00f3;
+        public static final int libraryDescription=0x7f0b00f5;
+        public static final int libraryDescriptionDivider=0x7f0b00f4;
+        public static final int libraryLicense=0x7f0b00f9;
+        public static final int libraryName=0x7f0b00f2;
+        public static final int libraryVersion=0x7f0b00f8;
+        public static final int line1=0x7f0b0119;
+        public static final int line3=0x7f0b011d;
+        public static final int linearlayout_dots=0x7f0b00bb;
         public static final int listMode=0x7f0b0016;
+        public static final int listViewExhibit=0x7f0b00a5;
         public static final int list_item=0x7f0b004c;
-        public static final int llExhibitListContent=0x7f0b007d;
-        public static final int llMuseumLargestIcon=0x7f0b0084;
-        public static final int llTabControlPlay=0x7f0b007c;
-        public static final int ll_collection_btn=0x7f0b00ce;
-        public static final int ll_collection_has_choose=0x7f0b00a4;
-        public static final int ll_collection_material=0x7f0b00b1;
-        public static final int ll_collection_years=0x7f0b00a5;
-        public static final int lvListMapExhibit=0x7f0b007b;
-        public static final int lvLyric=0x7f0b0095;
-        public static final int lv_collection_listView=0x7f0b00b6;
-        public static final int lv_exhibit_list=0x7f0b00c6;
-        public static final int lyric_line_text=0x7f0b00e4;
-        public static final int main_content=0x7f0b009c;
-        public static final int mapLayout=0x7f0b00c8;
-        public static final int material_drawer_account_header=0x7f0b00f8;
-        public static final int material_drawer_account_header_background=0x7f0b00f7;
-        public static final int material_drawer_account_header_current=0x7f0b00fc;
-        public static final int material_drawer_account_header_email=0x7f0b0100;
-        public static final int material_drawer_account_header_name=0x7f0b00ff;
-        public static final int material_drawer_account_header_small_first=0x7f0b00f9;
-        public static final int material_drawer_account_header_small_second=0x7f0b00fa;
-        public static final int material_drawer_account_header_small_third=0x7f0b00fb;
-        public static final int material_drawer_account_header_text_section=0x7f0b00fd;
-        public static final int material_drawer_account_header_text_switcher=0x7f0b00fe;
-        public static final int material_drawer_account_header_toggle=0x7f0b0101;
+        public static final int llCollectionBtn=0x7f0b00d1;
+        public static final int llExhibitListContent=0x7f0b007e;
+        public static final int llMuseumLargestIcon=0x7f0b0085;
+        public static final int llTabControlPlay=0x7f0b007d;
+        public static final int ll_collection_has_choose=0x7f0b00a7;
+        public static final int ll_collection_material=0x7f0b00b4;
+        public static final int ll_collection_years=0x7f0b00a8;
+        public static final int lvListMapExhibit=0x7f0b007c;
+        public static final int lvLyric=0x7f0b0097;
+        public static final int lv_collection_listView=0x7f0b00b9;
+        public static final int lv_exhibit_list=0x7f0b00c9;
+        public static final int lyric_line_text=0x7f0b00e8;
+        public static final int main_content=0x7f0b009e;
+        public static final int mapLayout=0x7f0b00cb;
+        public static final int material_drawer_account_header=0x7f0b00fc;
+        public static final int material_drawer_account_header_background=0x7f0b00fb;
+        public static final int material_drawer_account_header_current=0x7f0b0100;
+        public static final int material_drawer_account_header_email=0x7f0b0104;
+        public static final int material_drawer_account_header_name=0x7f0b0103;
+        public static final int material_drawer_account_header_small_first=0x7f0b00fd;
+        public static final int material_drawer_account_header_small_second=0x7f0b00fe;
+        public static final int material_drawer_account_header_small_third=0x7f0b00ff;
+        public static final int material_drawer_account_header_text_section=0x7f0b0101;
+        public static final int material_drawer_account_header_text_switcher=0x7f0b0102;
+        public static final int material_drawer_account_header_toggle=0x7f0b0105;
         public static final int material_drawer_animation=0x7f0b0007;
-        public static final int material_drawer_badge=0x7f0b0104;
-        public static final int material_drawer_badge_container=0x7f0b0108;
-        public static final int material_drawer_description=0x7f0b0106;
-        public static final int material_drawer_divider=0x7f0b0102;
-        public static final int material_drawer_email=0x7f0b010a;
-        public static final int material_drawer_icon=0x7f0b0103;
-        public static final int material_drawer_inner_shadow=0x7f0b010e;
-        public static final int material_drawer_layout=0x7f0b00f6;
+        public static final int material_drawer_badge=0x7f0b0108;
+        public static final int material_drawer_badge_container=0x7f0b010c;
+        public static final int material_drawer_description=0x7f0b010a;
+        public static final int material_drawer_divider=0x7f0b0106;
+        public static final int material_drawer_email=0x7f0b010e;
+        public static final int material_drawer_icon=0x7f0b0107;
+        public static final int material_drawer_inner_shadow=0x7f0b0112;
+        public static final int material_drawer_layout=0x7f0b00fa;
         public static final int material_drawer_menu_default_group=0x7f0b0008;
-        public static final int material_drawer_menu_overflow=0x7f0b0107;
-        public static final int material_drawer_name=0x7f0b0105;
-        public static final int material_drawer_profileIcon=0x7f0b0109;
+        public static final int material_drawer_menu_overflow=0x7f0b010b;
+        public static final int material_drawer_name=0x7f0b0109;
+        public static final int material_drawer_profileIcon=0x7f0b010d;
         public static final int material_drawer_profile_header=0x7f0b0009;
-        public static final int material_drawer_shadow_top=0x7f0b010d;
+        public static final int material_drawer_shadow_top=0x7f0b0111;
         public static final int material_drawer_slider_layout=0x7f0b000a;
         public static final int material_drawer_sticky_footer=0x7f0b000b;
         public static final int material_drawer_sticky_header=0x7f0b000c;
-        public static final int material_drawer_switch=0x7f0b010b;
-        public static final int material_drawer_toggle=0x7f0b010c;
+        public static final int material_drawer_switch=0x7f0b010f;
+        public static final int material_drawer_toggle=0x7f0b0110;
         public static final int materialize_root=0x7f0b000d;
-        public static final int md_menu_second_group=0x7f0b0127;
-        public static final int media_actions=0x7f0b0113;
-        public static final int menu_1=0x7f0b011e;
-        public static final int menu_2=0x7f0b011f;
-        public static final int menu_3=0x7f0b0123;
-        public static final int menu_4=0x7f0b0124;
-        public static final int menu_5=0x7f0b0129;
+        public static final int md_menu_second_group=0x7f0b012b;
+        public static final int media_actions=0x7f0b0117;
+        public static final int menu_1=0x7f0b0122;
+        public static final int menu_2=0x7f0b0123;
+        public static final int menu_3=0x7f0b0127;
+        public static final int menu_4=0x7f0b0128;
+        public static final int menu_5=0x7f0b012d;
         public static final int middle=0x7f0b003c;
         public static final int mini=0x7f0b003a;
         public static final int multiply=0x7f0b0031;
-        public static final int museumAddress=0x7f0b00d9;
-        public static final int museumFlagIsDownload=0x7f0b00d6;
-        public static final int museumImportantAlert=0x7f0b00d8;
-        public static final int museumListIcon=0x7f0b00d4;
-        public static final int museumListOpenTime=0x7f0b00d7;
-        public static final int museumListView=0x7f0b0093;
-        public static final int museumName=0x7f0b00d5;
-        public static final int museum_consumption_per=0x7f0b00da;
-        public static final int navigation_header_container=0x7f0b00c1;
+        public static final int museumAddress=0x7f0b00dd;
+        public static final int museumFlagIsDownload=0x7f0b00da;
+        public static final int museumImportantAlert=0x7f0b00dc;
+        public static final int museumListIcon=0x7f0b00d8;
+        public static final int museumListOpenTime=0x7f0b00db;
+        public static final int museumListView=0x7f0b0095;
+        public static final int museumName=0x7f0b00d9;
+        public static final int museum_consumption_per=0x7f0b00de;
+        public static final int navigation_header_container=0x7f0b00c4;
         public static final int never=0x7f0b0040;
         public static final int none=0x7f0b001b;
         public static final int normal=0x7f0b0017;
-        public static final int pane=0x7f0b00ba;
-        public static final int panel=0x7f0b00bb;
+        public static final int pane=0x7f0b00bd;
+        public static final int panel=0x7f0b00be;
         public static final int parallax=0x7f0b0025;
         public static final int parentPanel=0x7f0b0051;
         public static final int pin=0x7f0b0026;
         public static final int progress_circular=0x7f0b000e;
         public static final int progress_horizontal=0x7f0b000f;
         public static final int radio=0x7f0b005f;
-        public static final int radioButtonList=0x7f0b00e2;
-        public static final int radioButtonMap=0x7f0b00e3;
-        public static final int radioGroupTitle=0x7f0b00e1;
-        public static final int recycleMultiAngle=0x7f0b0096;
-        public static final int recycleNearly=0x7f0b0081;
+        public static final int radioButtonList=0x7f0b00e6;
+        public static final int radioButtonMap=0x7f0b00e7;
+        public static final int radioGroupTitle=0x7f0b00e5;
+        public static final int recycleMultiAngle=0x7f0b0098;
+        public static final int recycleNearly=0x7f0b0082;
         public static final int right=0x7f0b002e;
         public static final int rippleForegroundListenerView=0x7f0b0010;
-        public static final int rlGuideHome=0x7f0b0085;
-        public static final int rlTopicHome=0x7f0b0089;
-        public static final int rl_map_home=0x7f0b0087;
-        public static final int rl_relativeLayout=0x7f0b0090;
-        public static final int rootView=0x7f0b00ca;
+        public static final int rlCollectionHome=0x7f0b008e;
+        public static final int rlGuideHome=0x7f0b0086;
+        public static final int rlMapHome=0x7f0b0088;
+        public static final int rlTopicHome=0x7f0b008a;
+        public static final int rl_relativeLayout=0x7f0b0092;
+        public static final int rootView=0x7f0b00cd;
         public static final int round=0x7f0b0015;
         public static final int screen=0x7f0b0032;
         public static final int scroll=0x7f0b0023;
         public static final int scrollIndicatorDown=0x7f0b0059;
         public static final int scrollIndicatorUp=0x7f0b0056;
         public static final int scrollView=0x7f0b0057;
-        public static final int scroll_next=0x7f0b012e;
+        public static final int scroll_next=0x7f0b0132;
         public static final int scrollable=0x7f0b0043;
         public static final int search_badge=0x7f0b0069;
         public static final int search_bar=0x7f0b0068;
@@ -3323,17 +3327,17 @@ containing a value of this type.
         public static final int search_plate=0x7f0b006d;
         public static final int search_src_text=0x7f0b006e;
         public static final int search_voice_btn=0x7f0b0072;
-        public static final int second=0x7f0b00bd;
-        public static final int seekBarProgress=0x7f0b0097;
+        public static final int second=0x7f0b00c0;
+        public static final int seekBarProgress=0x7f0b0099;
         public static final int select_dialog_listview=0x7f0b0073;
         public static final int shortcut=0x7f0b005e;
         public static final int showCustom=0x7f0b001c;
         public static final int showHome=0x7f0b001d;
-        public static final int showPersonLayer=0x7f0b012d;
+        public static final int showPersonLayer=0x7f0b0131;
         public static final int showTitle=0x7f0b001e;
         public static final int sidrbar=0x7f0b0078;
-        public static final int snackbar_action=0x7f0b00c0;
-        public static final int snackbar_text=0x7f0b00bf;
+        public static final int snackbar_action=0x7f0b00c3;
+        public static final int snackbar_text=0x7f0b00c2;
         public static final int snap=0x7f0b0024;
         public static final int spacer=0x7f0b0050;
         public static final int split_action_bar=0x7f0b0011;
@@ -3341,60 +3345,60 @@ containing a value of this type.
         public static final int src_in=0x7f0b0034;
         public static final int src_over=0x7f0b0035;
         public static final int start=0x7f0b002f;
-        public static final int status_bar_latest_event_content=0x7f0b0112;
-        public static final int sub_menu2_1=0x7f0b0125;
-        public static final int sub_menu2_2=0x7f0b0126;
-        public static final int sub_menu_1=0x7f0b0120;
-        public static final int sub_menu_2=0x7f0b0121;
-        public static final int sub_menu_3=0x7f0b0122;
+        public static final int status_bar_latest_event_content=0x7f0b0116;
+        public static final int sub_menu2_1=0x7f0b0129;
+        public static final int sub_menu2_2=0x7f0b012a;
+        public static final int sub_menu_1=0x7f0b0124;
+        public static final int sub_menu_2=0x7f0b0125;
+        public static final int sub_menu_3=0x7f0b0126;
         public static final int submit_area=0x7f0b0070;
         public static final int tabMode=0x7f0b0018;
-        public static final int text=0x7f0b011a;
-        public static final int text2=0x7f0b0118;
+        public static final int text=0x7f0b011e;
+        public static final int text2=0x7f0b011c;
         public static final int textSpacerNoButtons=0x7f0b0058;
-        public static final int textView3=0x7f0b00a3;
-        public static final int time=0x7f0b0116;
+        public static final int textView3=0x7f0b00a6;
+        public static final int time=0x7f0b011a;
         public static final int title=0x7f0b004e;
-        public static final int titleBarDrawer=0x7f0b00de;
-        public static final int titleBarTopic=0x7f0b00df;
-        public static final int title_bar_search=0x7f0b00e0;
+        public static final int titleBarDrawer=0x7f0b00e2;
+        public static final int titleBarRightImg=0x7f0b00e4;
+        public static final int titleBarTopic=0x7f0b00e3;
         public static final int title_template=0x7f0b0053;
-        public static final int toolbar=0x7f0b0079;
+        public static final int toolbar=0x7f0b007a;
         public static final int top=0x7f0b0030;
         public static final int topPanel=0x7f0b0052;
-        public static final int tvExhibitDistance=0x7f0b00d1;
-        public static final int tvExhibitName=0x7f0b007f;
-        public static final int tvExhibitPosition=0x7f0b00d0;
-        public static final int tvExhibitYears=0x7f0b00cf;
-        public static final int tvLockTime=0x7f0b007e;
-        public static final int tvMuseumIntroduce=0x7f0b0092;
-        public static final int tvPlayTime=0x7f0b0098;
-        public static final int tvTotalTime=0x7f0b0099;
-        public static final int tv_collection_beiqi=0x7f0b00a7;
-        public static final int tv_collection_beiwei=0x7f0b00a8;
-        public static final int tv_collection_chunqiu=0x7f0b00ae;
-        public static final int tv_collection_dongwei=0x7f0b00a6;
-        public static final int tv_collection_handai=0x7f0b00ad;
-        public static final int tv_collection_qing=0x7f0b00b0;
-        public static final int tv_collection_qingtong=0x7f0b00b3;
-        public static final int tv_collection_shang=0x7f0b00aa;
-        public static final int tv_collection_shike=0x7f0b00b5;
-        public static final int tv_collection_shixiang=0x7f0b00b2;
-        public static final int tv_collection_sui=0x7f0b00ab;
-        public static final int tv_collection_tangdai=0x7f0b00ac;
-        public static final int tv_collection_tongqi=0x7f0b00b4;
-        public static final int tv_collection_xizhou=0x7f0b00a9;
-        public static final int tv_collection_zhanguo=0x7f0b00af;
-        public static final int tv_item_nearly_exhibit=0x7f0b00dc;
-        public static final int txtLabel=0x7f0b009b;
+        public static final int tvExhibitDistance=0x7f0b00d5;
+        public static final int tvExhibitName=0x7f0b0080;
+        public static final int tvExhibitPosition=0x7f0b00d4;
+        public static final int tvExhibitYears=0x7f0b00d3;
+        public static final int tvLockTime=0x7f0b007f;
+        public static final int tvMuseumIntroduce=0x7f0b0094;
+        public static final int tvPlayTime=0x7f0b009a;
+        public static final int tvTotalTime=0x7f0b009b;
+        public static final int tv_collection_beiqi=0x7f0b00aa;
+        public static final int tv_collection_beiwei=0x7f0b00ab;
+        public static final int tv_collection_chunqiu=0x7f0b00b1;
+        public static final int tv_collection_dongwei=0x7f0b00a9;
+        public static final int tv_collection_handai=0x7f0b00b0;
+        public static final int tv_collection_qing=0x7f0b00b3;
+        public static final int tv_collection_qingtong=0x7f0b00b6;
+        public static final int tv_collection_shang=0x7f0b00ad;
+        public static final int tv_collection_shike=0x7f0b00b8;
+        public static final int tv_collection_shixiang=0x7f0b00b5;
+        public static final int tv_collection_sui=0x7f0b00ae;
+        public static final int tv_collection_tangdai=0x7f0b00af;
+        public static final int tv_collection_tongqi=0x7f0b00b7;
+        public static final int tv_collection_xizhou=0x7f0b00ac;
+        public static final int tv_collection_zhanguo=0x7f0b00b2;
+        public static final int tv_item_nearly_exhibit=0x7f0b00e0;
+        public static final int txtLabel=0x7f0b009d;
         public static final int up=0x7f0b0012;
         public static final int useLogo=0x7f0b001f;
         public static final int view_offset_helper=0x7f0b0013;
-        public static final int viewpager=0x7f0b00b7;
+        public static final int viewpager=0x7f0b00ba;
         public static final int withText=0x7f0b0041;
         public static final int wrap_content=0x7f0b0044;
-        public static final int zoomIn=0x7f0b012a;
-        public static final int zoomOut=0x7f0b012b;
+        public static final int zoomIn=0x7f0b012e;
+        public static final int zoomOut=0x7f0b012f;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f090002;
@@ -3432,91 +3436,93 @@ containing a value of this type.
         public static final int abc_select_dialog_material=0x7f030018;
         public static final int activity_begin=0x7f030019;
         public static final int activity_city_choose=0x7f03001a;
-        public static final int activity_embedded=0x7f03001b;
-        public static final int activity_list_and_map=0x7f03001c;
-        public static final int activity_lock_screen=0x7f03001d;
-        public static final int activity_mini_drawer=0x7f03001e;
-        public static final int activity_museum_home=0x7f03001f;
-        public static final int activity_museum_list=0x7f030020;
-        public static final int activity_opensource=0x7f030021;
-        public static final int activity_persistent_drawer=0x7f030022;
-        public static final int activity_play=0x7f030023;
-        public static final int activity_sample=0x7f030024;
-        public static final int activity_sample_actionbar=0x7f030025;
-        public static final int activity_sample_collapsing_toolbar=0x7f030026;
-        public static final int activity_sample_custom_container_dark_toolbar=0x7f030027;
-        public static final int activity_sample_dark_toolbar=0x7f030028;
-        public static final int activity_sample_fragment_dark_toolbar=0x7f030029;
-        public static final int activity_sample_fullscreen_dark_toolbar=0x7f03002a;
-        public static final int activity_sample_nontranslucent=0x7f03002b;
-        public static final int activity_topic=0x7f03002c;
-        public static final int activity_welcome=0x7f03002d;
-        public static final int crossfader_base=0x7f03002e;
-        public static final int crossfader_gmail_style=0x7f03002f;
-        public static final int design_layout_snackbar=0x7f030030;
-        public static final int design_layout_snackbar_include=0x7f030031;
-        public static final int design_layout_tab_icon=0x7f030032;
-        public static final int design_layout_tab_text=0x7f030033;
-        public static final int design_menu_item_action_area=0x7f030034;
-        public static final int design_navigation_item=0x7f030035;
-        public static final int design_navigation_item_header=0x7f030036;
-        public static final int design_navigation_item_separator=0x7f030037;
-        public static final int design_navigation_item_subheader=0x7f030038;
-        public static final int design_navigation_menu=0x7f030039;
-        public static final int design_navigation_menu_item=0x7f03003a;
-        public static final int footer=0x7f03003b;
-        public static final int fragment_exhibit_list=0x7f03003c;
-        public static final int fragment_image=0x7f03003d;
-        public static final int fragment_map=0x7f03003e;
-        public static final int fragment_opensource=0x7f03003f;
-        public static final int fragment_sample=0x7f030040;
-        public static final int fragment_simple_sample=0x7f030041;
-        public static final int header=0x7f030042;
-        public static final int header_museum_list=0x7f030043;
-        public static final int item_city=0x7f030044;
-        public static final int item_list_exhibit=0x7f030045;
-        public static final int item_multi_angle_img=0x7f030046;
-        public static final int item_museum=0x7f030047;
-        public static final int item_nearly_gallery=0x7f030048;
-        public static final int layout_drawer=0x7f030049;
-        public static final int layout_title_bar=0x7f03004a;
-        public static final int layout_title_radio_btn_bar=0x7f03004b;
-        public static final int line_lyric=0x7f03004c;
-        public static final int listheader_opensource=0x7f03004d;
-        public static final int listitem_opensource=0x7f03004e;
-        public static final int material_drawer=0x7f03004f;
-        public static final int material_drawer_compact_header=0x7f030050;
-        public static final int material_drawer_compact_persistent_header=0x7f030051;
-        public static final int material_drawer_header=0x7f030052;
-        public static final int material_drawer_item_container=0x7f030053;
-        public static final int material_drawer_item_divider=0x7f030054;
-        public static final int material_drawer_item_mini=0x7f030055;
-        public static final int material_drawer_item_mini_profile=0x7f030056;
-        public static final int material_drawer_item_overflow_menu_primary=0x7f030057;
-        public static final int material_drawer_item_primary=0x7f030058;
-        public static final int material_drawer_item_profile=0x7f030059;
-        public static final int material_drawer_item_profile_setting=0x7f03005a;
-        public static final int material_drawer_item_secondary=0x7f03005b;
-        public static final int material_drawer_item_secondary_switch=0x7f03005c;
-        public static final int material_drawer_item_secondary_toggle=0x7f03005d;
-        public static final int material_drawer_item_section=0x7f03005e;
-        public static final int material_drawer_item_switch=0x7f03005f;
-        public static final int material_drawer_item_toggle=0x7f030060;
-        public static final int material_drawer_recycler_view=0x7f030061;
-        public static final int material_drawer_slider=0x7f030062;
-        public static final int materialize=0x7f030063;
-        public static final int notification_media_action=0x7f030064;
-        public static final int notification_media_cancel_action=0x7f030065;
-        public static final int notification_template_big_media=0x7f030066;
-        public static final int notification_template_big_media_narrow=0x7f030067;
-        public static final int notification_template_lines=0x7f030068;
-        public static final int notification_template_media=0x7f030069;
-        public static final int notification_template_part_chronometer=0x7f03006a;
-        public static final int notification_template_part_time=0x7f03006b;
-        public static final int select_dialog_item_material=0x7f03006c;
-        public static final int select_dialog_multichoice_material=0x7f03006d;
-        public static final int select_dialog_singlechoice_material=0x7f03006e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03006f;
+        public static final int activity_collection=0x7f03001b;
+        public static final int activity_embedded=0x7f03001c;
+        public static final int activity_list_and_map=0x7f03001d;
+        public static final int activity_lock_screen=0x7f03001e;
+        public static final int activity_mini_drawer=0x7f03001f;
+        public static final int activity_museum_home=0x7f030020;
+        public static final int activity_museum_list=0x7f030021;
+        public static final int activity_opensource=0x7f030022;
+        public static final int activity_persistent_drawer=0x7f030023;
+        public static final int activity_play=0x7f030024;
+        public static final int activity_sample=0x7f030025;
+        public static final int activity_sample_actionbar=0x7f030026;
+        public static final int activity_sample_collapsing_toolbar=0x7f030027;
+        public static final int activity_sample_custom_container_dark_toolbar=0x7f030028;
+        public static final int activity_sample_dark_toolbar=0x7f030029;
+        public static final int activity_sample_fragment_dark_toolbar=0x7f03002a;
+        public static final int activity_sample_fullscreen_dark_toolbar=0x7f03002b;
+        public static final int activity_sample_nontranslucent=0x7f03002c;
+        public static final int activity_search=0x7f03002d;
+        public static final int activity_topic=0x7f03002e;
+        public static final int activity_welcome=0x7f03002f;
+        public static final int crossfader_base=0x7f030030;
+        public static final int crossfader_gmail_style=0x7f030031;
+        public static final int design_layout_snackbar=0x7f030032;
+        public static final int design_layout_snackbar_include=0x7f030033;
+        public static final int design_layout_tab_icon=0x7f030034;
+        public static final int design_layout_tab_text=0x7f030035;
+        public static final int design_menu_item_action_area=0x7f030036;
+        public static final int design_navigation_item=0x7f030037;
+        public static final int design_navigation_item_header=0x7f030038;
+        public static final int design_navigation_item_separator=0x7f030039;
+        public static final int design_navigation_item_subheader=0x7f03003a;
+        public static final int design_navigation_menu=0x7f03003b;
+        public static final int design_navigation_menu_item=0x7f03003c;
+        public static final int footer=0x7f03003d;
+        public static final int fragment_exhibit_list=0x7f03003e;
+        public static final int fragment_image=0x7f03003f;
+        public static final int fragment_map=0x7f030040;
+        public static final int fragment_opensource=0x7f030041;
+        public static final int fragment_sample=0x7f030042;
+        public static final int fragment_simple_sample=0x7f030043;
+        public static final int header=0x7f030044;
+        public static final int header_museum_list=0x7f030045;
+        public static final int item_city=0x7f030046;
+        public static final int item_list_exhibit=0x7f030047;
+        public static final int item_multi_angle_img=0x7f030048;
+        public static final int item_museum=0x7f030049;
+        public static final int item_nearly_gallery=0x7f03004a;
+        public static final int layout_drawer=0x7f03004b;
+        public static final int layout_title_bar=0x7f03004c;
+        public static final int layout_title_radio_btn_bar=0x7f03004d;
+        public static final int line_lyric=0x7f03004e;
+        public static final int listheader_opensource=0x7f03004f;
+        public static final int listitem_opensource=0x7f030050;
+        public static final int material_drawer=0x7f030051;
+        public static final int material_drawer_compact_header=0x7f030052;
+        public static final int material_drawer_compact_persistent_header=0x7f030053;
+        public static final int material_drawer_header=0x7f030054;
+        public static final int material_drawer_item_container=0x7f030055;
+        public static final int material_drawer_item_divider=0x7f030056;
+        public static final int material_drawer_item_mini=0x7f030057;
+        public static final int material_drawer_item_mini_profile=0x7f030058;
+        public static final int material_drawer_item_overflow_menu_primary=0x7f030059;
+        public static final int material_drawer_item_primary=0x7f03005a;
+        public static final int material_drawer_item_profile=0x7f03005b;
+        public static final int material_drawer_item_profile_setting=0x7f03005c;
+        public static final int material_drawer_item_secondary=0x7f03005d;
+        public static final int material_drawer_item_secondary_switch=0x7f03005e;
+        public static final int material_drawer_item_secondary_toggle=0x7f03005f;
+        public static final int material_drawer_item_section=0x7f030060;
+        public static final int material_drawer_item_switch=0x7f030061;
+        public static final int material_drawer_item_toggle=0x7f030062;
+        public static final int material_drawer_recycler_view=0x7f030063;
+        public static final int material_drawer_slider=0x7f030064;
+        public static final int materialize=0x7f030065;
+        public static final int notification_media_action=0x7f030066;
+        public static final int notification_media_cancel_action=0x7f030067;
+        public static final int notification_template_big_media=0x7f030068;
+        public static final int notification_template_big_media_narrow=0x7f030069;
+        public static final int notification_template_lines=0x7f03006a;
+        public static final int notification_template_media=0x7f03006b;
+        public static final int notification_template_part_chronometer=0x7f03006c;
+        public static final int notification_template_part_time=0x7f03006d;
+        public static final int select_dialog_item_material=0x7f03006e;
+        public static final int select_dialog_multichoice_material=0x7f03006f;
+        public static final int select_dialog_singlechoice_material=0x7f030070;
+        public static final int support_simple_spinner_dropdown_item=0x7f030071;
     }
     public static final class menu {
         public static final int cab=0x7f0c0000;
@@ -5169,8 +5175,9 @@ containing a value of this type.
         public static final int lorem_ipsum=0x7f050668;
         public static final int material_drawer_close=0x7f050669;
         public static final int material_drawer_open=0x7f05066a;
+        public static final int search_view_hint=0x7f05066b;
         public static final int status_bar_notification_info_overflow=0x7f050013;
-        public static final int version=0x7f05066b;
+        public static final int version=0x7f05066c;
     }
     public static final class style {
         public static final int AboutLibrariesTheme=0x7f080090;
@@ -5583,13 +5590,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_card com.systekcn.guide.debug:about_libraries_card}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_dividerDark_openSource com.systekcn.guide.debug:about_libraries_dividerDark_openSource}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_dividerLight_openSource com.systekcn.guide.debug:about_libraries_dividerLight_openSource}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_special_button_openSource com.systekcn.guide.debug:about_libraries_special_button_openSource}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_text_openSource com.systekcn.guide.debug:about_libraries_text_openSource}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_title_openSource com.systekcn.guide.debug:about_libraries_title_openSource}</code></td><td></td></tr>
-           <tr><td><code>{@link #AboutLibraries_about_libraries_window_background com.systekcn.guide.debug:about_libraries_window_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_card com.systekcn.guide:about_libraries_card}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_dividerDark_openSource com.systekcn.guide:about_libraries_dividerDark_openSource}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_dividerLight_openSource com.systekcn.guide:about_libraries_dividerLight_openSource}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_special_button_openSource com.systekcn.guide:about_libraries_special_button_openSource}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_text_openSource com.systekcn.guide:about_libraries_text_openSource}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_title_openSource com.systekcn.guide:about_libraries_title_openSource}</code></td><td></td></tr>
+           <tr><td><code>{@link #AboutLibraries_about_libraries_window_background com.systekcn.guide:about_libraries_window_background}</code></td><td></td></tr>
            </table>
            @see #AboutLibraries_about_libraries_card
            @see #AboutLibraries_about_libraries_dividerDark_openSource
@@ -5604,7 +5611,7 @@ containing a value of this type.
             0x7f01000a, 0x7f01000b, 0x7f01000c
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_card}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_card}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5612,11 +5619,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_card
+          @attr name com.systekcn.guide:about_libraries_card
         */
         public static final int AboutLibraries_about_libraries_card = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_dividerDark_openSource}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_dividerDark_openSource}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5624,11 +5631,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_dividerDark_openSource
+          @attr name com.systekcn.guide:about_libraries_dividerDark_openSource
         */
         public static final int AboutLibraries_about_libraries_dividerDark_openSource = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_dividerLight_openSource}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_dividerLight_openSource}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5636,11 +5643,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_dividerLight_openSource
+          @attr name com.systekcn.guide:about_libraries_dividerLight_openSource
         */
         public static final int AboutLibraries_about_libraries_dividerLight_openSource = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_special_button_openSource}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_special_button_openSource}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5648,11 +5655,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_special_button_openSource
+          @attr name com.systekcn.guide:about_libraries_special_button_openSource
         */
         public static final int AboutLibraries_about_libraries_special_button_openSource = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_text_openSource}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_text_openSource}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5660,11 +5667,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_text_openSource
+          @attr name com.systekcn.guide:about_libraries_text_openSource
         */
         public static final int AboutLibraries_about_libraries_text_openSource = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_title_openSource}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_title_openSource}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5672,11 +5679,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_title_openSource
+          @attr name com.systekcn.guide:about_libraries_title_openSource
         */
         public static final int AboutLibraries_about_libraries_title_openSource = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#about_libraries_window_background}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#about_libraries_window_background}
           attribute's value can be found in the {@link #AboutLibraries} array.
 
 
@@ -5684,7 +5691,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:about_libraries_window_background
+          @attr name com.systekcn.guide:about_libraries_window_background
         */
         public static final int AboutLibraries_about_libraries_window_background = 0;
         /** Attributes that can be used with a ActionBar.
@@ -5693,33 +5700,33 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.systekcn.guide.debug:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.systekcn.guide.debug:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.systekcn.guide.debug:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.systekcn.guide.debug:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.systekcn.guide.debug:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.systekcn.guide.debug:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.systekcn.guide.debug:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.systekcn.guide.debug:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.systekcn.guide.debug:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.systekcn.guide.debug:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.systekcn.guide.debug:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.systekcn.guide.debug:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.systekcn.guide.debug:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.systekcn.guide.debug:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.systekcn.guide.debug:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.systekcn.guide.debug:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.systekcn.guide.debug:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.systekcn.guide.debug:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.systekcn.guide.debug:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.systekcn.guide.debug:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.systekcn.guide.debug:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.systekcn.guide.debug:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.systekcn.guide.debug:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.systekcn.guide.debug:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.systekcn.guide.debug:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.systekcn.guide.debug:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.systekcn.guide.debug:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.systekcn.guide:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.systekcn.guide:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.systekcn.guide:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.systekcn.guide:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.systekcn.guide:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.systekcn.guide:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.systekcn.guide:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.systekcn.guide:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.systekcn.guide:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.systekcn.guide:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.systekcn.guide:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.systekcn.guide:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.systekcn.guide:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.systekcn.guide:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.systekcn.guide:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.systekcn.guide:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.systekcn.guide:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.systekcn.guide:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.systekcn.guide:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.systekcn.guide:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.systekcn.guide:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.systekcn.guide:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.systekcn.guide:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.systekcn.guide:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.systekcn.guide:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.systekcn.guide:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.systekcn.guide:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -5759,17 +5766,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010023, 0x7f010024, 0x7f0100f4
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#background}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:background
+          @attr name com.systekcn.guide:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5777,11 +5784,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:backgroundSplit
+          @attr name com.systekcn.guide:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5789,11 +5796,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:backgroundStacked
+          @attr name com.systekcn.guide:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5805,11 +5812,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetEnd
+          @attr name com.systekcn.guide:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5821,11 +5828,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetLeft
+          @attr name com.systekcn.guide:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5837,11 +5844,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetRight
+          @attr name com.systekcn.guide:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5853,21 +5860,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetStart
+          @attr name com.systekcn.guide:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:customNavigationLayout
+          @attr name com.systekcn.guide:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5885,21 +5892,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:displayOptions
+          @attr name com.systekcn.guide:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:divider
+          @attr name com.systekcn.guide:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5911,11 +5918,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:elevation
+          @attr name com.systekcn.guide:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#height}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5927,11 +5934,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:height
+          @attr name com.systekcn.guide:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5941,51 +5948,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:hideOnContentScroll
+          @attr name com.systekcn.guide:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:homeAsUpIndicator
+          @attr name com.systekcn.guide:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:homeLayout
+          @attr name com.systekcn.guide:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:icon
+          @attr name com.systekcn.guide:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:indeterminateProgressStyle
+          @attr name com.systekcn.guide:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5997,21 +6004,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:itemPadding
+          @attr name com.systekcn.guide:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:logo
+          @attr name com.systekcn.guide:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -6025,21 +6032,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:navigationMode
+          @attr name com.systekcn.guide:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:popupTheme
+          @attr name com.systekcn.guide:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -6051,21 +6058,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:progressBarPadding
+          @attr name com.systekcn.guide:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:progressBarStyle
+          @attr name com.systekcn.guide:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -6075,21 +6082,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:subtitle
+          @attr name com.systekcn.guide:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:subtitleTextStyle
+          @attr name com.systekcn.guide:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#title}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -6099,17 +6106,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:title
+          @attr name com.systekcn.guide:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:titleTextStyle
+          @attr name com.systekcn.guide:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -6161,12 +6168,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.systekcn.guide.debug:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.systekcn.guide.debug:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.systekcn.guide.debug:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.systekcn.guide.debug:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.systekcn.guide.debug:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.systekcn.guide.debug:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.systekcn.guide:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.systekcn.guide:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.systekcn.guide:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.systekcn.guide:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.systekcn.guide:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.systekcn.guide:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -6180,17 +6187,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010017, 0x7f010025
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#background}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:background
+          @attr name com.systekcn.guide:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -6198,21 +6205,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:backgroundSplit
+          @attr name com.systekcn.guide:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:closeItemLayout
+          @attr name com.systekcn.guide:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#height}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -6224,27 +6231,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:height
+          @attr name com.systekcn.guide:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:subtitleTextStyle
+          @attr name com.systekcn.guide:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:titleTextStyle
+          @attr name com.systekcn.guide:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -6253,8 +6260,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.systekcn.guide.debug:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.systekcn.guide.debug:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.systekcn.guide:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.systekcn.guide:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -6263,17 +6270,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:expandActivityOverflowButtonDrawable
+          @attr name com.systekcn.guide:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -6283,7 +6290,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:initialActivityCount
+          @attr name com.systekcn.guide:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -6293,11 +6300,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.systekcn.guide.debug:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.systekcn.guide.debug:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.systekcn.guide.debug:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.systekcn.guide.debug:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.systekcn.guide.debug:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.systekcn.guide:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.systekcn.guide:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.systekcn.guide:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.systekcn.guide:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.systekcn.guide:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -6317,53 +6324,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonPanelSideLayout
+          @attr name com.systekcn.guide:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:listItemLayout
+          @attr name com.systekcn.guide:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:listLayout
+          @attr name com.systekcn.guide:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:multiChoiceItemLayout
+          @attr name com.systekcn.guide:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:singleChoiceItemLayout
+          @attr name com.systekcn.guide:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -6373,8 +6380,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation com.systekcn.guide.debug:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded com.systekcn.guide.debug:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.systekcn.guide:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.systekcn.guide:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -6390,7 +6397,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -6402,11 +6409,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:elevation
+          @attr name com.systekcn.guide:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -6416,7 +6423,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expanded
+          @attr name com.systekcn.guide:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -6425,8 +6432,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.systekcn.guide.debug:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.systekcn.guide.debug:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.systekcn.guide:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.systekcn.guide:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -6435,7 +6442,7 @@ containing a value of this type.
             0x7f01002e, 0x7f01002f
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -6451,17 +6458,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:layout_scrollFlags
+          @attr name com.systekcn.guide:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:layout_scrollInterpolator
+          @attr name com.systekcn.guide:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -6471,7 +6478,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.systekcn.guide.debug:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.systekcn.guide:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -6486,14 +6493,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.systekcn.guide.debug:textAllCaps
+          @attr name com.systekcn.guide:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a BezelImageView.
@@ -6502,9 +6509,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BezelImageView_biv_drawCircularShadow com.systekcn.guide.debug:biv_drawCircularShadow}</code></td><td></td></tr>
-           <tr><td><code>{@link #BezelImageView_biv_maskDrawable com.systekcn.guide.debug:biv_maskDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BezelImageView_biv_selectorOnPress com.systekcn.guide.debug:biv_selectorOnPress}</code></td><td></td></tr>
+           <tr><td><code>{@link #BezelImageView_biv_drawCircularShadow com.systekcn.guide:biv_drawCircularShadow}</code></td><td></td></tr>
+           <tr><td><code>{@link #BezelImageView_biv_maskDrawable com.systekcn.guide:biv_maskDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BezelImageView_biv_selectorOnPress com.systekcn.guide:biv_selectorOnPress}</code></td><td></td></tr>
            </table>
            @see #BezelImageView_biv_drawCircularShadow
            @see #BezelImageView_biv_maskDrawable
@@ -6514,7 +6521,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010031, 0x7f010032, 0x7f010033
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#biv_drawCircularShadow}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#biv_drawCircularShadow}
           attribute's value can be found in the {@link #BezelImageView} array.
 
 
@@ -6524,21 +6531,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:biv_drawCircularShadow
+          @attr name com.systekcn.guide:biv_drawCircularShadow
         */
         public static final int BezelImageView_biv_drawCircularShadow = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#biv_maskDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#biv_maskDrawable}
           attribute's value can be found in the {@link #BezelImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:biv_maskDrawable
+          @attr name com.systekcn.guide:biv_maskDrawable
         */
         public static final int BezelImageView_biv_maskDrawable = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#biv_selectorOnPress}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#biv_selectorOnPress}
           attribute's value can be found in the {@link #BezelImageView} array.
 
 
@@ -6546,7 +6553,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:biv_selectorOnPress
+          @attr name com.systekcn.guide:biv_selectorOnPress
         */
         public static final int BezelImageView_biv_selectorOnPress = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6555,7 +6562,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.systekcn.guide.debug:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.systekcn.guide:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6563,7 +6570,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010034
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6573,7 +6580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:allowStacking
+          @attr name com.systekcn.guide:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -6582,17 +6589,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor com.systekcn.guide.debug:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius com.systekcn.guide.debug:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation com.systekcn.guide.debug:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation com.systekcn.guide.debug:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.systekcn.guide.debug:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding com.systekcn.guide.debug:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding com.systekcn.guide.debug:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom com.systekcn.guide.debug:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft com.systekcn.guide.debug:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight com.systekcn.guide.debug:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop com.systekcn.guide.debug:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.systekcn.guide:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.systekcn.guide:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.systekcn.guide:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.systekcn.guide:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.systekcn.guide:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.systekcn.guide:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.systekcn.guide:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.systekcn.guide:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.systekcn.guide:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.systekcn.guide:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.systekcn.guide:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -6612,7 +6619,7 @@ containing a value of this type.
             0x7f01003d, 0x7f01003e, 0x7f01003f
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6623,11 +6630,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardBackgroundColor
+          @attr name com.systekcn.guide:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6639,11 +6646,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardCornerRadius
+          @attr name com.systekcn.guide:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6655,11 +6662,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardElevation
+          @attr name com.systekcn.guide:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6671,11 +6678,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardMaxElevation
+          @attr name com.systekcn.guide:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6685,11 +6692,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardPreventCornerOverlap
+          @attr name com.systekcn.guide:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6699,11 +6706,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:cardUseCompatPadding
+          @attr name com.systekcn.guide:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6715,11 +6722,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentPadding
+          @attr name com.systekcn.guide:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6731,11 +6738,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentPaddingBottom
+          @attr name com.systekcn.guide:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6747,11 +6754,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentPaddingLeft
+          @attr name com.systekcn.guide:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6763,11 +6770,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentPaddingRight
+          @attr name com.systekcn.guide:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6779,7 +6786,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentPaddingTop
+          @attr name com.systekcn.guide:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -6788,8 +6795,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.systekcn.guide.debug:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.systekcn.guide.debug:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.systekcn.guide:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.systekcn.guide:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -6798,7 +6805,7 @@ containing a value of this type.
             0x7f010040, 0x7f010041
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6812,11 +6819,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:layout_collapseMode
+          @attr name com.systekcn.guide:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6826,7 +6833,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:layout_collapseParallaxMultiplier
+          @attr name com.systekcn.guide:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6835,20 +6842,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.systekcn.guide.debug:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.systekcn.guide.debug:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.systekcn.guide.debug:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.systekcn.guide.debug:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.systekcn.guide.debug:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.systekcn.guide.debug:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.systekcn.guide.debug:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.systekcn.guide.debug:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.systekcn.guide.debug:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.systekcn.guide.debug:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.systekcn.guide.debug:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.systekcn.guide.debug:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.systekcn.guide.debug:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.systekcn.guide.debug:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.systekcn.guide:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.systekcn.guide:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.systekcn.guide:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.systekcn.guide:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.systekcn.guide:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.systekcn.guide:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.systekcn.guide:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.systekcn.guide:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.systekcn.guide:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.systekcn.guide:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.systekcn.guide:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.systekcn.guide:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.systekcn.guide:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.systekcn.guide:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6872,7 +6879,7 @@ containing a value of this type.
             0x7f01004d, 0x7f01004e
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6893,21 +6900,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:collapsedTitleGravity
+          @attr name com.systekcn.guide:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:collapsedTitleTextAppearance
+          @attr name com.systekcn.guide:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6918,11 +6925,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentScrim
+          @attr name com.systekcn.guide:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6943,11 +6950,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:expandedTitleGravity
+          @attr name com.systekcn.guide:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6959,11 +6966,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expandedTitleMargin
+          @attr name com.systekcn.guide:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6975,11 +6982,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expandedTitleMarginBottom
+          @attr name com.systekcn.guide:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6991,11 +6998,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expandedTitleMarginEnd
+          @attr name com.systekcn.guide:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7007,11 +7014,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expandedTitleMarginStart
+          @attr name com.systekcn.guide:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7023,21 +7030,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:expandedTitleMarginTop
+          @attr name com.systekcn.guide:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:expandedTitleTextAppearance
+          @attr name com.systekcn.guide:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7048,11 +7055,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:statusBarScrim
+          @attr name com.systekcn.guide:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#title}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7062,11 +7069,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:title
+          @attr name com.systekcn.guide:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7076,17 +7083,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleEnabled
+          @attr name com.systekcn.guide:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:toolbarId
+          @attr name com.systekcn.guide:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -7096,8 +7103,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.systekcn.guide.debug:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.systekcn.guide.debug:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.systekcn.guide:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.systekcn.guide:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -7113,7 +7120,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7124,11 +7131,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:buttonTint
+          @attr name com.systekcn.guide:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7144,7 +7151,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:buttonTintMode
+          @attr name com.systekcn.guide:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -7153,8 +7160,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines com.systekcn.guide.debug:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.systekcn.guide.debug:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.systekcn.guide:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.systekcn.guide:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -7163,23 +7170,23 @@ containing a value of this type.
             0x7f010051, 0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:keylines
+          @attr name com.systekcn.guide:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:statusBarBackground
+          @attr name com.systekcn.guide:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -7189,10 +7196,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.systekcn.guide.debug:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.systekcn.guide.debug:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.systekcn.guide.debug:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.systekcn.guide.debug:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.systekcn.guide:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.systekcn.guide:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.systekcn.guide:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.systekcn.guide:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -7211,17 +7218,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:layout_anchor
+          @attr name com.systekcn.guide:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -7246,11 +7253,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:layout_anchorGravity
+          @attr name com.systekcn.guide:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -7260,11 +7267,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:layout_behavior
+          @attr name com.systekcn.guide:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -7274,7 +7281,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:layout_keyline
+          @attr name com.systekcn.guide:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DrawInsetsFrameLayout.
@@ -7283,7 +7290,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawInsetsFrameLayout_insetBackground com.systekcn.guide.debug:insetBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawInsetsFrameLayout_insetBackground com.systekcn.guide:insetBackground}</code></td><td></td></tr>
            </table>
            @see #DrawInsetsFrameLayout_insetBackground
          */
@@ -7291,7 +7298,7 @@ containing a value of this type.
             0x7f010057
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#insetBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#insetBackground}
           attribute's value can be found in the {@link #DrawInsetsFrameLayout} array.
 
 
@@ -7299,7 +7306,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:insetBackground
+          @attr name com.systekcn.guide:insetBackground
         */
         public static final int DrawInsetsFrameLayout_insetBackground = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -7308,14 +7315,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.systekcn.guide.debug:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.systekcn.guide.debug:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.systekcn.guide.debug:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.systekcn.guide.debug:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.systekcn.guide.debug:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.systekcn.guide.debug:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.systekcn.guide.debug:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.systekcn.guide.debug:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.systekcn.guide:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.systekcn.guide:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.systekcn.guide:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.systekcn.guide:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.systekcn.guide:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.systekcn.guide:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.systekcn.guide:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.systekcn.guide:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -7331,7 +7338,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7343,11 +7350,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:arrowHeadLength
+          @attr name com.systekcn.guide:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7359,11 +7366,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:arrowShaftLength
+          @attr name com.systekcn.guide:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7375,11 +7382,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:barLength
+          @attr name com.systekcn.guide:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7390,11 +7397,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:color
+          @attr name com.systekcn.guide:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7406,11 +7413,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:drawableSize
+          @attr name com.systekcn.guide:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7422,11 +7429,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:gapBetweenBars
+          @attr name com.systekcn.guide:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7436,11 +7443,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:spinBars
+          @attr name com.systekcn.guide:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7452,7 +7459,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:thickness
+          @attr name com.systekcn.guide:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -7461,13 +7468,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.systekcn.guide.debug:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.systekcn.guide.debug:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth com.systekcn.guide.debug:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation com.systekcn.guide.debug:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize com.systekcn.guide.debug:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.systekcn.guide.debug:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor com.systekcn.guide.debug:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.systekcn.guide:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.systekcn.guide:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.systekcn.guide:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.systekcn.guide:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.systekcn.guide:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.systekcn.guide:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.systekcn.guide:rippleColor}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -7482,7 +7489,7 @@ containing a value of this type.
             0x7f010063, 0x7f010144, 0x7f010145
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7493,11 +7500,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:backgroundTint
+          @attr name com.systekcn.guide:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7513,11 +7520,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:backgroundTintMode
+          @attr name com.systekcn.guide:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7529,11 +7536,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:borderWidth
+          @attr name com.systekcn.guide:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7545,11 +7552,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:elevation
+          @attr name com.systekcn.guide:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7562,11 +7569,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:fabSize
+          @attr name com.systekcn.guide:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7578,11 +7585,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:pressedTranslationZ
+          @attr name com.systekcn.guide:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7593,7 +7600,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:rippleColor
+          @attr name com.systekcn.guide:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7604,7 +7611,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.systekcn.guide.debug:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.systekcn.guide:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7626,7 +7633,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7636,7 +7643,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:foregroundInsidePadding
+          @attr name com.systekcn.guide:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a Iconics.
@@ -7645,16 +7652,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Iconics_ico_background_color com.systekcn.guide.debug:ico_background_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_color com.systekcn.guide.debug:ico_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_contour_color com.systekcn.guide.debug:ico_contour_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_contour_width com.systekcn.guide.debug:ico_contour_width}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_corner_radius com.systekcn.guide.debug:ico_corner_radius}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_icon com.systekcn.guide.debug:ico_icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_offset_x com.systekcn.guide.debug:ico_offset_x}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_offset_y com.systekcn.guide.debug:ico_offset_y}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_padding com.systekcn.guide.debug:ico_padding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Iconics_ico_size com.systekcn.guide.debug:ico_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_background_color com.systekcn.guide:ico_background_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_color com.systekcn.guide:ico_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_contour_color com.systekcn.guide:ico_contour_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_contour_width com.systekcn.guide:ico_contour_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_corner_radius com.systekcn.guide:ico_corner_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_icon com.systekcn.guide:ico_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_offset_x com.systekcn.guide:ico_offset_x}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_offset_y com.systekcn.guide:ico_offset_y}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_padding com.systekcn.guide:ico_padding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Iconics_ico_size com.systekcn.guide:ico_size}</code></td><td></td></tr>
            </table>
            @see #Iconics_ico_background_color
            @see #Iconics_ico_color
@@ -7673,7 +7680,7 @@ containing a value of this type.
             0x7f01006d, 0x7f01006e
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_background_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_background_color}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7681,11 +7688,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:ico_background_color
+          @attr name com.systekcn.guide:ico_background_color
         */
         public static final int Iconics_ico_background_color = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_color}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7693,11 +7700,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:ico_color
+          @attr name com.systekcn.guide:ico_color
         */
         public static final int Iconics_ico_color = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_contour_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_contour_color}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7705,11 +7712,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:ico_contour_color
+          @attr name com.systekcn.guide:ico_contour_color
         */
         public static final int Iconics_ico_contour_color = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_contour_width}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_contour_width}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7718,11 +7725,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_contour_width
+          @attr name com.systekcn.guide:ico_contour_width
         */
         public static final int Iconics_ico_contour_width = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_corner_radius}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_corner_radius}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7731,11 +7738,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_corner_radius
+          @attr name com.systekcn.guide:ico_corner_radius
         */
         public static final int Iconics_ico_corner_radius = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_icon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_icon}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7745,11 +7752,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:ico_icon
+          @attr name com.systekcn.guide:ico_icon
         */
         public static final int Iconics_ico_icon = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_offset_x}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_offset_x}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7758,11 +7765,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_offset_x
+          @attr name com.systekcn.guide:ico_offset_x
         */
         public static final int Iconics_ico_offset_x = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_offset_y}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_offset_y}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7771,11 +7778,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_offset_y
+          @attr name com.systekcn.guide:ico_offset_y
         */
         public static final int Iconics_ico_offset_y = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_padding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_padding}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7784,11 +7791,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_padding
+          @attr name com.systekcn.guide:ico_padding
         */
         public static final int Iconics_ico_padding = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ico_size}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ico_size}
           attribute's value can be found in the {@link #Iconics} array.
 
 
@@ -7797,7 +7804,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:ico_size
+          @attr name com.systekcn.guide:ico_size
         */
         public static final int Iconics_ico_size = 2;
         /** Attributes that can be used with a IconicsImageView.
@@ -7806,14 +7813,14 @@ in (inches), mm (millimeters).
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_background_color com.systekcn.guide.debug:iiv_background_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_color com.systekcn.guide.debug:iiv_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_contour_color com.systekcn.guide.debug:iiv_contour_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_contour_width com.systekcn.guide.debug:iiv_contour_width}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_corner_radius com.systekcn.guide.debug:iiv_corner_radius}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_icon com.systekcn.guide.debug:iiv_icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_padding com.systekcn.guide.debug:iiv_padding}</code></td><td></td></tr>
-           <tr><td><code>{@link #IconicsImageView_iiv_size com.systekcn.guide.debug:iiv_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_background_color com.systekcn.guide:iiv_background_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_color com.systekcn.guide:iiv_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_contour_color com.systekcn.guide:iiv_contour_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_contour_width com.systekcn.guide:iiv_contour_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_corner_radius com.systekcn.guide:iiv_corner_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_icon com.systekcn.guide:iiv_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_padding com.systekcn.guide:iiv_padding}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconicsImageView_iiv_size com.systekcn.guide:iiv_size}</code></td><td></td></tr>
            </table>
            @see #IconicsImageView_iiv_background_color
            @see #IconicsImageView_iiv_color
@@ -7829,7 +7836,7 @@ in (inches), mm (millimeters).
             0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_background_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_background_color}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7837,11 +7844,11 @@ in (inches), mm (millimeters).
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:iiv_background_color
+          @attr name com.systekcn.guide:iiv_background_color
         */
         public static final int IconicsImageView_iiv_background_color = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_color}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7849,11 +7856,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:iiv_color
+          @attr name com.systekcn.guide:iiv_color
         */
         public static final int IconicsImageView_iiv_color = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_contour_color}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_contour_color}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7861,11 +7868,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:iiv_contour_color
+          @attr name com.systekcn.guide:iiv_contour_color
         */
         public static final int IconicsImageView_iiv_contour_color = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_contour_width}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_contour_width}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7874,11 +7881,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:iiv_contour_width
+          @attr name com.systekcn.guide:iiv_contour_width
         */
         public static final int IconicsImageView_iiv_contour_width = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_corner_radius}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_corner_radius}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7887,11 +7894,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:iiv_corner_radius
+          @attr name com.systekcn.guide:iiv_corner_radius
         */
         public static final int IconicsImageView_iiv_corner_radius = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_icon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_icon}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7901,11 +7908,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:iiv_icon
+          @attr name com.systekcn.guide:iiv_icon
         */
         public static final int IconicsImageView_iiv_icon = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_padding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_padding}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7914,11 +7921,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:iiv_padding
+          @attr name com.systekcn.guide:iiv_padding
         */
         public static final int IconicsImageView_iiv_padding = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iiv_size}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iiv_size}
           attribute's value can be found in the {@link #IconicsImageView} array.
 
 
@@ -7927,7 +7934,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.systekcn.guide.debug:iiv_size
+          @attr name com.systekcn.guide:iiv_size
         */
         public static final int IconicsImageView_iiv_size = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7941,10 +7948,10 @@ in (inches), mm (millimeters).
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.systekcn.guide.debug:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.systekcn.guide.debug:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.systekcn.guide.debug:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.systekcn.guide.debug:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.systekcn.guide:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.systekcn.guide:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.systekcn.guide:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.systekcn.guide:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7992,17 +7999,17 @@ in (inches), mm (millimeters).
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:divider
+          @attr name com.systekcn.guide:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8014,11 +8021,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:dividerPadding
+          @attr name com.systekcn.guide:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8028,11 +8035,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:measureWithLargestChild
+          @attr name com.systekcn.guide:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8047,7 +8054,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:showDividers
+          @attr name com.systekcn.guide:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -8126,17 +8133,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_background com.systekcn.guide.debug:material_drawer_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_divider com.systekcn.guide.debug:material_drawer_divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_header_selection_text com.systekcn.guide.debug:material_drawer_header_selection_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_hint_icon com.systekcn.guide.debug:material_drawer_hint_icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_hint_text com.systekcn.guide.debug:material_drawer_hint_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_primary_icon com.systekcn.guide.debug:material_drawer_primary_icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_primary_text com.systekcn.guide.debug:material_drawer_primary_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_secondary_text com.systekcn.guide.debug:material_drawer_secondary_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_selected com.systekcn.guide.debug:material_drawer_selected}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_selected_text com.systekcn.guide.debug:material_drawer_selected_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #MaterialDrawer_material_drawer_window_background com.systekcn.guide.debug:material_drawer_window_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_background com.systekcn.guide:material_drawer_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_divider com.systekcn.guide:material_drawer_divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_header_selection_text com.systekcn.guide:material_drawer_header_selection_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_hint_icon com.systekcn.guide:material_drawer_hint_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_hint_text com.systekcn.guide:material_drawer_hint_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_primary_icon com.systekcn.guide:material_drawer_primary_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_primary_text com.systekcn.guide:material_drawer_primary_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_secondary_text com.systekcn.guide:material_drawer_secondary_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_selected com.systekcn.guide:material_drawer_selected}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_selected_text com.systekcn.guide:material_drawer_selected_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #MaterialDrawer_material_drawer_window_background com.systekcn.guide:material_drawer_window_background}</code></td><td></td></tr>
            </table>
            @see #MaterialDrawer_material_drawer_background
            @see #MaterialDrawer_material_drawer_divider
@@ -8156,7 +8163,7 @@ containing a value of this type.
             0x7f010082, 0x7f010083, 0x7f010084
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_background}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_background}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8164,11 +8171,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_background
+          @attr name com.systekcn.guide:material_drawer_background
         */
         public static final int MaterialDrawer_material_drawer_background = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_divider}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_divider}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8176,11 +8183,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_divider
+          @attr name com.systekcn.guide:material_drawer_divider
         */
         public static final int MaterialDrawer_material_drawer_divider = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_header_selection_text}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_header_selection_text}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8188,11 +8195,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_header_selection_text
+          @attr name com.systekcn.guide:material_drawer_header_selection_text
         */
         public static final int MaterialDrawer_material_drawer_header_selection_text = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_hint_icon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_hint_icon}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8200,11 +8207,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_hint_icon
+          @attr name com.systekcn.guide:material_drawer_hint_icon
         */
         public static final int MaterialDrawer_material_drawer_hint_icon = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_hint_text}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_hint_text}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8212,11 +8219,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_hint_text
+          @attr name com.systekcn.guide:material_drawer_hint_text
         */
         public static final int MaterialDrawer_material_drawer_hint_text = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_primary_icon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_primary_icon}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8224,11 +8231,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_primary_icon
+          @attr name com.systekcn.guide:material_drawer_primary_icon
         */
         public static final int MaterialDrawer_material_drawer_primary_icon = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_primary_text}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_primary_text}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8236,11 +8243,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_primary_text
+          @attr name com.systekcn.guide:material_drawer_primary_text
         */
         public static final int MaterialDrawer_material_drawer_primary_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_secondary_text}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_secondary_text}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8248,11 +8255,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_secondary_text
+          @attr name com.systekcn.guide:material_drawer_secondary_text
         */
         public static final int MaterialDrawer_material_drawer_secondary_text = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_selected}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_selected}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8260,11 +8267,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_selected
+          @attr name com.systekcn.guide:material_drawer_selected
         */
         public static final int MaterialDrawer_material_drawer_selected = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_selected_text}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_selected_text}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8272,11 +8279,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_selected_text
+          @attr name com.systekcn.guide:material_drawer_selected_text
         */
         public static final int MaterialDrawer_material_drawer_selected_text = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#material_drawer_window_background}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#material_drawer_window_background}
           attribute's value can be found in the {@link #MaterialDrawer} array.
 
 
@@ -8284,7 +8291,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:material_drawer_window_background
+          @attr name com.systekcn.guide:material_drawer_window_background
         */
         public static final int MaterialDrawer_material_drawer_window_background = 0;
         /** Attributes that can be used with a MenuGroup.
@@ -8353,9 +8360,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.systekcn.guide.debug:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.systekcn.guide.debug:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.systekcn.guide.debug:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.systekcn.guide:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.systekcn.guide:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.systekcn.guide:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -8369,7 +8376,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.systekcn.guide.debug:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.systekcn.guide:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -8397,17 +8404,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010088
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionLayout
+          @attr name com.systekcn.guide:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8417,11 +8424,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:actionProviderClass
+          @attr name com.systekcn.guide:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8431,7 +8438,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:actionViewClass
+          @attr name com.systekcn.guide:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -8513,7 +8520,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8529,7 +8536,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:showAsAction
+          @attr name com.systekcn.guide:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -8545,7 +8552,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.systekcn.guide.debug:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.systekcn.guide:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -8603,7 +8610,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -8613,7 +8620,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:preserveIconSpacing
+          @attr name com.systekcn.guide:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -8625,13 +8632,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation com.systekcn.guide.debug:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout com.systekcn.guide.debug:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground com.systekcn.guide.debug:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint com.systekcn.guide.debug:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance com.systekcn.guide.debug:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor com.systekcn.guide.debug:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu com.systekcn.guide.debug:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.systekcn.guide:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.systekcn.guide:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.systekcn.guide:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.systekcn.guide:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.systekcn.guide:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.systekcn.guide:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.systekcn.guide:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -8668,7 +8675,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8680,31 +8687,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:elevation
+          @attr name com.systekcn.guide:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:headerLayout
+          @attr name com.systekcn.guide:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:itemBackground
+          @attr name com.systekcn.guide:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8715,21 +8722,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:itemIconTint
+          @attr name com.systekcn.guide:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:itemTextAppearance
+          @attr name com.systekcn.guide:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8740,17 +8747,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:itemTextColor
+          @attr name com.systekcn.guide:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:menu
+          @attr name com.systekcn.guide:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -8760,7 +8767,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.systekcn.guide.debug:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.systekcn.guide:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -8775,7 +8782,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -8785,7 +8792,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:overlapAnchor
+          @attr name com.systekcn.guide:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -8794,7 +8801,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.systekcn.guide.debug:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.systekcn.guide:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -8802,7 +8809,7 @@ containing a value of this type.
             0x7f010091
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -8812,7 +8819,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:state_above_anchor
+          @attr name com.systekcn.guide:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -8822,10 +8829,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.systekcn.guide.debug:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.systekcn.guide.debug:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.systekcn.guide.debug:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.systekcn.guide.debug:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.systekcn.guide:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.systekcn.guide:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.systekcn.guide:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.systekcn.guide:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -8844,7 +8851,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8854,11 +8861,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:layoutManager
+          @attr name com.systekcn.guide:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8868,11 +8875,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:reverseLayout
+          @attr name com.systekcn.guide:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8882,11 +8889,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:spanCount
+          @attr name com.systekcn.guide:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8896,7 +8903,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:stackFromEnd
+          @attr name com.systekcn.guide:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a RoundImageView.
@@ -8905,8 +8912,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RoundImageView_borderRadius com.systekcn.guide.debug:borderRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #RoundImageView_type com.systekcn.guide.debug:type}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundImageView_borderRadius com.systekcn.guide:borderRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundImageView_type com.systekcn.guide:type}</code></td><td></td></tr>
            </table>
            @see #RoundImageView_borderRadius
            @see #RoundImageView_type
@@ -8915,7 +8922,7 @@ containing a value of this type.
             0x7f010000, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#borderRadius}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#borderRadius}
           attribute's value can be found in the {@link #RoundImageView} array.
 
 
@@ -8927,11 +8934,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:borderRadius
+          @attr name com.systekcn.guide:borderRadius
         */
         public static final int RoundImageView_borderRadius = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#type}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#type}
           attribute's value can be found in the {@link #RoundImageView} array.
 
 
@@ -8944,7 +8951,7 @@ containing a value of this type.
 <tr><td><code>circle</code></td><td>0</td><td></td></tr>
 <tr><td><code>round</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:type
+          @attr name com.systekcn.guide:type
         */
         public static final int RoundImageView_type = 1;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -8953,7 +8960,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.systekcn.guide.debug:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.systekcn.guide:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -8961,7 +8968,7 @@ containing a value of this type.
             0x7f010096
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -8969,7 +8976,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:insetForeground
+          @attr name com.systekcn.guide:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrimInsetsView.
@@ -8978,7 +8985,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsView_siv_insetForeground com.systekcn.guide.debug:siv_insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsView_siv_insetForeground com.systekcn.guide:siv_insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsView_siv_insetForeground
          */
@@ -8986,7 +8993,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010097
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#siv_insetForeground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#siv_insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsView} array.
 
 
@@ -8994,7 +9001,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:siv_insetForeground
+          @attr name com.systekcn.guide:siv_insetForeground
         */
         public static final int ScrimInsetsView_siv_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -9003,7 +9010,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.systekcn.guide.debug:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.systekcn.guide:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -9011,7 +9018,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010098
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -9023,7 +9030,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:behavior_overlapTop
+          @attr name com.systekcn.guide:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -9036,19 +9043,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.systekcn.guide.debug:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.systekcn.guide.debug:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.systekcn.guide.debug:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.systekcn.guide.debug:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.systekcn.guide.debug:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.systekcn.guide.debug:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.systekcn.guide.debug:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.systekcn.guide.debug:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.systekcn.guide.debug:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.systekcn.guide.debug:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.systekcn.guide.debug:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.systekcn.guide.debug:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.systekcn.guide.debug:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.systekcn.guide:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.systekcn.guide:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.systekcn.guide:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.systekcn.guide:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.systekcn.guide:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.systekcn.guide:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.systekcn.guide:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.systekcn.guide:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.systekcn.guide:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.systekcn.guide:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.systekcn.guide:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.systekcn.guide:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.systekcn.guide:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9100,27 +9107,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:closeIcon
+          @attr name com.systekcn.guide:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:commitIcon
+          @attr name com.systekcn.guide:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9130,21 +9137,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:defaultQueryHint
+          @attr name com.systekcn.guide:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:goIcon
+          @attr name com.systekcn.guide:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9154,31 +9161,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:iconifiedByDefault
+          @attr name com.systekcn.guide:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:layout
+          @attr name com.systekcn.guide:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:queryBackground
+          @attr name com.systekcn.guide:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9188,57 +9195,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:queryHint
+          @attr name com.systekcn.guide:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:searchHintIcon
+          @attr name com.systekcn.guide:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:searchIcon
+          @attr name com.systekcn.guide:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:submitBackground
+          @attr name com.systekcn.guide:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:suggestionRowLayout
+          @attr name com.systekcn.guide:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:voiceIcon
+          @attr name com.systekcn.guide:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -9248,8 +9255,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation com.systekcn.guide.debug:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.systekcn.guide.debug:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.systekcn.guide:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.systekcn.guide:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -9265,7 +9272,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9277,11 +9284,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:elevation
+          @attr name com.systekcn.guide:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9293,7 +9300,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:maxActionInlineWidth
+          @attr name com.systekcn.guide:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -9305,7 +9312,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.systekcn.guide.debug:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.systekcn.guide:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_popupBackground
@@ -9334,13 +9341,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:popupTheme
+          @attr name com.systekcn.guide:popupTheme
         */
         public static final int Spinner_popupTheme = 3;
         /** Attributes that can be used with a SwitchCompat.
@@ -9352,13 +9359,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.systekcn.guide.debug:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.systekcn.guide.debug:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.systekcn.guide.debug:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.systekcn.guide.debug:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.systekcn.guide.debug:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.systekcn.guide.debug:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.systekcn.guide.debug:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.systekcn.guide:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.systekcn.guide:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.systekcn.guide:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.systekcn.guide:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.systekcn.guide:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.systekcn.guide:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.systekcn.guide:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -9395,7 +9402,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9405,11 +9412,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:showText
+          @attr name com.systekcn.guide:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9419,11 +9426,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:splitTrack
+          @attr name com.systekcn.guide:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9435,11 +9442,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:switchMinWidth
+          @attr name com.systekcn.guide:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9451,21 +9458,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:switchPadding
+          @attr name com.systekcn.guide:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:switchTextAppearance
+          @attr name com.systekcn.guide:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9477,17 +9484,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:thumbTextPadding
+          @attr name com.systekcn.guide:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#track}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:track
+          @attr name com.systekcn.guide:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabLayout.
@@ -9496,22 +9503,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground com.systekcn.guide.debug:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart com.systekcn.guide.debug:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity com.systekcn.guide.debug:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.systekcn.guide.debug:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.systekcn.guide.debug:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth com.systekcn.guide.debug:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth com.systekcn.guide.debug:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode com.systekcn.guide.debug:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding com.systekcn.guide.debug:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.systekcn.guide.debug:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.systekcn.guide.debug:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart com.systekcn.guide.debug:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop com.systekcn.guide.debug:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.systekcn.guide.debug:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance com.systekcn.guide.debug:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor com.systekcn.guide.debug:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.systekcn.guide:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.systekcn.guide:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.systekcn.guide:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.systekcn.guide:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.systekcn.guide:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.systekcn.guide:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.systekcn.guide:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.systekcn.guide:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.systekcn.guide:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.systekcn.guide:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.systekcn.guide:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.systekcn.guide:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.systekcn.guide:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.systekcn.guide:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.systekcn.guide:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.systekcn.guide:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -9537,17 +9544,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:tabBackground
+          @attr name com.systekcn.guide:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9559,11 +9566,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabContentStart
+          @attr name com.systekcn.guide:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9576,11 +9583,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:tabGravity
+          @attr name com.systekcn.guide:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9591,11 +9598,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabIndicatorColor
+          @attr name com.systekcn.guide:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9607,11 +9614,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabIndicatorHeight
+          @attr name com.systekcn.guide:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9623,11 +9630,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabMaxWidth
+          @attr name com.systekcn.guide:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9639,11 +9646,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabMinWidth
+          @attr name com.systekcn.guide:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9656,11 +9663,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:tabMode
+          @attr name com.systekcn.guide:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9672,11 +9679,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabPadding
+          @attr name com.systekcn.guide:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9688,11 +9695,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabPaddingBottom
+          @attr name com.systekcn.guide:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9704,11 +9711,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabPaddingEnd
+          @attr name com.systekcn.guide:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9720,11 +9727,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabPaddingStart
+          @attr name com.systekcn.guide:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9736,11 +9743,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabPaddingTop
+          @attr name com.systekcn.guide:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9751,21 +9758,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabSelectedTextColor
+          @attr name com.systekcn.guide:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:tabTextAppearance
+          @attr name com.systekcn.guide:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9776,7 +9783,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:tabTextColor
+          @attr name com.systekcn.guide:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -9793,7 +9800,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.systekcn.guide.debug:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.systekcn.guide:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -9859,14 +9866,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.systekcn.guide.debug:textAllCaps
+          @attr name com.systekcn.guide:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -9877,14 +9884,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled com.systekcn.guide.debug:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.systekcn.guide.debug:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.systekcn.guide.debug:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.systekcn.guide.debug:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled com.systekcn.guide.debug:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.systekcn.guide.debug:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.systekcn.guide.debug:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.systekcn.guide.debug:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.systekcn.guide:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.systekcn.guide:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.systekcn.guide:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.systekcn.guide:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.systekcn.guide:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.systekcn.guide:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.systekcn.guide:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.systekcn.guide:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -9915,7 +9922,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9925,11 +9932,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:counterEnabled
+          @attr name com.systekcn.guide:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9939,31 +9946,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:counterMaxLength
+          @attr name com.systekcn.guide:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:counterOverflowTextAppearance
+          @attr name com.systekcn.guide:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:counterTextAppearance
+          @attr name com.systekcn.guide:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9973,21 +9980,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:errorEnabled
+          @attr name com.systekcn.guide:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:errorTextAppearance
+          @attr name com.systekcn.guide:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9997,17 +10004,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:hintAnimationEnabled
+          @attr name com.systekcn.guide:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:hintTextAppearance
+          @attr name com.systekcn.guide:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Theme.
@@ -10016,116 +10023,116 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.systekcn.guide.debug:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.systekcn.guide.debug:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.systekcn.guide.debug:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.systekcn.guide.debug:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.systekcn.guide.debug:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.systekcn.guide.debug:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.systekcn.guide.debug:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.systekcn.guide.debug:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.systekcn.guide.debug:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.systekcn.guide.debug:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.systekcn.guide.debug:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.systekcn.guide.debug:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.systekcn.guide.debug:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.systekcn.guide.debug:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.systekcn.guide.debug:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.systekcn.guide.debug:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.systekcn.guide.debug:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.systekcn.guide.debug:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.systekcn.guide.debug:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.systekcn.guide.debug:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.systekcn.guide.debug:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.systekcn.guide.debug:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.systekcn.guide.debug:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.systekcn.guide.debug:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.systekcn.guide.debug:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.systekcn.guide.debug:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.systekcn.guide.debug:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.systekcn.guide.debug:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.systekcn.guide.debug:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.systekcn.guide.debug:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.systekcn.guide.debug:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.systekcn.guide.debug:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.systekcn.guide.debug:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle com.systekcn.guide.debug:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme com.systekcn.guide.debug:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.systekcn.guide:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.systekcn.guide:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.systekcn.guide:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.systekcn.guide:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.systekcn.guide:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.systekcn.guide:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.systekcn.guide:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.systekcn.guide:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.systekcn.guide:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.systekcn.guide:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.systekcn.guide:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.systekcn.guide:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.systekcn.guide:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.systekcn.guide:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.systekcn.guide:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.systekcn.guide:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.systekcn.guide:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.systekcn.guide:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.systekcn.guide:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.systekcn.guide:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.systekcn.guide:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.systekcn.guide:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.systekcn.guide:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.systekcn.guide:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.systekcn.guide:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.systekcn.guide:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.systekcn.guide:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.systekcn.guide:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.systekcn.guide:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.systekcn.guide:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.systekcn.guide:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.systekcn.guide:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.systekcn.guide:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.systekcn.guide:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.systekcn.guide:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.systekcn.guide.debug:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle com.systekcn.guide.debug:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.systekcn.guide.debug:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.systekcn.guide.debug:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.systekcn.guide.debug:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.systekcn.guide.debug:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.systekcn.guide.debug:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle com.systekcn.guide.debug:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall com.systekcn.guide.debug:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle com.systekcn.guide.debug:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle com.systekcn.guide.debug:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.systekcn.guide.debug:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.systekcn.guide.debug:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.systekcn.guide.debug:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.systekcn.guide.debug:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.systekcn.guide.debug:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.systekcn.guide.debug:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.systekcn.guide.debug:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.systekcn.guide.debug:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_controlBackground com.systekcn.guide.debug:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding com.systekcn.guide.debug:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme com.systekcn.guide.debug:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.systekcn.guide.debug:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.systekcn.guide.debug:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.systekcn.guide.debug:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.systekcn.guide.debug:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.systekcn.guide.debug:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.systekcn.guide.debug:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle com.systekcn.guide.debug:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.systekcn.guide.debug:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_imageButtonStyle com.systekcn.guide.debug:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.systekcn.guide.debug:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog com.systekcn.guide.debug:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.systekcn.guide.debug:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.systekcn.guide.debug:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.systekcn.guide.debug:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.systekcn.guide.debug:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.systekcn.guide.debug:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.systekcn.guide.debug:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.systekcn.guide.debug:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.systekcn.guide.debug:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.systekcn.guide.debug:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.systekcn.guide.debug:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.systekcn.guide.debug:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle com.systekcn.guide.debug:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle com.systekcn.guide.debug:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.systekcn.guide.debug:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_seekBarStyle com.systekcn.guide.debug:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.systekcn.guide.debug:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.systekcn.guide.debug:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.systekcn.guide.debug:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.systekcn.guide.debug:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.systekcn.guide.debug:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.systekcn.guide.debug:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.systekcn.guide.debug:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.systekcn.guide.debug:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.systekcn.guide.debug:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.systekcn.guide.debug:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.systekcn.guide.debug:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.systekcn.guide.debug:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.systekcn.guide.debug:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.systekcn.guide.debug:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.systekcn.guide.debug:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.systekcn.guide.debug:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.systekcn.guide.debug:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.systekcn.guide.debug:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.systekcn.guide.debug:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.systekcn.guide.debug:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.systekcn.guide.debug:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.systekcn.guide.debug:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor com.systekcn.guide.debug:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor com.systekcn.guide.debug:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle com.systekcn.guide.debug:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.systekcn.guide:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle com.systekcn.guide:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.systekcn.guide:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.systekcn.guide:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.systekcn.guide:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.systekcn.guide:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.systekcn.guide:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.systekcn.guide:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.systekcn.guide:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.systekcn.guide:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.systekcn.guide:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.systekcn.guide:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.systekcn.guide:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.systekcn.guide:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.systekcn.guide:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.systekcn.guide:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.systekcn.guide:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.systekcn.guide:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.systekcn.guide:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_controlBackground com.systekcn.guide:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.systekcn.guide:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.systekcn.guide:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.systekcn.guide:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.systekcn.guide:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.systekcn.guide:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.systekcn.guide:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.systekcn.guide:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.systekcn.guide:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.systekcn.guide:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.systekcn.guide:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_imageButtonStyle com.systekcn.guide:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.systekcn.guide:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.systekcn.guide:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.systekcn.guide:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.systekcn.guide:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.systekcn.guide:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.systekcn.guide:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.systekcn.guide:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.systekcn.guide:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.systekcn.guide:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.systekcn.guide:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.systekcn.guide:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.systekcn.guide:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.systekcn.guide:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.systekcn.guide:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.systekcn.guide:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.systekcn.guide:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_seekBarStyle com.systekcn.guide:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.systekcn.guide:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.systekcn.guide:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.systekcn.guide:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.systekcn.guide:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.systekcn.guide:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.systekcn.guide:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.systekcn.guide:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.systekcn.guide:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.systekcn.guide:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.systekcn.guide:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.systekcn.guide:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.systekcn.guide:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.systekcn.guide:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.systekcn.guide:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.systekcn.guide:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.systekcn.guide:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.systekcn.guide:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.systekcn.guide:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.systekcn.guide:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.systekcn.guide:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.systekcn.guide:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.systekcn.guide:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.systekcn.guide:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.systekcn.guide:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.systekcn.guide:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -10269,37 +10276,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010130, 0x7f010131
         };
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarDivider
+          @attr name com.systekcn.guide:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarItemBackground
+          @attr name com.systekcn.guide:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarPopupTheme
+          @attr name com.systekcn.guide:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10319,111 +10326,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:actionBarSize
+          @attr name com.systekcn.guide:actionBarSize
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarSplitStyle
+          @attr name com.systekcn.guide:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarStyle
+          @attr name com.systekcn.guide:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarTabBarStyle
+          @attr name com.systekcn.guide:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarTabStyle
+          @attr name com.systekcn.guide:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarTabTextStyle
+          @attr name com.systekcn.guide:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarTheme
+          @attr name com.systekcn.guide:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionBarWidgetTheme
+          @attr name com.systekcn.guide:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionButtonStyle
+          @attr name com.systekcn.guide:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionDropDownStyle
+          @attr name com.systekcn.guide:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionMenuTextAppearance
+          @attr name com.systekcn.guide:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10431,181 +10438,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:actionMenuTextColor
+          @attr name com.systekcn.guide:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeBackground
+          @attr name com.systekcn.guide:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeCloseButtonStyle
+          @attr name com.systekcn.guide:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeCloseDrawable
+          @attr name com.systekcn.guide:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeCopyDrawable
+          @attr name com.systekcn.guide:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeCutDrawable
+          @attr name com.systekcn.guide:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeFindDrawable
+          @attr name com.systekcn.guide:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModePasteDrawable
+          @attr name com.systekcn.guide:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModePopupWindowStyle
+          @attr name com.systekcn.guide:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeSelectAllDrawable
+          @attr name com.systekcn.guide:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeShareDrawable
+          @attr name com.systekcn.guide:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeSplitBackground
+          @attr name com.systekcn.guide:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeStyle
+          @attr name com.systekcn.guide:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionModeWebSearchDrawable
+          @attr name com.systekcn.guide:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionOverflowButtonStyle
+          @attr name com.systekcn.guide:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:actionOverflowMenuStyle
+          @attr name com.systekcn.guide:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:activityChooserViewStyle
+          @attr name com.systekcn.guide:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:alertDialogButtonGroupStyle
+          @attr name com.systekcn.guide:alertDialogButtonGroupStyle
         */
         public static final int Theme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10615,27 +10622,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:alertDialogCenterButtons
+          @attr name com.systekcn.guide:alertDialogCenterButtons
         */
         public static final int Theme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:alertDialogStyle
+          @attr name com.systekcn.guide:alertDialogStyle
         */
         public static final int Theme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:alertDialogTheme
+          @attr name com.systekcn.guide:alertDialogTheme
         */
         public static final int Theme_alertDialogTheme = 94;
         /**
@@ -10651,117 +10658,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:autoCompleteTextViewStyle
+          @attr name com.systekcn.guide:autoCompleteTextViewStyle
         */
         public static final int Theme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:borderlessButtonStyle
+          @attr name com.systekcn.guide:borderlessButtonStyle
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonBarButtonStyle
+          @attr name com.systekcn.guide:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonBarNegativeButtonStyle
+          @attr name com.systekcn.guide:buttonBarNegativeButtonStyle
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonBarNeutralButtonStyle
+          @attr name com.systekcn.guide:buttonBarNeutralButtonStyle
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonBarPositiveButtonStyle
+          @attr name com.systekcn.guide:buttonBarPositiveButtonStyle
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonBarStyle
+          @attr name com.systekcn.guide:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonStyle
+          @attr name com.systekcn.guide:buttonStyle
         */
         public static final int Theme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:buttonStyleSmall
+          @attr name com.systekcn.guide:buttonStyleSmall
         */
         public static final int Theme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:checkboxStyle
+          @attr name com.systekcn.guide:checkboxStyle
         */
         public static final int Theme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:checkedTextViewStyle
+          @attr name com.systekcn.guide:checkedTextViewStyle
         */
         public static final int Theme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10772,11 +10779,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorAccent
+          @attr name com.systekcn.guide:colorAccent
         */
         public static final int Theme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10787,11 +10794,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorButtonNormal
+          @attr name com.systekcn.guide:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10802,11 +10809,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorControlActivated
+          @attr name com.systekcn.guide:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10817,11 +10824,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorControlHighlight
+          @attr name com.systekcn.guide:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10832,11 +10839,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorControlNormal
+          @attr name com.systekcn.guide:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10847,11 +10854,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorPrimary
+          @attr name com.systekcn.guide:colorPrimary
         */
         public static final int Theme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10862,11 +10869,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorPrimaryDark
+          @attr name com.systekcn.guide:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10877,21 +10884,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:colorSwitchThumbNormal
+          @attr name com.systekcn.guide:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:controlBackground
+          @attr name com.systekcn.guide:controlBackground
         */
         public static final int Theme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10903,51 +10910,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:dialogPreferredPadding
+          @attr name com.systekcn.guide:dialogPreferredPadding
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:dialogTheme
+          @attr name com.systekcn.guide:dialogTheme
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:dividerHorizontal
+          @attr name com.systekcn.guide:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:dividerVertical
+          @attr name com.systekcn.guide:dividerVertical
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:dropDownListViewStyle
+          @attr name com.systekcn.guide:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10959,21 +10966,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:dropdownListPreferredItemHeight
+          @attr name com.systekcn.guide:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:editTextBackground
+          @attr name com.systekcn.guide:editTextBackground
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10981,71 +10988,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:editTextColor
+          @attr name com.systekcn.guide:editTextColor
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:editTextStyle
+          @attr name com.systekcn.guide:editTextStyle
         */
         public static final int Theme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:homeAsUpIndicator
+          @attr name com.systekcn.guide:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:imageButtonStyle
+          @attr name com.systekcn.guide:imageButtonStyle
         */
         public static final int Theme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:listChoiceBackgroundIndicator
+          @attr name com.systekcn.guide:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:listDividerAlertDialog
+          @attr name com.systekcn.guide:listDividerAlertDialog
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:listPopupWindowStyle
+          @attr name com.systekcn.guide:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11057,11 +11064,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:listPreferredItemHeight
+          @attr name com.systekcn.guide:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11073,11 +11080,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:listPreferredItemHeightLarge
+          @attr name com.systekcn.guide:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11089,11 +11096,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:listPreferredItemHeightSmall
+          @attr name com.systekcn.guide:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11105,11 +11112,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:listPreferredItemPaddingLeft
+          @attr name com.systekcn.guide:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11121,31 +11128,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:listPreferredItemPaddingRight
+          @attr name com.systekcn.guide:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:panelBackground
+          @attr name com.systekcn.guide:panelBackground
         */
         public static final int Theme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:panelMenuListTheme
+          @attr name com.systekcn.guide:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11157,181 +11164,181 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:panelMenuListWidth
+          @attr name com.systekcn.guide:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:popupMenuStyle
+          @attr name com.systekcn.guide:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:popupWindowStyle
+          @attr name com.systekcn.guide:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:radioButtonStyle
+          @attr name com.systekcn.guide:radioButtonStyle
         */
         public static final int Theme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:ratingBarStyle
+          @attr name com.systekcn.guide:ratingBarStyle
         */
         public static final int Theme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:searchViewStyle
+          @attr name com.systekcn.guide:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:seekBarStyle
+          @attr name com.systekcn.guide:seekBarStyle
         */
         public static final int Theme_seekBarStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:selectableItemBackground
+          @attr name com.systekcn.guide:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:selectableItemBackgroundBorderless
+          @attr name com.systekcn.guide:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:spinnerDropDownItemStyle
+          @attr name com.systekcn.guide:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:spinnerStyle
+          @attr name com.systekcn.guide:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:switchStyle
+          @attr name com.systekcn.guide:switchStyle
         */
         public static final int Theme_switchStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceLargePopupMenu
+          @attr name com.systekcn.guide:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceListItem
+          @attr name com.systekcn.guide:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceListItemSmall
+          @attr name com.systekcn.guide:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceSearchResultSubtitle
+          @attr name com.systekcn.guide:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceSearchResultTitle
+          @attr name com.systekcn.guide:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:textAppearanceSmallPopupMenu
+          @attr name com.systekcn.guide:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11339,11 +11346,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:textColorAlertDialogListItem
+          @attr name com.systekcn.guide:textColorAlertDialogListItem
         */
         public static final int Theme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11351,31 +11358,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.systekcn.guide.debug:textColorSearchUrl
+          @attr name com.systekcn.guide:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:toolbarNavigationButtonStyle
+          @attr name com.systekcn.guide:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:toolbarStyle
+          @attr name com.systekcn.guide:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11385,11 +11392,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowActionBar
+          @attr name com.systekcn.guide:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11399,11 +11406,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowActionBarOverlay
+          @attr name com.systekcn.guide:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11413,11 +11420,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowActionModeOverlay
+          @attr name com.systekcn.guide:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11432,11 +11439,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowFixedHeightMajor
+          @attr name com.systekcn.guide:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11451,11 +11458,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowFixedHeightMinor
+          @attr name com.systekcn.guide:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11470,11 +11477,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowFixedWidthMajor
+          @attr name com.systekcn.guide:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11489,11 +11496,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowFixedWidthMinor
+          @attr name com.systekcn.guide:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11508,11 +11515,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowMinWidthMajor
+          @attr name com.systekcn.guide:windowMinWidthMajor
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11527,11 +11534,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowMinWidthMinor
+          @attr name com.systekcn.guide:windowMinWidthMinor
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11541,7 +11548,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:windowNoTitle
+          @attr name com.systekcn.guide:windowNoTitle
         */
         public static final int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a Toolbar.
@@ -11552,29 +11559,29 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.systekcn.guide.debug:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.systekcn.guide.debug:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.systekcn.guide.debug:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.systekcn.guide.debug:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.systekcn.guide.debug:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.systekcn.guide.debug:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.systekcn.guide.debug:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.systekcn.guide.debug:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.systekcn.guide.debug:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.systekcn.guide.debug:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.systekcn.guide.debug:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.systekcn.guide.debug:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.systekcn.guide.debug:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.systekcn.guide.debug:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.systekcn.guide.debug:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.systekcn.guide.debug:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.systekcn.guide.debug:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.systekcn.guide.debug:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.systekcn.guide.debug:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.systekcn.guide.debug:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.systekcn.guide.debug:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.systekcn.guide.debug:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.systekcn.guide.debug:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.systekcn.guide:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.systekcn.guide:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.systekcn.guide:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.systekcn.guide:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.systekcn.guide:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.systekcn.guide:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.systekcn.guide:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.systekcn.guide:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.systekcn.guide:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.systekcn.guide:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.systekcn.guide:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.systekcn.guide:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.systekcn.guide:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.systekcn.guide:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.systekcn.guide:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.systekcn.guide:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.systekcn.guide:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.systekcn.guide:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.systekcn.guide:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.systekcn.guide:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.systekcn.guide:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.systekcn.guide:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.systekcn.guide:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -11624,7 +11631,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11634,21 +11641,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:collapseContentDescription
+          @attr name com.systekcn.guide:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:collapseIcon
+          @attr name com.systekcn.guide:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11660,11 +11667,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetEnd
+          @attr name com.systekcn.guide:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11676,11 +11683,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetLeft
+          @attr name com.systekcn.guide:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11692,11 +11699,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetRight
+          @attr name com.systekcn.guide:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11708,21 +11715,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:contentInsetStart
+          @attr name com.systekcn.guide:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:logo
+          @attr name com.systekcn.guide:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11732,11 +11739,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:logoDescription
+          @attr name com.systekcn.guide:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11748,11 +11755,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:maxButtonHeight
+          @attr name com.systekcn.guide:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11762,31 +11769,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:navigationContentDescription
+          @attr name com.systekcn.guide:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:navigationIcon
+          @attr name com.systekcn.guide:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:popupTheme
+          @attr name com.systekcn.guide:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11796,21 +11803,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:subtitle
+          @attr name com.systekcn.guide:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:subtitleTextAppearance
+          @attr name com.systekcn.guide:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11821,11 +11828,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:subtitleTextColor
+          @attr name com.systekcn.guide:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#title}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11835,11 +11842,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:title
+          @attr name com.systekcn.guide:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11851,11 +11858,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleMarginBottom
+          @attr name com.systekcn.guide:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11867,11 +11874,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleMarginEnd
+          @attr name com.systekcn.guide:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11883,11 +11890,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleMarginStart
+          @attr name com.systekcn.guide:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11899,11 +11906,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleMarginTop
+          @attr name com.systekcn.guide:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11915,21 +11922,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleMargins
+          @attr name com.systekcn.guide:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:titleTextAppearance
+          @attr name com.systekcn.guide:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11940,7 +11947,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:titleTextColor
+          @attr name com.systekcn.guide:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -11951,9 +11958,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.systekcn.guide.debug:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.systekcn.guide.debug:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.systekcn.guide.debug:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.systekcn.guide:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.systekcn.guide:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.systekcn.guide:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -11978,7 +11985,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -11990,11 +11997,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:paddingEnd
+          @attr name com.systekcn.guide:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -12006,17 +12013,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:paddingStart
+          @attr name com.systekcn.guide:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.systekcn.guide.debug:theme
+          @attr name com.systekcn.guide:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -12026,8 +12033,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.systekcn.guide.debug:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.systekcn.guide.debug:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.systekcn.guide:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.systekcn.guide:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -12043,7 +12050,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -12054,11 +12061,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.systekcn.guide.debug:backgroundTint
+          @attr name com.systekcn.guide:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.systekcn.guide.debug.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.systekcn.guide.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -12074,7 +12081,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.systekcn.guide.debug:backgroundTintMode
+          @attr name com.systekcn.guide:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

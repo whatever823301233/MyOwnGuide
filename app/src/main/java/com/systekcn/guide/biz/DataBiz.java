@@ -1,6 +1,9 @@
 package com.systekcn.guide.biz;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
@@ -14,10 +17,12 @@ import com.systekcn.guide.entity.BeaconBean;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.LabelBean;
 import com.systekcn.guide.utils.ExceptionUtil;
+import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.MyHttpUtil;
 
-import java.util.ArrayList;
-import java.util.HashSet;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -78,10 +83,9 @@ public class DataBiz implements IConstants{
     public  static<T> boolean saveListToSQLite(List<T> list){
         boolean isSuccess=true;
         if(list==null){return false; }
-        List<T> listWithoutDup= new ArrayList<>(new HashSet<>(list)) ;
         DbUtils db=DbUtils.create(MyApplication.get());
         try {
-            db.saveOrUpdateAll(listWithoutDup);
+            db.saveOrUpdateAll(list);
         } catch (Exception e) {
             ExceptionUtil.handleException(e);
             isSuccess=false;
@@ -134,16 +138,38 @@ public class DataBiz implements IConstants{
         }
         return isSuccess;
     }
+
+
+
+    public static List<ExhibitBean> getCollectionExhibitListFromDB(String museumId) {
+        List<ExhibitBean> collectionList=null;
+        DbUtils db=DbUtils.create(MyApplication.get());
+        try {
+            collectionList= db.findAll(Selector.from(ExhibitBean.class).where(SAVE_FOR_PERSON,"=", true).and(MUSEUM_ID, LIKE, "%" + museumId + "%"));
+        } catch (DbException e) {
+            ExceptionUtil.handleException(e);
+        }finally {
+            if(db!=null){
+                db.close();
+            }
+        }
+        return collectionList;
+    }
+
     public  static boolean saveAllJsonData(String museumID) {
         List<BeaconBean> beaconList = getEntityListFromNet(BeaconBean.class, URL_BEACON_LIST + museumID);
         List<LabelBean> labelList = getEntityListFromNet(LabelBean.class, URL_LABELS_LIST + museumID);
         List<ExhibitBean> exhibitList = getEntityListFromNet(ExhibitBean.class, URL_EXHIBIT_LIST + museumID);
         if(beaconList == null || labelList == null || exhibitList == null //|| mapList == null//|| mapList.size() == 0
                 || beaconList.size() == 0 || labelList.size() == 0 || exhibitList.size() == 0 ){return false;}
-        //deleteOldJsonData(museumID);
+        List<ExhibitBean> collectionList=getCollectionExhibitListFromDB(museumID);
+        if(collectionList!=null&&collectionList.size()>0){
+            exhibitList.removeAll(collectionList);
+        }
         return saveListToSQLite(beaconList) && saveListToSQLite(labelList) && saveListToSQLite(exhibitList);// && saveEntityToSQLite(mapList)
-
     }
+
+
     public  static<T>  List<T> getLocalListById(Class<T> clazz, String museumID) {
         DbUtils db=DbUtils.create(MyApplication.get());
         List<T>list=null;
@@ -154,4 +180,117 @@ public class DataBiz implements IConstants{
         }
         return list;
     }
+
+    public static List<ExhibitBean> getExhibitListByBeaconId(String museumId,String beaconId){
+
+        DbUtils db=DbUtils.create(MyApplication.get());
+        List<ExhibitBean> list=null;
+        if(TextUtils.isEmpty(beaconId)){return null;}
+        try {
+            list=db.findAll(Selector.from(ExhibitBean.class).where(BEACON_ID,LIKE,"%"+beaconId+"%"));
+        } catch (DbException e) {
+            ExceptionUtil.handleException(e);
+        }
+        if(list!=null){return list;}
+        String url=URL_EXHIBIT_LIST+museumId+"&beaconId="+beaconId;
+        String response=MyHttpUtil.sendGet(url);
+        if(TextUtils.isEmpty(response)){return null;}
+        list=JSON.parseArray(response,ExhibitBean.class);
+        return list;
+    }
+
+    /**
+     * 向SP文件存储数据
+     * @param context
+     * @param key  键名
+     * @param value  键值
+     */
+    public static void saveTempValue(Context context, String key, Object value) {
+        try {
+            SharedPreferences sp = context.getApplicationContext().getSharedPreferences("temp", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sp.edit();
+            if (value instanceof Integer) {
+                editor.putInt(key, (Integer) value);
+            } else if (value instanceof String) {
+                editor.putString(key, (String) value);
+            } else if (value instanceof Boolean) {
+                editor.putBoolean(key, (Boolean) value);
+            }
+            editor.apply();
+        } catch (Exception e) {
+            ExceptionUtil.handleException(e);
+        }
+    }
+
+
+    public static  String getCurrentMuseumId(){
+       return (String) getTempValue(MyApplication.get(),SP_MUSEUM_ID,"");
+    }
+    /**
+     * 从SP文件中读取指定Key的值
+     * type=1/数值 defValue=-1 | type=2/字符串 defValue=null | type=3/布尔
+     * defValue=false
+     * @param context
+     * @param key  键名
+     * @return 键值
+     */
+    public static Object getTempValue(Context context, String key, Object defaultObject) {
+        try {
+            SharedPreferences sp = context.getApplicationContext().getSharedPreferences("temp", Context.MODE_PRIVATE);
+            if (defaultObject instanceof Integer) {
+                return sp.getInt(key, (Integer) defaultObject);
+            } else if (defaultObject instanceof String) {
+                return sp.getString(key, (String) defaultObject);
+            } else if (defaultObject instanceof Boolean) {
+                return sp.getBoolean(key, (Boolean) defaultObject);
+            }
+        } catch (Exception e) {
+            ExceptionUtil.handleException(e);
+        }
+        return null;
+    }
+
+    /**
+     * 清空
+     * @param context
+     */
+    public static void clearTempValues(Context context) {
+        try {
+            SharedPreferences sp = context.getSharedPreferences("temp", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sp.edit();
+            editor.clear();
+            editor.apply();
+        } catch (Exception e) {
+            ExceptionUtil.handleException(e);
+        }
+    }
+
+    /** 保存方法 */
+    public static boolean saveBitmap(String path,String name,Bitmap bm) {
+        boolean isSave=false;
+        File f = new File(path,name);
+        if (!f.exists()) {
+            f.delete();
+        }
+        FileOutputStream out=null;
+        try {
+            out = new FileOutputStream(f);
+            bm.compress(Bitmap.CompressFormat.JPEG, 100, out);
+            out.flush();
+            isSave=true;
+        } catch (IOException e) {
+            ExceptionUtil.handleException(e);
+        }finally {
+            if(out!=null){
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    ExceptionUtil.handleException(e);
+                }
+            }
+        }
+        LogUtil.i("ZHANG", isSave + "image 存储路径==" + isSave + path);
+        return isSave;
+    }
+
 }

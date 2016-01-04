@@ -72,4 +72,7 @@
     <string name="label_activity_collection_shike">石刻</string>
 
 
+    <string name="search_view_hint">请输入关键字...</string>
+
+
 </resources>

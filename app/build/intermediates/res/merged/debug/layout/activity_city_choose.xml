@@ -16,7 +16,7 @@
         android:drawableLeft="@drawable/search_bar_icon_normal"
         android:hint="请输入关键字"
         android:singleLine="true"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >

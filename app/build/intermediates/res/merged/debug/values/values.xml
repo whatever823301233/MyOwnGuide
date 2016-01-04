@@ -3239,6 +3239,7 @@ If the Library as you received it specifies that a proxy can decide whether futu
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
     <string name="material_drawer_close">Close</string>
     <string name="material_drawer_open">Open</string>
+    <string name="search_view_hint">请输入关键字...</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="version">Version</string>
     <style name="AboutLibrariesTheme" parent="Theme.AppCompat.NoActionBar">

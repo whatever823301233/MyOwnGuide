@@ -62,7 +62,7 @@ public class ListAndMapActivity extends BaseActivity {
                 .withFullscreen(true)
                 .withCustomView(view)
                 .withHeader(R.layout.header)
-                //.inflateMenu(R.menu.example_menu)
+                        //.inflateMenu(R.menu.example_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
@@ -86,13 +86,17 @@ public class ListAndMapActivity extends BaseActivity {
         radioGroupTitle=(RadioGroup)findViewById(R.id.radioGroupTitle);
     }
 
-    private void setDefaultFragment()
-    {
+    private void setDefaultFragment() {
+        String flag=getIntent().getStringExtra(INTENT_FLAG_GUIDE_MAP);
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         exhibitListFragment = ExhibitListFragment.newInstance();
         mapFragment = new MapFragment();
-        transaction.replace(R.id.llExhibitListContent, exhibitListFragment);
+        if(flag.equals(INTENT_FLAG_GUIDE)){
+            transaction.replace(R.id.llExhibitListContent, exhibitListFragment);
+        }else{
+            transaction.replace(R.id.llExhibitListContent, mapFragment);
+        }
         transaction.commit();
     }
 

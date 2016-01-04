@@ -53,7 +53,6 @@ public class Tools implements IConstants{
 
 	}
 
-
 	public static  byte[] BitmapToBytes(Bitmap bm) {
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		bm.compress(Bitmap.CompressFormat.PNG, 100, baos);

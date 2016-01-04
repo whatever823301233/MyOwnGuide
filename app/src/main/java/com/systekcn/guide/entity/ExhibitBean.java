@@ -23,7 +23,7 @@ public class ExhibitBean extends BaseEntity {
     private int version;
     private int priority;
     private double distance;
-    private boolean isSaveForPerson;
+    private boolean saveForPerson;
 
     public ExhibitBean(){}
 
@@ -180,11 +180,11 @@ public class ExhibitBean extends BaseEntity {
     }
 
     public boolean isSaveForPerson() {
-        return isSaveForPerson;
+        return saveForPerson;
     }
 
-    public void setIsSaveForPerson(boolean isSaveForPerson) {
-        this.isSaveForPerson = isSaveForPerson;
+    public void setSaveForPerson(boolean saveForPerson) {
+        this.saveForPerson = saveForPerson;
     }
 
     @Override

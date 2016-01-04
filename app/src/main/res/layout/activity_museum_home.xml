@@ -49,7 +49,7 @@
                         android:layout_below="@id/iv_home_circle_guide" />
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/rl_map_home"
+                    android:id="@+id/rlMapHome"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
@@ -94,7 +94,7 @@
                         style="@style/normal_image_view" />
 
                     <TextView
-                        android:text="专题"
+                        android:text="精品"
                         style="@style/tv_home_menu"
                         android:layout_below="@id/iv_home_circle_essence" />
                 </RelativeLayout>
@@ -124,6 +124,7 @@
                         android:layout_below="@id/iv_home_circle_nearly"/>
                 </RelativeLayout>
                 <RelativeLayout
+                    android:id="@+id/rlCollectionHome"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">

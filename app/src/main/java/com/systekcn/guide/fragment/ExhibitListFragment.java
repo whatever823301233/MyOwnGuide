@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
@@ -23,6 +24,7 @@ import com.systekcn.guide.adapter.ExhibitAdapter;
 import com.systekcn.guide.entity.ExhibitBean;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ExhibitListFragment extends Fragment implements IConstants {
 
@@ -33,6 +35,7 @@ public class ExhibitListFragment extends Fragment implements IConstants {
     private Handler handler;
     private static ExhibitListFragment exhibitListFragment;
     private ListChangeReceiver listChangeReceiver;
+    private List<ExhibitBean> currentExhibitList;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -59,7 +62,7 @@ public class ExhibitListFragment extends Fragment implements IConstants {
     private void registerReceiver() {
         listChangeReceiver = new ListChangeReceiver();
         IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(ACTION_NOTIFY_NEARLY_EXHIBIT_LIST_CHANGE);
+        intentFilter.addAction(INTENT_EXHIBIT_LIST);
         activity.registerReceiver(listChangeReceiver, intentFilter);
     }
 
@@ -73,13 +76,10 @@ public class ExhibitListFragment extends Fragment implements IConstants {
         return view;
     }
 
-    private void initData() {
 
-        if(application.currentExhibitBeanList!=null){
-            exhibitAdapter =new ExhibitAdapter(activity,application.currentExhibitBeanList);
-        }else{
-            exhibitAdapter =new ExhibitAdapter(activity,new ArrayList<ExhibitBean>());
-        }
+    private void initData() {
+        currentExhibitList=new ArrayList<>();
+        exhibitAdapter =new ExhibitAdapter(activity,currentExhibitList);
         listView.setAdapter(exhibitAdapter);
     }
 
@@ -118,7 +118,13 @@ public class ExhibitListFragment extends Fragment implements IConstants {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
+            String action=intent.getAction();
+            if(action.equals(INTENT_EXHIBIT_LIST)){
+                String exhibitJson=intent.getStringExtra(INTENT_EXHIBIT_LIST);
+                currentExhibitList= JSON.parseArray(exhibitJson,ExhibitBean.class);
+                if(currentExhibitList==null){return;}
+                handler.sendEmptyMessage(MSG_WHAT_UPDATE_DATA_SUCCESS);
+            }
         }
     }
 
@@ -133,12 +139,9 @@ public class ExhibitListFragment extends Fragment implements IConstants {
         @Override
         public void handleMessage(Message msg) {
             if(msg.what==MSG_WHAT_UPDATE_DATA_SUCCESS){
-                if(exhibitAdapter !=null&&application.currentExhibitBeanList.size()>0){
-                    exhibitAdapter.updateData(application.currentExhibitBeanList);
-                }
+                if(exhibitAdapter ==null||currentExhibitList==null){return;}
+                exhibitAdapter.updateData(currentExhibitList);
             }
         }
     }
-
-
 }

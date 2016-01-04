@@ -9,6 +9,7 @@ import android.os.Message;
 import android.os.PersistableBundle;
 import android.text.TextUtils;
 import android.view.Display;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
@@ -36,7 +38,7 @@ import java.io.IOException;
 public class MuseumHomeActivity extends BaseActivity {
 
     /*抽屉*/
-    private Drawer result;
+    private Drawer drawer;
     /*当前博物馆ID*/
     private String currentMuseumId;
     private MuseumBean currentMuseum;
@@ -46,15 +48,17 @@ public class MuseumHomeActivity extends BaseActivity {
     private AlertDialog progressDialog;
     private ImageView titleBarDrawer;
     private TextView titleBarTopic;
-
     private LinearLayout llMuseumLargestIcon;
     private TextView tvMuseumIntroduce;
     private RelativeLayout rlGuideHome;
+    private RelativeLayout rlMapHome;
     private RelativeLayout rlTopicHome;
     private Handler handler;
     private String currentMuseumStr;
     private MediaPlayer mediaPlayer;
     private ImageView ivPlayStateCtrl;
+    private RelativeLayout rlCollectionHome;
+    private ImageView titleBarSearch;
 
 
     @Override
@@ -73,12 +77,11 @@ public class MuseumHomeActivity extends BaseActivity {
         initView();
         addListener();
         /**数据初始化好之前显示加载对话框*/
-        showProgressDialog();
-
+        //showProgressDialog();
     }
 
     private void initDrawer() {
-        result = new DrawerBuilder()
+        drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withFullscreen(true)
                 .withHeader(R.layout.header)
@@ -89,12 +92,11 @@ public class MuseumHomeActivity extends BaseActivity {
                         if (drawerItem instanceof Nameable) {
                             //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
                         }
-
                         return false;
                     }
                 }).build();
         // set the selection to the item with the identifier 5
-        result.setSelection(5, false);
+        drawer.setSelection(5, false);
     }
 
     @Override
@@ -113,10 +115,14 @@ public class MuseumHomeActivity extends BaseActivity {
     }
 
     private void addListener() {
+        titleBarSearch.setOnClickListener(onClickListener);
         rlGuideHome.setOnClickListener(onClickListener);
+        rlMapHome.setOnClickListener(onClickListener);
         rlTopicHome.setOnClickListener(onClickListener);
         titleBarDrawer.setOnClickListener(onClickListener);
         ivPlayStateCtrl.setOnClickListener(onClickListener);
+        rlCollectionHome.setOnClickListener(onClickListener);
+
     }
 
     private View.OnClickListener onClickListener=new View.OnClickListener() {
@@ -126,18 +132,33 @@ public class MuseumHomeActivity extends BaseActivity {
             switch (v.getId()){
                 case R.id.rlGuideHome:
                     intent=new Intent(MuseumHomeActivity.this,ListAndMapActivity.class);
+                    intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_GUIDE);
+                    startActivity(intent);
+                    break;
+                case R.id.rlMapHome:
+                    intent=new Intent(MuseumHomeActivity.this,ListAndMapActivity.class);
+                    intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_MAP);
+                    startActivity(intent);
+                    break;
+                case R.id.titleBarRightImg:
+                    intent=new Intent(MuseumHomeActivity.this,SearchActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.rlTopicHome:
                     intent=new Intent(MuseumHomeActivity.this,TopicActivity.class);
-                    intent.putExtra(MUSEUM_ID,currentMuseumId);
+                    intent.putExtra(INTENT_MUSEUM_ID,currentMuseumId);
+                    startActivity(intent);
+                    break;
+                case R.id.rlCollectionHome:
+                    intent=new Intent(MuseumHomeActivity.this,CollectionActivity.class);
+                    intent.putExtra(INTENT_MUSEUM_ID,currentMuseumId);
                     startActivity(intent);
                     break;
                 case R.id.titleBarDrawer:
-                    if (result.isDrawerOpen()) {
-                        result.closeDrawer();
+                    if (drawer.isDrawerOpen()) {
+                        drawer.closeDrawer();
                     } else {
-                        result.openDrawer();
+                        drawer.openDrawer();
                     }
                     break;
                 case R.id.ivPlayStateCtrl:
@@ -180,6 +201,7 @@ public class MuseumHomeActivity extends BaseActivity {
                 }
                 if(TextUtils.isEmpty(currentMuseumId)){return;}
                 LogUtil.i("ZHANG",currentMuseumId);
+                DataBiz.saveTempValue(MuseumHomeActivity.this, SP_MUSEUM_ID,currentMuseumId);
                 boolean flag=DataBiz.saveAllJsonData(currentMuseumId);
                 if(flag){
                     LogUtil.i("ZHANG","DataBiz.saveAllJsonData 数据更新成功");
@@ -202,14 +224,16 @@ public class MuseumHomeActivity extends BaseActivity {
 
     private void initView() {
         titleBarDrawer = (ImageView) findViewById(R.id.titleBarDrawer);
+        titleBarSearch = (ImageView) findViewById(R.id.titleBarRightImg);
         ivPlayStateCtrl = (ImageView) findViewById(R.id.ivPlayStateCtrl);
         titleBarTopic = (TextView) findViewById(R.id.titleBarTopic);
         llMuseumLargestIcon = (LinearLayout) findViewById(R.id.llMuseumLargestIcon);
         tvMuseumIntroduce = (TextView) findViewById(R.id.tvMuseumIntroduce);
         rlGuideHome = (RelativeLayout) findViewById(R.id.rlGuideHome);
+        rlMapHome = (RelativeLayout) findViewById(R.id.rlMapHome);
         rlTopicHome = (RelativeLayout) findViewById(R.id.rlTopicHome);
+        rlCollectionHome = (RelativeLayout) findViewById(R.id.rlCollectionHome);
     }
-
 
     private void showData(){
         if(currentMuseum!=null){
@@ -282,6 +306,31 @@ public class MuseumHomeActivity extends BaseActivity {
         super.onSaveInstanceState(outState, outPersistentState);
     }
 
+    /*用于计算点击返回键时间*/
+    private long mExitTime=0;
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if(drawer.isDrawerOpen()){
+                drawer.closeDrawer();
+            }else {
+                if ((System.currentTimeMillis() - mExitTime) > 2000) {
+                    Toast.makeText(this, "在按一次退出", Toast.LENGTH_SHORT).show();
+                    mExitTime = System.currentTimeMillis();
+                } else {
+                    application.exit();
+                }
+            }
+            return true;
+        }
+        //拦截MENU按钮点击事件，让他无任何操作
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -305,5 +354,4 @@ public class MuseumHomeActivity extends BaseActivity {
             }
         }
     }
-
 }

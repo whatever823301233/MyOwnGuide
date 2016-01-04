@@ -15,6 +15,7 @@ import com.mikepenz.iconics.IconicsDrawable;
 import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
+import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.manager.MediaServiceManager;
@@ -205,6 +206,7 @@ public class MyApplication extends Application implements IConstants{
                 }
             }
         }
+        DataBiz.clearTempValues(getAppContext());
         System.exit(0);
     }
 

@@ -20,7 +20,7 @@
                 android:textSize="15sp"
                 style="@style/text_view_title_bar"/>
             <ImageView
-                android:id="@+id/title_bar_search"
+                android:id="@+id/titleBarRightImg"
                 style="@style/normal_image_view"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"

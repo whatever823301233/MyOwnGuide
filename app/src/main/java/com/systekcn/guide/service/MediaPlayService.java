@@ -29,38 +29,24 @@ public class MediaPlayService extends Service implements IConstants {
 
     /** 播放器*/
     private MediaPlayer mediaPlayer;
-    /*是否正在播放*/
+    /**是否正在播放*/
     private boolean isPlaying = false;
     /**服务Binder*/
     private Binder mediaServiceBinder = new MediaServiceBinder();
-    /**
-     * 当前展品
-     */
+    /**当前展品*/
     private ExhibitBean currentExhibit;
-    /**
-     * 当前位置
-     */
+    /**当前位置*/
     private int currentPosition;
-    /**
-     * message类型之更新进度
-     */
+    /** message类型之更新进度*/
     private static final int updateProgress = 1;
-    /**
-     * message类型之更新展品
-     */
+    /**message类型之更新展品*/
     private static final int updateCurrentMusic = 2;
-    /**
-     * message类型之更新播放长度
-     */
+    /** message类型之更新播放长度*/
     private static final int updateDuration = 3;
     private MyApplication application;
     private int duration;
     private DownloadAudioTask downloadAudioTask;
     private LockScreenReceiver mReceiver;
-
-    public static final String ACTION_UPDATE_PROGRESS = "com.systekcn.guide.UPDATE_PROGRESS";
-    public static final String ACTION_UPDATE_DURATION = "com.systekcn.guide.UPDATE_DURATION";
-    public static final String ACTION_UPDATE_CURRENT_EXHIBIT = "com.systekcn.guide.UPDATE_CURRENT_MUSIC";
 
     private Handler handler = new Handler() {
 

@@ -42,7 +42,7 @@ public class TopicActivity extends BaseActivity {
     protected void initialize(Bundle savedInstanceState) {
         setContentView(R.layout.activity_topic);
         Intent intent=getIntent();
-        currentMuseumId =intent.getStringExtra(MUSEUM_ID);
+        currentMuseumId =intent.getStringExtra(INTENT_MUSEUM_ID);
         //totalExhibitList =application.totalExhibitBeanList;
         /*初始化*/
         init();
