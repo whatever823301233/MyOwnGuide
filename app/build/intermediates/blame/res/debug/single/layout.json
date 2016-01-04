@@ -52,20 +52,20 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_city_choose.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_city_choose.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_collection.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_collection.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_divider.xml",
-        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_divider.xml"
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_city_choose.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_city_choose.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_image.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\fragment_image.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_divider.xml",
+        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_divider.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_exhibit_list.xml",
@@ -80,12 +80,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\layout\\item_multi_angle_img.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
-        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_welcome.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -112,16 +112,16 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\line_lyric.xml",
-        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\line_lyric.xml"
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\line_lyric.xml",
+        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\line_lyric.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_persistent_drawer.xml",
@@ -640,6 +640,10 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_lines.xml"
     },
     {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search.xml",
+        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
@@ -734,6 +738,10 @@
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_collection.xml",
+        "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_collection.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",

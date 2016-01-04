@@ -140,13 +140,11 @@ public class ExhibitAdapter extends BaseAdapter implements IConstants {
             // 显示sdcard
             ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, viewHolder.ivExhibitIcon);
         } else {
-            // 服务器上存的imageUrl有域名如http://www.systek.com.cn/1.png
             iconUrl = BASE_URL + iconUrl;
             ImageLoaderUtil.displayNetworkImage(context, iconUrl, viewHolder.ivExhibitIcon);
         }
         return convertView;
     }
-
 
     class ViewHolder{
         TextView tvExhibitName, tvExhibitYears, tvExhibitPosition,tvExhibitDistance;

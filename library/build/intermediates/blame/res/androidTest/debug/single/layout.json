@@ -108,12 +108,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\material_drawer_slider.xml",
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\material_drawer_slider.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",

@@ -32,12 +32,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\drawable\\material_drawer_shadow_top.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\material_drawer_shadow_bottom.xml",
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\drawable\\material_drawer_shadow_bottom.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
@@ -56,12 +56,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\material_drawer_shadow_left.9.png",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\drawable\\material_drawer_shadow_left.9.png"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\material_drawer_shadow_left.9.png",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\drawable\\material_drawer_shadow_left.9.png"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
