@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.systekcn.guide.IConstants;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.activity.MuseumHomeActivity;
 import com.systekcn.guide.biz.DownloadTask;
@@ -25,6 +26,7 @@ import java.util.List;
 
 /**
  * Created by Qiang on 2015/11/2.
+ *
  */
 public class DownloadAdapter extends BaseAdapter implements IConstants {
 
@@ -88,7 +90,7 @@ public class DownloadAdapter extends BaseAdapter implements IConstants {
             viewHolder=(ViewHolder)convertView.getTag();
         }
         final MuseumBean bean = getItem(position);
-        final boolean isDownload=bean.isDownload();
+        final boolean isDownload= (boolean) Tools.getValue(MyApplication.get(), bean.getId(), false);
         LogUtil.i("ZHANG", "测试数据isDownload----" + isDownload);
         if(isDownload){
             viewHolder.ivCtrl.setVisibility(View.GONE);
@@ -106,7 +108,7 @@ public class DownloadAdapter extends BaseAdapter implements IConstants {
         }else{
             viewHolder.tvState.setVisibility(View.GONE);
             viewHolder.ivCtrl.setVisibility(View.VISIBLE);
-            //viewHolder.ivCtrl.setBackgroundResource(R.drawable.btn_download_pause);
+            viewHolder.ivCtrl.setBackground(context.getResources().getDrawable(R.drawable.iv_play_state_stop));
         }
         String iconPath=bean.getIconUrl();
         String name= Tools.changePathToName(iconPath);
@@ -117,18 +119,35 @@ public class DownloadAdapter extends BaseAdapter implements IConstants {
             ImageLoaderUtil.displayNetworkImage(context, BASE_URL + iconPath, viewHolder.ivIcon);
         }
 
-        viewHolder.ivCtrl.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener ll=new View.OnClickListener() {
+            DownloadTask task=null;
             @Override
             public void onClick(View v) {
                 if(isDownload){return;}
-                DownloadTask task=new DownloadTask(bean.getId());
-                viewHolder.setNewTask(task);
-                task.start();
+                else if(bean.getState()==0){
+                    task=new DownloadTask(bean.getId());
+                    viewHolder.setNewTask(task);
+                    task.start();
+                    bean.setState(1);
+                    v.setBackground(context.getResources().getDrawable(R.drawable.iv_play_state_open));
+                }else if(bean.getState()==1){
+                    if(task==null){return;}
+                    task.pause();
+                    v.setBackground(context.getResources().getDrawable(R.drawable.iv_play_state_stop));
+                    bean.setState(2);
+                }else if(bean.getState()==2){
+                    if(task==null){return;}
+                    task.toContinue();
+                    v.setBackground(context.getResources().getDrawable(R.drawable.iv_play_state_open));
+                    bean.setState(1);
+                }
             }
-        });
-
+        };
+        viewHolder.ivCtrl.setOnClickListener(ll);
         return convertView;
     }
+
+
     public class ViewHolder {
         public   ImageView ivIcon,ivCtrl;
         public ProgressBar progressBar;

@@ -1,10 +1,14 @@
 package com.systekcn.guide.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.DownloadAdapter;
 import com.systekcn.guide.biz.DataBiz;
@@ -27,6 +31,21 @@ public class DownloadActivity extends BaseActivity {
         setContentView(R.layout.activity_download);
         initData();
         initView();
+        addListener();
+    }
+
+    private void addListener() {
+        listViewDownload.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MuseumBean museumBean=museumList.get(position);
+                String museumStr= JSON.toJSONString(museumBean);
+                Intent intent=new Intent(DownloadActivity.this,MuseumHomeActivity.class);
+                intent.putExtra(INTENT_MUSEUM,museumStr);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void initData() {

@@ -1,11 +1,8 @@
 package com.systekcn.guide.biz;
 
-import android.content.Intent;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.systekcn.guide.IConstants;
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.MyHttpUtil;
@@ -27,10 +24,10 @@ public class DownloadBiz implements IConstants {
     public  boolean downloadPause;
     /**下载文件个数*/
     private int count;
-    public boolean downloadOver;
+    public boolean downloadOver=false;
     public int getProgress(){
-
-        return count*100/totalSize>100?100:count;
+        int progress=count*100/totalSize>100?100:count;
+        return progress;
     }
 
     /** 获得assets资源json */
@@ -115,23 +112,15 @@ public class DownloadBiz implements IConstants {
             ExceptionUtil.handleException(e);
         }
         if (url.endsWith(".jpg")) {
-            LogUtil.i("jpg文件下载成功", url.substring(url.lastIndexOf("/") + 1) + "剩余个数" + count);
+            LogUtil.i("ZHANG","jpg文件下载成功"+ url.substring(url.lastIndexOf("/") + 1) + "下载个数" + count);
         }else if (url.endsWith(".png")) {
-            LogUtil.i("png文件下载成功", url.substring(url.lastIndexOf("/") + 1) + "剩余个数" + count);
+            LogUtil.i("ZHANG","png文件下载成功"+ url.substring(url.lastIndexOf("/") + 1) + "下载个数" + count);
         }else if (url.endsWith(".lrc")) {
-            LogUtil.i("lrc文件下载成功", url.substring(url.lastIndexOf("/") + 1) + "剩余个数" + count);
+            LogUtil.i("ZHANG","lrc文件下载成功"+ url.substring(url.lastIndexOf("/") + 1) + "下载个数" + count);
         } else if (url.endsWith(".mp3")) {
-            LogUtil.i("mp3文件下载成功", url.substring(url.lastIndexOf("/") + 1) + "剩余个数" + count);
+            LogUtil.i("ZHANG","mp3文件下载成功"+ url.substring(url.lastIndexOf("/") + 1) + "下载个数" + count);
         } else if (url.endsWith(".wav")) {
-            LogUtil.i("wav文件下载成功", url.substring(url.lastIndexOf("/") + 1) + "剩余个数" + count);
-        }
-        if (count == totalSize) {
-            long cost = System.currentTimeMillis() - startTime;
-            LogUtil.i("下载执行完毕", "用时----------" + cost / 1000 + "秒");
-            Intent in = new Intent();
-            in.setAction(ACTION_PROGRESS);
-            in.putExtra(ACTION_PROGRESS, 100);// currentSize*100/totalSize
-            MyApplication.get().sendBroadcast(in);
+            LogUtil.i("ZHANG","wav文件下载成功"+ url.substring(url.lastIndexOf("/") + 1) + "下载个数" + count);
         }
     }
 }

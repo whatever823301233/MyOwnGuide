@@ -20,8 +20,16 @@ public class MuseumBean extends BaseEntity {
 	private int version;
 	private int priority ;
     private boolean isDownload;
+    private int state;
 
-	public String getId() {
+    public int getState() {
+        return state;
+    }
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public String getId() {
 		return id;
 	}
 	public void setId(String id) {

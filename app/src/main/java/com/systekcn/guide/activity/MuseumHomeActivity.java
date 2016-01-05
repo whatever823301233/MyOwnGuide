@@ -65,20 +65,27 @@ public class MuseumHomeActivity extends BaseActivity {
     @Override
     protected void initialize(Bundle savedInstanceState) {
         setContentView(R.layout.activity_museum_home);
+        WindowManager windowManager = getWindowManager();
+        Display display = windowManager.getDefaultDisplay();
+        screenWidth = display.getWidth();
+        handler=new MyHandler();
         initDrawer();
         Intent intent =getIntent();
         currentMuseumStr=intent.getStringExtra(INTENT_MUSEUM);
         initData();
         // TODO: 2016/1/3
         application.currentMuseumId=currentMuseumId;
-        WindowManager windowManager = getWindowManager();
-        Display display = windowManager.getDefaultDisplay();
-        screenWidth = display.getWidth();
-        handler=new MyHandler();
         initView();
         addListener();
         /**数据初始化好之前显示加载对话框*/
         //showProgressDialog();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        currentMuseumStr=intent.getStringExtra(INTENT_MUSEUM);
+        initData();
+        application.currentMuseumId=currentMuseumId;
     }
 
     private void initDrawer() {
@@ -326,7 +333,7 @@ public class MuseumHomeActivity extends BaseActivity {
                     Toast.makeText(this, "在按一次退出", Toast.LENGTH_SHORT).show();
                     mExitTime = System.currentTimeMillis();
                 } else {
-                    application.exit();
+                    MyApplication.exit();
                 }
             }
             return true;

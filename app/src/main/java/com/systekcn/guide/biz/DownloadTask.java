@@ -64,8 +64,21 @@ public class DownloadTask extends Thread implements  IConstants {
         sendProgress();
         downloadBiz.downloadAssets(assetsList, 0, assetsList.size(), museumId);
         //*下载完毕，存储状态
-        Tools.saveValue(MyApplication.get(), museumId, "true");
+        Tools.saveValue(MyApplication.get(), museumId, true);
         LogUtil.i("ZHANG", "下载状态已保存");
+        if(!taskListeners.isEmpty()){
+            for(TaskListener l:taskListeners){
+                l.onProgressChanged(downloadBiz.getProgress());
+            }
+        }
+    }
+
+
+    public void pause(){
+        downloadBiz.pause();
+    }
+    public void toContinue(){
+        downloadBiz.toContinue();
     }
 
     public  interface TaskListener {
