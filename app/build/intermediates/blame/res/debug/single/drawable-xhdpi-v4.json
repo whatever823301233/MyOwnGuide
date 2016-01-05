@@ -316,6 +316,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg_progress_bar.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\bg_progress_bar.png"
+    },
+    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_home_circle_nearly.png",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_home_circle_nearly.png"
     },

@@ -8,7 +8,8 @@ import android.os.Environment;
 public interface IConstants {
 
     String SP_NOT_FIRST_LOGIN="sp_not_first_login";//是否首次登陆
-    String SP_MUSEUM_ID="SP_museum_id";//博物馆id
+    String SP_MUSEUM_ID="sp_museum_id";//博物馆id
+    String SP_DOWNLOAD_MUSEUM_COUNT="sp_download_museum_count";//下载博物馆数据个数
 
     /**消息类型*/
 

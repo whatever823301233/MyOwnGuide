@@ -116,6 +116,9 @@
         <activity
             android:name="com.systekcn.guide.activity.SearchActivity"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.systekcn.guide.activity.DownloadActivity"
+            android:theme="@style/FullscreenTheme" />
 
         <service
             android:name="org.altbeacon.beacon.service.BeaconService"

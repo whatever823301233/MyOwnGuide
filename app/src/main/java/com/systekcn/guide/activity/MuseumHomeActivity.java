@@ -59,6 +59,7 @@ public class MuseumHomeActivity extends BaseActivity {
     private ImageView ivPlayStateCtrl;
     private RelativeLayout rlCollectionHome;
     private ImageView titleBarSearch;
+    private RelativeLayout rlNearlyHome;
 
 
     @Override
@@ -122,6 +123,7 @@ public class MuseumHomeActivity extends BaseActivity {
         titleBarDrawer.setOnClickListener(onClickListener);
         ivPlayStateCtrl.setOnClickListener(onClickListener);
         rlCollectionHome.setOnClickListener(onClickListener);
+        rlNearlyHome.setOnClickListener(onClickListener);
 
     }
 
@@ -130,6 +132,11 @@ public class MuseumHomeActivity extends BaseActivity {
         public void onClick(View v) {
             Intent intent=null;
             switch (v.getId()){
+                case R.id.rlNearlyHome:
+                    intent=new Intent(MuseumHomeActivity.this,DownloadActivity.class);
+                    intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_GUIDE);
+                    startActivity(intent);
+                    break;
                 case R.id.rlGuideHome:
                     intent=new Intent(MuseumHomeActivity.this,ListAndMapActivity.class);
                     intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_GUIDE);
@@ -233,6 +240,7 @@ public class MuseumHomeActivity extends BaseActivity {
         rlMapHome = (RelativeLayout) findViewById(R.id.rlMapHome);
         rlTopicHome = (RelativeLayout) findViewById(R.id.rlTopicHome);
         rlCollectionHome = (RelativeLayout) findViewById(R.id.rlCollectionHome);
+        rlNearlyHome = (RelativeLayout) findViewById(R.id.rlNearlyHome);
     }
 
     private void showData(){

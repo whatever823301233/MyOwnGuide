@@ -283,6 +283,7 @@ public class MediaPlayService extends Service implements IConstants {
         mediaPlayer.stop();
         isPlaying = false;
     }
+
     @Override
     public IBinder onBind(Intent intent) {
         return mediaServiceBinder;

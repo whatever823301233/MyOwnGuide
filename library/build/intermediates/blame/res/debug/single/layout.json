@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_switch.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_switch.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -16,12 +16,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_switch.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_mini.xml",
-        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_mini.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_mini.xml",
+        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_mini.xml"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
@@ -60,24 +60,24 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_mini_profile.xml",
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_mini_profile.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_secondary.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_secondary.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_header.xml",
@@ -124,12 +124,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_profile.xml"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_divider.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_divider.xml"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_container.xml",

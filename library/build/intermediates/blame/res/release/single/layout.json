@@ -24,12 +24,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_secondary_toggle.xml",
-        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_secondary_toggle.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_divider.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_divider.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_secondary_toggle.xml",
+        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_secondary_toggle.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
@@ -140,12 +140,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_section.xml",
