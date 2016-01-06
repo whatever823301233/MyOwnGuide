@@ -25,8 +25,8 @@ public interface IConstants {
     int MSG_WHAT_PAUSE_MUSIC=9;
     int MSG_WHAT_CONTINUE_MUSIC=10;
     int MSG_WHAT_REFRESH_VIEW=11;
-
-
+    int MSG_WHAT_CHANGE_PLAY_STOP=12;
+    int MSG_WHAT_CHANGE_PLAY_START=13;
     /**关于URL*/
 
     String BASE_URL ="http://182.92.82.70";
@@ -70,12 +70,9 @@ public interface IConstants {
     String INTENT_EXHIBIT_DURATION ="intent_exhibit_duration";//播放总时长
     String INTENT_EXHIBIT_CHANG ="intent_exhibit_chang";//切换展品
 
-
-
-    String ACTION_UPDATE_PROGRESS = "com.systekcn.guide.UPDATE_PROGRESS";
-    String ACTION_UPDATE_DURATION = "com.systekcn.guide.UPDATE_DURATION";
-    String ACTION_UPDATE_CURRENT_EXHIBIT = "com.systekcn.guide.UPDATE_CURRENT_MUSIC";
-
+    String INTENT_CHANGE_PLAY_STATE="intent_change_play_state";
+    String INTENT_CHANGE_PLAY_STOP="intent_change_play_stop";
+    String INTENT_CHANGE_PLAY_PLAY="intent_change_play_play";
     /**欢迎界面图片路径*/
     String WELCOME_IMAGES="welcome_images";
 

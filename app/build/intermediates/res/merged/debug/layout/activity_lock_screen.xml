@@ -33,7 +33,6 @@
             <ImageView
                 android:id="@+id/fullscreenImage"
                 android:layout_width="match_parent"
-                android:src="@drawable/header"
                 android:layout_weight="5"
                 android:layout_height="0dp"/>
 

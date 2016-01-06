@@ -24,6 +24,7 @@
             android:layout_marginStart="@dimen/simple_4dp"
             android:src="@drawable/iv_left_gray_line"/>
         <ImageView
+            android:id="@+id/exhibitIcon"
             android:src="@drawable/iv_app_logo"
             android:layout_margin="@dimen/simple_4dp"
             android:layout_width="@dimen/simple40dp"
@@ -34,6 +35,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <SeekBar
+                android:id="@+id/seekBarProgress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -41,8 +43,6 @@
                 android:paddingEnd="8dp"
                 android:maxHeight="5dp"
                 android:minHeight="5dp"
-                android:max="10"
-                android:progress="5"
                 android:progressDrawable="@drawable/seek_bar_bg"
                 android:thumb="@drawable/thumb_bar_selector"/>
 
@@ -52,15 +52,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/exhibitName"
                     android:layout_centerVertical="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="双龙耳盘口壶"
-                    android:textSize="10sp"
-                    android:textColor="@color/md_red_400"
-                    />
+                    android:textSize="@dimen/normal_textSize"
+                    android:textColor="@color/md_red_400" />
                 <ImageView
+                    android:id="@+id/ivPlayCtrl"
                     style="@style/normal_image_view"
                     android:layout_marginEnd="8dp"
                     android:layout_alignParentEnd="true"

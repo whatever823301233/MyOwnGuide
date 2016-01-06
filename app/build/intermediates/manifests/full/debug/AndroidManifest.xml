@@ -79,6 +79,7 @@
             android:theme="@style/MaterialDrawerTheme" />
         <activity
             android:name="com.systekcn.guide.activity.BeginActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,36 +89,47 @@
         </activity>
         <activity
             android:name="com.systekcn.guide.activity.CityChooseActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.MuseumListActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.MuseumHomeActivity"
+            android:launchMode="singleTop"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.ListAndMapActivity"
+            android:launchMode="singleTop"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.TopicActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.PlayActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.LockScreenActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.WelcomeActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.CollectionActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.SearchActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name="com.systekcn.guide.activity.DownloadActivity"
+            android:launchMode="singleInstance"
             android:theme="@style/FullscreenTheme" />
 
         <service

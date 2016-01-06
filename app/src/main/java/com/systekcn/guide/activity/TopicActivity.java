@@ -44,8 +44,6 @@ public class TopicActivity extends BaseActivity {
         setContentView(R.layout.activity_topic);
         Intent intent=getIntent();
         currentMuseumId =intent.getStringExtra(INTENT_MUSEUM_ID);
-        //totalExhibitList =application.totalExhibitBeanList;
-        /*初始化*/
         init();
     }
     private TextView  tv_collection_dongwei,tv_collection_beiqi,
@@ -75,16 +73,11 @@ public class TopicActivity extends BaseActivity {
     /**侧边栏按钮*/
     private ImageView titleBarDrawer;
 
-   /* public void setOnListViewScrollListener(OnListViewScrollListener onListViewScrollListener) {
-        this.onListViewScrollListener = onListViewScrollListener;
-    }*/
-
     private void init() {
         initViews();
         initDrawer();
         addListener();
         initData();
-
     }
 
     private void initData() {

@@ -119,6 +119,9 @@ public class MediaPlayService extends Service implements IConstants {
         if(mediaPlayer==null){return false;}
         try {
             mediaPlayer.start();
+            Intent intent=new Intent();
+            intent.setAction(INTENT_CHANGE_PLAY_PLAY);
+            sendBroadcast(intent);
             isPlaying=true;
             addRecord(currentExhibit);
             duration = mediaPlayer.getDuration();

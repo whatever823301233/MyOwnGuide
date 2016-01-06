@@ -2,22 +2,35 @@ package com.systekcn.guide.activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.R;
+import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.fragment.ExhibitListFragment;
 import com.systekcn.guide.fragment.MapFragment;
 import com.systekcn.guide.manager.BluetoothManager;
+import com.systekcn.guide.utils.ImageLoaderUtil;
+import com.systekcn.guide.utils.Tools;
 
-public class ListAndMapActivity extends BaseActivity {
+public class ListAndMapActivity extends BaseActivity implements ExhibitListFragment.OnFragmentInteractionListener{
 
     private Drawer result;
     private RadioButton radioButtonList;
@@ -27,23 +40,36 @@ public class ListAndMapActivity extends BaseActivity {
     private View view;
     private TextView aaa;
     private MapFragment mapFragment;
+    private ExhibitBean currentExhibit;
+    private int currentProgress;
+    private int currentDuration;
+    private SeekBar seekBarProgress;
+    private Handler handler;
+    private PlayStateReceiver receiver;
+    private String currentMuseumId;
+    private TextView exhibitName;
+    private ImageView exhibitIcon;
+    private ImageView ivPlayCtrl;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
         setContentView(R.layout.activity_list_and_map);
         view =getLayoutInflater().inflate(R.layout.layout_drawer,null);
-        aaa=(TextView)view.findViewById(R.id.aaa);
-        aaa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showToast("aaaaaaaaaaaaaaaaaaaa");
-            }
-        });
+        handler=new MyHandler();
         initBlueTooth();
         initDrawer();
         initView();
         addListener();
         setDefaultFragment();
+        registerReceiver();
+    }
+
+    private void registerReceiver() {
+        receiver=new PlayStateReceiver();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction(INTENT_EXHIBIT_PROGRESS);
+        filter.addAction(INTENT_EXHIBIT_DURATION);
+        registerReceiver(receiver,filter);
     }
 
     private void initBlueTooth() {
@@ -73,13 +99,32 @@ public class ListAndMapActivity extends BaseActivity {
 
     private void addListener() {
         radioGroupTitle.setOnCheckedChangeListener(radioButtonCheckListener);
+        ivPlayCtrl.setOnClickListener(onClickListener);
     }
 
     private void initView() {
         radioButtonList=(RadioButton)findViewById(R.id.radioButtonList);
         radioButtonMap=(RadioButton)findViewById(R.id.radioButtonMap);
         radioGroupTitle=(RadioGroup)findViewById(R.id.radioGroupTitle);
+        seekBarProgress=(SeekBar)findViewById(R.id.seekBarProgress);
+        exhibitName=(TextView)findViewById(R.id.exhibitName);
+        exhibitIcon=(ImageView)findViewById(R.id.exhibitIcon);
+        ivPlayCtrl=(ImageView)findViewById(R.id.ivPlayCtrl);
     }
+
+    View.OnClickListener onClickListener=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.ivPlayCtrl:
+                    Intent intent=new Intent();
+                    intent.setAction(INTENT_CHANGE_PLAY_STATE);
+                    sendBroadcast(intent);
+                    break;
+            }
+        }
+    };
+
 
     private void setDefaultFragment() {
         String flag=getIntent().getStringExtra(INTENT_FLAG_GUIDE_MAP);
@@ -106,16 +151,14 @@ public class ListAndMapActivity extends BaseActivity {
             FragmentTransaction transaction = fm.beginTransaction();
             switch(checkedId){
                 case R.id.radioButtonList:
-                    if (exhibitListFragment == null)
-                    {
+                    if (exhibitListFragment == null) {
                         exhibitListFragment = ExhibitListFragment.newInstance();
                     }
                     // 使用当前Fragment的布局替代id_content的控件
                     transaction.replace(R.id.llExhibitListContent, exhibitListFragment);
                     break;
                 case R.id.radioButtonMap:
-                    if (mapFragment == null)
-                    {
+                    if (mapFragment == null) {
                         mapFragment = new MapFragment();
                     }
                     transaction.replace(R.id.llExhibitListContent, mapFragment);
@@ -125,5 +168,93 @@ public class ListAndMapActivity extends BaseActivity {
             transaction.commit();
         }
     };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        unregisterReceiver(receiver);
+        handler.removeCallbacksAndMessages(null);
+        super.onDestroy();
+    }
+
+    @Override
+    public void onFragmentInteraction(ExhibitBean bean) {
+        this.currentExhibit=bean;
+        refreshBottomTab();
+    }
+
+    private class MyHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what){
+                case MSG_WHAT_CHANGE_EXHIBIT:
+                    refreshBottomTab();
+                    break;
+                case MSG_WHAT_UPDATE_PROGRESS:
+                    seekBarProgress.setProgress(currentProgress);
+                    break;
+                case MSG_WHAT_UPDATE_DURATION:
+                    seekBarProgress.setMax(currentDuration);
+                    break;
+                case MSG_WHAT_PAUSE_MUSIC:
+                    break;
+                case MSG_WHAT_CONTINUE_MUSIC:
+                    break;
+                case MSG_WHAT_CHANGE_PLAY_START:
+                    ivPlayCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_play_state_open));
+                    break;
+                case MSG_WHAT_CHANGE_PLAY_STOP:
+                    ivPlayCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_play_state_stop));
+                    break;
+            }
+        }
+    }
+
+    private void refreshBottomTab() {
+        if(currentExhibit==null){return;}
+        String iconPath=currentExhibit.getIconurl();
+        String name= Tools.changePathToName(iconPath);
+        exhibitName.setText(currentExhibit.getName());
+        String path=LOCAL_ASSETS_PATH+currentExhibit.getMuseumId()+"/"+LOCAL_FILE_TYPE_IMAGE+"/"+name;
+        if(Tools.isFileExist(path)){
+            ImageLoaderUtil.displaySdcardImage(ListAndMapActivity.this, path, exhibitIcon);
+        }else{
+            ImageLoaderUtil.displayNetworkImage(ListAndMapActivity.this, BASE_URL + iconPath, exhibitIcon);
+        }
+    }
+
+    class PlayStateReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if(action.equals(INTENT_EXHIBIT_PROGRESS)){
+                currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
+                handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
+            }else if(action.equals(INTENT_EXHIBIT_DURATION)){
+                currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
+                handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
+            }else if(action.equals(INTENT_EXHIBIT)){
+                String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+                if(TextUtils.isEmpty(exhibitStr)){return;}
+                ExhibitBean exhibitBean= JSON.parseObject(exhibitStr, ExhibitBean.class);
+                if(exhibitBean==null){return;}
+                if(currentExhibit==null||!currentExhibit.equals(exhibitBean)){
+                    currentExhibit=exhibitBean;
+                    currentMuseumId=currentExhibit.getMuseumId();
+                    handler.sendEmptyMessage(MSG_WHAT_CHANGE_EXHIBIT);
+                }
+            }else if(action.equals(INTENT_CHANGE_PLAY_STOP)){
+                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
+            }else if(action.equals(INTENT_CHANGE_PLAY_PLAY)){
+                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+            }
+        }
+    }
+
 
 }

@@ -74,5 +74,8 @@
 
     <string name="search_view_hint">请输入关键字...</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

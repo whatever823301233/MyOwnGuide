@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -64,17 +65,33 @@ public class PlayActivity extends BaseActivity {
         setContentView(R.layout.activity_play);
         handler =new MyHandler();
         initView();
+        addListener();
+        registerReceiver();
         initData();
         refreshView();
+    }
+
+    private void addListener() {
+        ivPlayCtrl.setOnClickListener(onClickListener);
+    }
+
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
         registerReceiver();
+        initData();
+
     }
 
     private void registerReceiver() {
         playStateReceiver=new PlayStateReceiver();
         IntentFilter filter=new IntentFilter();
+        filter.addAction(INTENT_EXHIBIT);
         filter.addAction(INTENT_EXHIBIT_PROGRESS);
         filter.addAction(INTENT_EXHIBIT_DURATION);
-        filter.addAction(INTENT_EXHIBIT_CHANG);
+        filter.addAction(INTENT_CHANGE_PLAY_PLAY);
+        filter.addAction(INTENT_CHANGE_PLAY_STOP);
         registerReceiver(playStateReceiver,filter);
 
     }
@@ -101,8 +118,6 @@ public class PlayActivity extends BaseActivity {
             ImageLoaderUtil.displayNetworkImage(this, iconUrl, imgExhibitIcon);
         }
     }
-
-
 
     /*初始化界面控件*/
     private void initView() {
@@ -143,6 +158,10 @@ public class PlayActivity extends BaseActivity {
                         imgExhibitIcon.setAlpha(0.7f);
                     }
                     break;
+                case R.id.ivPlayCtrl:
+                    Intent intent=new Intent();
+                    intent.setAction(INTENT_CHANGE_PLAY_STATE);
+                    sendBroadcast(intent);
             }
 
         }
@@ -170,7 +189,6 @@ public class PlayActivity extends BaseActivity {
 
     /*加载数据*/
     private void initData() {
-
         Intent intent=getIntent();
         String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
         currentExhibit= JSON.parseObject(exhibitStr, ExhibitBean.class);
@@ -238,9 +256,8 @@ public class PlayActivity extends BaseActivity {
         //获取多角度图片地址数组
         String[] imgs = imgStr.split(",");
         if (imgs[0].equals("") && imgs.length != 0) {
-            recycleMultiAngle.setVisibility(View.GONE);
+            //recycleMultiAngle.setVisibility(View.GONE);
             return;}
-
         for (String singleUrl : imgs) {
             String[] nameTime = singleUrl.split("\\*");
             MultiAngleImg multiAngleImg=new MultiAngleImg();
@@ -263,18 +280,29 @@ public class PlayActivity extends BaseActivity {
     private class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
-            /**当信息类型为更换歌词背景*/
-            if (msg.what == MSG_WHAT_CHANGE_ICON) {
-                /**若信息类型为展品切换，刷新数据，刷新界面*/
-            } else if (msg.what == MSG_WHAT_UPDATE_PROGRESS) {
-                seekBarProgress.setProgress(currentProgress);
-                mLyricLoadHelper.notifyTime(currentProgress);
-            }else if(msg.what==MSG_WHAT_UPDATE_DURATION){
-                seekBarProgress.setMax(currentDuration);
-            }else if(msg.what==MSG_WHAT_PAUSE_MUSIC){
-                /**暂停播放*/
-            }else if(msg.what==MSG_WHAT_CONTINUE_MUSIC){
-                //* *继续播放
+            switch (msg.what){
+                case MSG_WHAT_UPDATE_PROGRESS:
+                    seekBarProgress.setProgress(currentProgress);
+                    mLyricLoadHelper.notifyTime(currentProgress);
+                    break;
+                case MSG_WHAT_UPDATE_DURATION:
+                    seekBarProgress.setMax(currentDuration);
+                    break;
+                case MSG_WHAT_PAUSE_MUSIC:
+                    break;
+                case MSG_WHAT_CONTINUE_MUSIC:
+                    break;
+                case MSG_WHAT_CHANGE_EXHIBIT:
+                    refreshView();
+                    break;
+                case MSG_WHAT_CHANGE_ICON:
+                    break;
+                case MSG_WHAT_CHANGE_PLAY_START:
+                    ivPlayCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_play_state_open_big));
+                    break;
+                case MSG_WHAT_CHANGE_PLAY_STOP:
+                    ivPlayCtrl.setImageDrawable(getResources().getDrawable(R.drawable.iv_play_state_close_big));
+                    break;
             }
         }
     }
@@ -284,12 +312,24 @@ public class PlayActivity extends BaseActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
+            LogUtil.i("ZHANG",action);
             if(action.equals(INTENT_EXHIBIT_PROGRESS)){
                 currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
                 handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
             }else if(action.equals(INTENT_EXHIBIT_DURATION)){
                 currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
                 handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
+            }else if(action.equals(INTENT_EXHIBIT)){
+                LogUtil.i("ZHANG","接收了INTENT_EXHIBIT");
+                String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+                if(TextUtils.isEmpty(exhibitStr)){return;}
+                ExhibitBean exhibitBean=JSON.parseObject(exhibitStr, ExhibitBean.class);
+                if(currentExhibit.equals(exhibitBean)){return;}
+                handler.sendEmptyMessage(MSG_WHAT_CHANGE_EXHIBIT);
+            }else if(action.equals(INTENT_CHANGE_PLAY_PLAY)){
+                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+            }else if(action.equals(INTENT_CHANGE_PLAY_STOP)){
+                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
             }
         }
     }

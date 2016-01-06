@@ -42,7 +42,8 @@ public class MediaServiceManager implements IConstants {
         playCtrlReceiver=new PlayCtrlReceiver();
         IntentFilter filter=new IntentFilter();
         filter.addAction(INTENT_EXHIBIT);
-        mContext.registerReceiver(playCtrlReceiver,filter);
+        filter.addAction(INTENT_CHANGE_PLAY_STATE);
+        mContext.registerReceiver(playCtrlReceiver, filter);
     }
 
     private void initConn() {
@@ -160,12 +161,23 @@ public class MediaServiceManager implements IConstants {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action=intent.getAction();
+            Intent intent1=null;
             if(action.equals(INTENT_EXHIBIT)){
                 String exhibitStr= intent.getStringExtra(INTENT_EXHIBIT);
                 if(TextUtils.isEmpty(exhibitStr)){return;}
                 ExhibitBean exhibitBean= JSON.parseObject( exhibitStr,ExhibitBean.class);
                 if(exhibitBean==null||mediaServiceBinder==null){return;}
                 mediaServiceBinder.notifyExhibitChange(exhibitBean);
+            }else if(action.equals(INTENT_CHANGE_PLAY_STATE)){
+               intent1=new Intent();
+                if(mediaServiceBinder.isPlaying()){
+                    mediaServiceBinder.pause();
+                    intent1.setAction(INTENT_CHANGE_PLAY_STOP);
+                }else{
+                    mediaServiceBinder.continuePlay();
+                    intent1.setAction(INTENT_CHANGE_PLAY_PLAY);
+                }
+                context.sendBroadcast(intent1);
             }
         }
     }
