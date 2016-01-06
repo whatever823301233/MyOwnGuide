@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.alibaba.fastjson.JSON;
 import com.lidroid.xutils.DbUtils;
 import com.lidroid.xutils.db.sqlite.Selector;
 import com.lidroid.xutils.exception.DbException;
@@ -136,11 +137,15 @@ public class TopicActivity extends BaseActivity {
         lv_collection_listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                application.currentExhibitBean= exhibitAdapter.getItem(position);
-                application.refreshData();
-                Intent intent =new Intent(TopicActivity.this,PlayActivity.class);
-                //application.dataFrom=application.DATA_FROM_HOME;
-                startActivity(intent);
+                ExhibitBean exhibitBean= exhibitAdapter.getItem(position);
+                String str= JSON.toJSONString(exhibitBean);
+                Intent intent =new Intent();
+                intent.setAction(INTENT_EXHIBIT);
+                intent.putExtra(INTENT_EXHIBIT, str);
+                sendBroadcast(intent);
+                Intent intent1 =new Intent(TopicActivity.this,PlayActivity.class);
+                intent1.putExtra(INTENT_EXHIBIT,str);
+                startActivity(intent1);
                 finish();
             }
         });

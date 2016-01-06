@@ -16,7 +16,6 @@ import com.systekcn.guide.R;
 import com.systekcn.guide.fragment.ExhibitListFragment;
 import com.systekcn.guide.fragment.MapFragment;
 import com.systekcn.guide.manager.BluetoothManager;
-import com.systekcn.guide.manager.MediaServiceManager;
 
 public class ListAndMapActivity extends BaseActivity {
 
@@ -45,10 +44,6 @@ public class ListAndMapActivity extends BaseActivity {
         initView();
         addListener();
         setDefaultFragment();
-        if(application.mServiceManager==null){
-            application.mServiceManager=new MediaServiceManager(getApplicationContext());
-        }
-        application.mServiceManager.connectService();
     }
 
     private void initBlueTooth() {

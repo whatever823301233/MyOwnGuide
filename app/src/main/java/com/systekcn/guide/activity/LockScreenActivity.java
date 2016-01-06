@@ -17,9 +17,7 @@ import android.widget.TextView;
 
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.NearlyGalleryAdapter;
-import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.TimeUtil;
-import com.systekcn.guide.utils.Tools;
 
 public class LockScreenActivity extends BaseActivity {
 
@@ -89,7 +87,7 @@ public class LockScreenActivity extends BaseActivity {
     }
 
     private void displayLockImage() {
-        if(application.currentExhibitBean!=null){
+        /*if(application.currentExhibitBean!=null){
             String imgUrl=application.currentExhibitBean.getIconurl();
             String localName= Tools.changePathToName(imgUrl);
             String localPath=application.getCurrentImgDir()+localName;
@@ -98,7 +96,7 @@ public class LockScreenActivity extends BaseActivity {
             }else{
                 ImageLoaderUtil.displayNetworkImage(this, BASE_URL + imgUrl, fullscreenImage);
             }
-        }
+        }*/
     }
 
     @Override

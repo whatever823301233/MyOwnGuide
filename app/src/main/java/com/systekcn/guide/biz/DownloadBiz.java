@@ -71,23 +71,25 @@ public class DownloadBiz implements IConstants {
         totalSize=assetsList.size();
         LogUtil.i("ZHANG", "downloadAssets开始执行------当前时间为" + startTime + "文件个数" + (totalSize-count));
         String url="";
+        String name="";
 		/* 遍历集合并下载 */
         for (int i = start; i < end; i++) {
             str = assetsList.get(i);
             if (str.endsWith(".jpg")||str.endsWith(".png")) {
-                savePath = LOCAL_ASSETS_PATH +museumId+"/"+LOCAL_FILE_TYPE_IMAGE+"/"+ str.replaceAll("/","_");
+                savePath = LOCAL_ASSETS_PATH +museumId+"/"+LOCAL_FILE_TYPE_IMAGE;//+"/"+ str.replaceAll("/","_")
                 url = BASE_URL + assetsList.get(i);
             } else if (str.endsWith(".lrc")) {
-                savePath = LOCAL_ASSETS_PATH+museumId+"/" +LOCAL_FILE_TYPE_LYRIC+"/"+ str.replaceAll("/", "_");
+                savePath = LOCAL_ASSETS_PATH+museumId+"/" +LOCAL_FILE_TYPE_LYRIC;//+"/"+ str.replaceAll("/", "_")
                 url = BASE_URL + assetsList.get(i);
             } else if (str.endsWith(".mp3") || str.endsWith(".wav")) {
-                savePath = LOCAL_ASSETS_PATH+museumId+"/" +LOCAL_FILE_TYPE_AUDIO+"/"+ str.replaceAll("/","_");
+                savePath = LOCAL_ASSETS_PATH+museumId+"/" +LOCAL_FILE_TYPE_AUDIO;//+"/"+ str.replaceAll("/","_")
                 url = BASE_URL + assetsList.get(i);
             } else {
                 LogUtil.i("ZHANG", "文件后缀异常-----------------");
                 continue;
             }
-            if(Tools.isFileExist(savePath)){
+            String fileName=Tools.changePathToName(str);
+            if(Tools.isFileExist(savePath+"/"+fileName)){
                 count++;
                 continue;
             }
@@ -98,15 +100,15 @@ public class DownloadBiz implements IConstants {
                     ExceptionUtil.handleException(e);
                 }
             }
-            downloadFile(savePath, url);
+            downloadFile(savePath,fileName, url);
 //            DataBiz.saveTempValue(MyApplication.get(),SP_DOWNLOAD_MUSEUM_COUNT,totalSize-count);
         }
         downloadOver=true;
     }
 
-    private void downloadFile(String savePath, final String url) {
+    private void downloadFile(String savePath,String name, final String url) {
         try {
-            MyHttpUtil.downLoadFromUrl(url,url.substring(url.lastIndexOf("/") + 1),savePath);
+            MyHttpUtil.downLoadFromUrl(url,name,savePath);
             count++;
         } catch (IOException e) {
             ExceptionUtil.handleException(e);

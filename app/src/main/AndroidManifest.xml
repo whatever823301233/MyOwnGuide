@@ -114,6 +114,11 @@
             android:name=".activity.DownloadActivity"
             android:theme="@style/FullscreenTheme" />
         <service
+            android:name=".service.MediaPlayService"
+            android:enabled="true"
+            android:exported="false"
+            android:isolatedProcess="false" />
+        <service
             android:name="org.altbeacon.beacon.service.BeaconService"
             android:enabled="true"
             android:exported="false"
@@ -129,7 +134,6 @@
             android:permission="android.permission.BAIDU_LOCATION_SERVICE"
             android:process=":remote" />
         <service android:name=".service.MuseumDownloadService" />
-        <service android:name=".service.MediaPlayService" />
 
     </application>
 

@@ -16,6 +16,15 @@ public interface IConstants {
     int MSG_WHAT_UPDATE_DATA_SUCCESS = 1;//数据获取成功
     int MSG_WHAT_UPDATE_DATA_FAIL = 2;//数据获取失败
     int MSG_WHAT_REFRESH_DATA = 3;//刷新数据
+    int MSG_WHAT_UPDATE_PROGRESS = 4;//message类型之更新进度
+    int MSG_WHAT_UPDATE_CURRENT_MUSEUM = 5;//message类型之更新展品
+    int MSG_WHAT_UPDATE_DURATION = 6;//message类型之更新播放长度
+
+    int MSG_WHAT_CHANGE_ICON=7;
+    int MSG_WHAT_CHANGE_EXHIBIT=8;
+    int MSG_WHAT_PAUSE_MUSIC=9;
+    int MSG_WHAT_CONTINUE_MUSIC=10;
+    int MSG_WHAT_REFRESH_VIEW=11;
 
 
     /**关于URL*/
@@ -40,6 +49,10 @@ public interface IConstants {
     int INTERNET_TYPE_MOBILE=2;//网络状态--数据网络
     int INTERNET_TYPE_NONE=3;//网络状态--无网络
 
+    /**播放模式*/
+    int PLAY_MODE_HAND=1;
+    int PLAY_MODE_AUTO=2;
+
 
     /**intent 传递数据*/
     String INTENT_CITY="intent_city";//城市对象
@@ -50,6 +63,13 @@ public interface IConstants {
     String INTENT_FLAG_MAP="intent_flag_map";//数据标记--进入地图
     String INTENT_FLAG_GUIDE ="intent_flag_guide";//数据标记--进入附近列表
     String INTENT_EXHIBIT_LIST ="intent_exhibit_list";//展品列表
+
+
+    String INTENT_START_PLAY_SERVICE ="intent_start_play_service";//启动播放服务
+    String INTENT_EXHIBIT_PROGRESS ="intent_exhibit_progress";//播放进度
+    String INTENT_EXHIBIT_DURATION ="intent_exhibit_duration";//播放总时长
+    String INTENT_EXHIBIT_CHANG ="intent_exhibit_chang";//切换展品
+
 
 
     String ACTION_UPDATE_PROGRESS = "com.systekcn.guide.UPDATE_PROGRESS";

@@ -17,7 +17,6 @@ import android.widget.ListView;
 
 import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.IConstants;
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.activity.PlayActivity;
 import com.systekcn.guide.adapter.ExhibitAdapter;
@@ -30,7 +29,6 @@ public class ExhibitListFragment extends Fragment implements IConstants {
 
     private Activity activity;
     private ListView listView;
-    private MyApplication application;
     private ExhibitAdapter exhibitAdapter;
     private Handler handler;
     private static ExhibitListFragment exhibitListFragment;
@@ -85,17 +83,18 @@ public class ExhibitListFragment extends Fragment implements IConstants {
 
     private void initView(View view) {
         listView=(ListView)view.findViewById(R.id.lv_exhibit_list);
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(application.currentExhibitBeanList!=null&&application.currentExhibitBeanList.size()>0){
-                    ExhibitBean exhibitBean=application.currentExhibitBeanList.get(position);
-                    application.currentExhibitBean=exhibitBean;
-                    application.mServiceManager.notifyAllDataChange();
-                    Intent intent=new Intent(activity, PlayActivity.class);
-                    activity.startActivity(intent);// TODO: 2015/12/31
-                }
+                ExhibitBean exhibitBean=currentExhibitList.get(position);
+                Intent intent=new Intent();
+                String str=JSON.toJSONString(exhibitBean);
+                intent.setAction(INTENT_EXHIBIT);
+                intent.putExtra(INTENT_EXHIBIT, str);
+                activity.sendBroadcast(intent);
+                Intent intent1=new Intent(activity, PlayActivity.class);
+                intent1.putExtra(INTENT_EXHIBIT,str);
+                activity.startActivity(intent1);
             }
         });
     }
@@ -103,7 +102,6 @@ public class ExhibitListFragment extends Fragment implements IConstants {
 
     @Override
     public void onAttach(Activity activity) {
-        application=MyApplication.get();
         this.activity=getActivity();
         super.onAttach(activity);
     }

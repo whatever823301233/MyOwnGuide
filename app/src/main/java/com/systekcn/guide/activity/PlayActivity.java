@@ -1,5 +1,9 @@
 package com.systekcn.guide.activity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,8 +16,10 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MultiAngleImgAdapter;
+import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.MultiAngleImg;
 import com.systekcn.guide.lyric.LyricAdapter;
 import com.systekcn.guide.lyric.LyricDownloadManager;
@@ -32,27 +38,26 @@ public class PlayActivity extends BaseActivity {
 
     private ListView lvLyric;
     private ImageView imgExhibitIcon;
-    private SeekBar seekBarProgress;
-    private TextView tvPlayTime;
-    private RecyclerView recycleMultiAngle;
-    private ImageView ivPlayCtrl;
     private ImageView imgWordCtrl;
-    private final int MSG_WHAT_CHANGE_ICON=2;
-    private final int MSG_WHAT_CHANGE_EXHIBIT=3;
-    private final int MSG_WHAT_PAUSE_MUSIC=4;
-    private final int MSG_WHAT_CONTINUE_MUSIC=5;
     private MyHandler handler;
     private ArrayList<MultiAngleImg> multiAngleImgs;
-    private ArrayList<Integer> imgsTimeList;
-    private boolean hasMultiImg;
     private MultiAngleImgAdapter mulTiAngleImgAdapter;
-    private int mScreenWidth;
-    /*当前歌词路径*/
-    private String currentLyricUrl;
+    private String currentLyricUrl;/*当前歌词路径*/
     private LyricLoadHelper mLyricLoadHelper;
     private LyricAdapter mLyricAdapter;
+    private String currentMuseumId;
+    private ExhibitBean currentExhibit;
+    private ArrayList<Integer> imgsTimeList;
+    private ImageView ivPlayCtrl;
+    private int mScreenWidth;
+    private TextView tvPlayTime;
+    private boolean hasMultiImg;
     private boolean mIsLyricDownloading;
-    private LyricDownloadManager mLyricDownloadManager;
+    private SeekBar seekBarProgress;
+    private int currentProgress;
+    private int currentDuration;
+    private PlayStateReceiver playStateReceiver;
+    private RecyclerView recycleMultiAngle;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
@@ -61,6 +66,17 @@ public class PlayActivity extends BaseActivity {
         initView();
         initData();
         refreshView();
+        registerReceiver();
+    }
+
+    private void registerReceiver() {
+        playStateReceiver=new PlayStateReceiver();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction(INTENT_EXHIBIT_PROGRESS);
+        filter.addAction(INTENT_EXHIBIT_DURATION);
+        filter.addAction(INTENT_EXHIBIT_CHANG);
+        registerReceiver(playStateReceiver,filter);
+
     }
 
     private void refreshView() {
@@ -71,20 +87,20 @@ public class PlayActivity extends BaseActivity {
 
 
     private void initIcon() {
-        if(application.currentExhibitBean==null){return;}
-        String iconUrl=application.currentExhibitBean.getIconurl();
+        if(currentExhibit==null){return;}
+        String iconUrl=currentExhibit.getIconurl();
         String imageName = Tools.changePathToName(iconUrl);
-        String imgLocalUrl = LOCAL_ASSETS_PATH+application.getCurrentMuseumId() + "/" + LOCAL_FILE_TYPE_IMAGE+"/"+imageName;
+        String imgLocalUrl = LOCAL_ASSETS_PATH+currentMuseumId + "/" + LOCAL_FILE_TYPE_IMAGE+"/"+imageName;
         File file = new File(imgLocalUrl);
         // 判断sdcard上有没有图片
         if (file.exists()) {
             // 显示sdcard
             ImageLoaderUtil.displaySdcardImage(this, imgLocalUrl, imgExhibitIcon);
         } else {
-            // 服务器上存的imageUrl有域名如http://www.systek.com.cn/1.png
             iconUrl = BASE_URL + iconUrl;
             ImageLoaderUtil.displayNetworkImage(this, iconUrl, imgExhibitIcon);
-        }}
+        }
+    }
 
 
 
@@ -94,7 +110,7 @@ public class PlayActivity extends BaseActivity {
         imgExhibitIcon=(ImageView)findViewById(R.id.imgExhibitIcon);
         seekBarProgress=(SeekBar)findViewById(R.id.seekBarProgress);
         tvPlayTime=(TextView)findViewById(R.id.tvPlayTime);
-        recycleMultiAngle=(RecyclerView)findViewById(R.id.recycleMultiAngle);
+        recycleMultiAngle = (RecyclerView) findViewById(R.id.recycleMultiAngle);
         ivPlayCtrl=(ImageView)findViewById(R.id.ivPlayCtrl);
         imgWordCtrl=(ImageView)findViewById(R.id.imgWordCtrl);
         multiAngleImgs=new ArrayList<>();
@@ -109,22 +125,28 @@ public class PlayActivity extends BaseActivity {
         mLyricAdapter = new LyricAdapter(this);
         mLyricLoadHelper.setLyricListener(mLyricListener);
         lvLyric.setAdapter(mLyricAdapter);
-
-
-        imgWordCtrl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(lvLyric.getVisibility()!=View.GONE){
-                    lvLyric.setVisibility(View.GONE);
-                    imgExhibitIcon.setAlpha(1.0f);
-                }else{
-                    lvLyric.setVisibility(View.VISIBLE);
-                    imgExhibitIcon.setAlpha(0.7f);
-                }
-
-            }
-        });
+        imgWordCtrl.setOnClickListener(onClickListener);
     }
+
+
+    View.OnClickListener onClickListener=new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.imgWordCtrl:
+                    if(lvLyric.getVisibility()!=View.GONE){
+                        lvLyric.setVisibility(View.GONE);
+                        imgExhibitIcon.setAlpha(1.0f);
+                    }else{
+                        lvLyric.setVisibility(View.VISIBLE);
+                        imgExhibitIcon.setAlpha(0.7f);
+                    }
+                    break;
+            }
+
+        }
+    };
 
 
     private LyricLoadHelper.LyricListener mLyricListener = new LyricLoadHelper.LyricListener() {
@@ -148,9 +170,14 @@ public class PlayActivity extends BaseActivity {
 
     /*加载数据*/
     private void initData() {
-        if(application.currentExhibitBean==null){return;}
-        /**加载歌词*/
-        currentLyricUrl = application.currentExhibitBean.getTexturl();
+
+        Intent intent=getIntent();
+        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+        currentExhibit= JSON.parseObject(exhibitStr, ExhibitBean.class);
+        if(currentExhibit==null){return;}
+        currentMuseumId=currentExhibit.getMuseumId();
+        //*加载歌词
+        currentLyricUrl = currentExhibit.getTexturl();
         handler.sendEmptyMessage(MSG_WHAT_CHANGE_EXHIBIT);
     }
 
@@ -159,7 +186,7 @@ public class PlayActivity extends BaseActivity {
         try{
             String name = currentLyricUrl.replaceAll("/", "_");
             // 取得歌曲同目录下的歌词文件绝对路径
-            String lyricFilePath = application.getCurrentLyricDir() + name;
+            String lyricFilePath = LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_LYRIC+"/"+ name;
             File lyricFile = new File(lyricFilePath);
             if (lyricFile.exists()) {
                 // 本地有歌词，直接读取
@@ -182,9 +209,10 @@ public class PlayActivity extends BaseActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            mLyricDownloadManager = new LyricDownloadManager(PlayActivity.this);
+            LyricDownloadManager mLyricDownloadManager = new LyricDownloadManager(PlayActivity.this);
             // 从网络获取歌词，然后保存到本地
-            String lyricFilePath = mLyricDownloadManager.searchLyricFromWeb(params[0],application.getCurrentLyricDir());
+            String lyricFilePath = mLyricDownloadManager.searchLyricFromWeb(params[0],
+                    LOCAL_ASSETS_PATH + currentMuseumId + "/" + LOCAL_FILE_TYPE_LYRIC);
             // 返回本地歌词路径
             mIsLyricDownloading = false;
             return lyricFilePath;
@@ -199,18 +227,19 @@ public class PlayActivity extends BaseActivity {
     }
 
 
-    /*加载多角度图片*/
+    //加载多角度图片
     private void initMultiImgs() {
-        long startT=System.currentTimeMillis();
-        /*当前展品为空，返回*/
-        if(application.currentExhibitBean==null){return;}
-        String imgStr=application.currentExhibitBean.getImgsurl();
-        /*没有多角度图片，返回*/
+        //当前展品为空，返回
+        if(currentExhibit==null){return;}
+        String imgStr=currentExhibit.getImgsurl();
+        // 没有多角度图片，返回
         if(imgStr==null||imgStr.equals("")){return;}
         imgsTimeList=new ArrayList<>();
-        /*获取多角度图片地址数组*/
+        //获取多角度图片地址数组
         String[] imgs = imgStr.split(",");
-        if (imgs[0].equals("") && imgs.length != 0) {return;}
+        if (imgs[0].equals("") && imgs.length != 0) {
+            recycleMultiAngle.setVisibility(View.GONE);
+            return;}
 
         for (String singleUrl : imgs) {
             String[] nameTime = singleUrl.split("\\*");
@@ -224,58 +253,46 @@ public class PlayActivity extends BaseActivity {
         mulTiAngleImgAdapter.notifyDataSetChanged();
     }
 
-
     @Override
     protected void onDestroy() {
+        unregisterReceiver(playStateReceiver);
         handler.removeCallbacksAndMessages(null);
         super.onDestroy();
     }
-
 
     private class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
             /**当信息类型为更换歌词背景*/
             if (msg.what == MSG_WHAT_CHANGE_ICON) {
-                /*String imgPath = (String) msg.obj;
-                String currentIconPath=(String)iv_frag_largest_img.getTag();
-                String imgLocalPath = application.getCurrentImgDir() + Tools.changePathToName(imgPath);
-                *//**若歌词路径不为空，判断图片url,加载图片*//*
-                if(currentIconPath!=null&&!imgPath.equals(currentIconPath)&&!imgPath.equals(imgLocalPath)){
-                    if (Tools.isFileExist(imgLocalPath)) {
-                        iv_frag_largest_img.setTag(imgLocalPath);
-                        ImageLoaderUtil.displaySdcardImage(activity, imgLocalPath, iv_frag_largest_img);
-                    } else {
-                        String httpPath = BASE_URL + imgPath;
-                        iv_frag_largest_img.setTag(httpPath);
-                        ImageLoaderUtil.displayNetworkImage(activity, httpPath, iv_frag_largest_img);
-                    }
-                }else{
-                    currentIconPath=null;
-                    imgPath=null;
-                }*/
                 /**若信息类型为展品切换，刷新数据，刷新界面*/
-            } else if (msg.what == MSG_WHAT_CHANGE_EXHIBIT) {
-                /**数据初始化好之前显示加载对话框*/
-               /* showProgressDialog();
-                refreshData();
-                refreshView();
-                mediaServiceManager.notifyAllDataChange();
-                if(progressDialog!=null&&progressDialog.isShowing()){
-                    progressDialog.dismiss();
-                }*/
+            } else if (msg.what == MSG_WHAT_UPDATE_PROGRESS) {
+                seekBarProgress.setProgress(currentProgress);
+                mLyricLoadHelper.notifyTime(currentProgress);
+            }else if(msg.what==MSG_WHAT_UPDATE_DURATION){
+                seekBarProgress.setMax(currentDuration);
             }else if(msg.what==MSG_WHAT_PAUSE_MUSIC){
-                /**暂停播放*//*
-                if (mediaServiceManager != null && mediaServiceManager.isPlaying()) {
-                    music_play_and_ctrl.setBackgroundResource(R.mipmap.iv_media_stop);
-                    mediaServiceManager.pause();
-                }*/
+                /**暂停播放*/
             }else if(msg.what==MSG_WHAT_CONTINUE_MUSIC){
-               /* *//**继续播放*//*
-                music_play_and_ctrl.setBackgroundResource(R.mipmap.iv_media_play);
-                mediaServiceManager.toContinue();*/
+                //* *继续播放
             }
         }
     }
+
+    class PlayStateReceiver extends BroadcastReceiver{
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if(action.equals(INTENT_EXHIBIT_PROGRESS)){
+                currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
+                handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
+            }else if(action.equals(INTENT_EXHIBIT_DURATION)){
+                currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
+                handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
+            }
+        }
+    }
+
 
 }

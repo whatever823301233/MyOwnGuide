@@ -121,6 +121,11 @@
             android:theme="@style/FullscreenTheme" />
 
         <service
+            android:name="com.systekcn.guide.service.MediaPlayService"
+            android:enabled="true"
+            android:exported="false"
+            android:isolatedProcess="false" />
+        <service
             android:name="org.altbeacon.beacon.service.BeaconService"
             android:enabled="true"
             android:exported="false"
@@ -136,7 +141,6 @@
             android:permission="android.permission.BAIDU_LOCATION_SERVICE"
             android:process=":remote" />
         <service android:name="com.systekcn.guide.service.MuseumDownloadService" />
-        <service android:name="com.systekcn.guide.service.MediaPlayService" />
 
         <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
     </application>

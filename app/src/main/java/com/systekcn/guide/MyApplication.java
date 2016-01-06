@@ -17,7 +17,6 @@ import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.ExhibitBean;
-import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.manager.MediaServiceManager;
 import com.systekcn.guide.receiver.NetworkStateChangedReceiver;
 import com.systekcn.guide.utils.ExceptionUtil;
@@ -38,42 +37,21 @@ public class MyApplication extends Application implements IConstants{
     public static final boolean isRelease = false;
     /*所有的activity都放入此集合中*/
     public static ArrayList<Activity> listActivity = new ArrayList<>();
+    public MediaServiceManager mServiceManager;
     /*当前网络状态*/
     public static int currentNetworkType= INTERNET_TYPE_NONE;
-    public static final int GUIDE_MODEL_AUTO=2;
-    public static final int GUIDE_MODEL_HAND=3;
-    public static int guideModel=GUIDE_MODEL_HAND;
-    public MediaServiceManager mServiceManager;
-    /**当前展品*/
-    public ExhibitBean currentExhibitBean;
-    /**当前博物馆*/
-    public MuseumBean currentMuseum;
-    /**展品总集合*/
-    public List<ExhibitBean> totalExhibitBeanList;
-    /**当前要加入展品（蓝牙扫描周边等）集合*/
-    public List<ExhibitBean> currentExhibitBeanList;
-    /**看过的展品集合*/
-    public List<ExhibitBean> everSeenExhibitBeanList;
-    /**专题展品集合*/
-    public List<ExhibitBean> topicExhibitBeanList;
-    /***/
-    public List<ExhibitBean> recordExhibitBeanList;
-    /**附近展品框中显示的展品*/
-    public List<ExhibitBean> nearlyExhibitBeanList;
-
+    public List<ExhibitBean> totalExhibitBeanList; /**展品总集合*/
+    public List<ExhibitBean> currentExhibitBeanList;/**当前要加入展品（蓝牙扫描周边等）集合*/
     public String currentMuseumId;
-    public String currentBeaconId;
-    public String currentExhibitId;
 
     @Override
     public void onCreate() {
         myApplication = this;
         // 防止重启两次,非相同名字的则返回
-        if (!isSameAppName()) {
-            return;
-        }
+        if (!isSameAppName()) {return;}
         super.onCreate();
         mServiceManager = new MediaServiceManager(getApplicationContext());
+        mServiceManager.connectService();
         initDrawerImageLoader();
         registerNetWorkReceiver();
     }
@@ -84,17 +62,12 @@ public class MyApplication extends Application implements IConstants{
             public void set(ImageView imageView, Uri uri, Drawable placeholder) {
                 Glide.with(imageView.getContext()).load(uri).placeholder(placeholder).into(imageView);
             }
-
             @Override
             public void cancel(ImageView imageView) {
                 Glide.clear(imageView);
             }
-
             @Override
             public Drawable placeholder(Context ctx, String tag) {
-                //define different placeholders for different imageView targets
-                //default tags are accessible via the DrawerImageLoader.Tags
-                //custom ones can be checked via string. see the CustomUrlBasePrimaryDrawerItem LINE 111
                 if (DrawerImageLoader.Tags.PROFILE.name().equals(tag)) {
                     return DrawerUIUtils.getPlaceHolder(ctx);
                 } else if (DrawerImageLoader.Tags.ACCOUNT_HEADER.name().equals(tag)) {
@@ -102,50 +75,12 @@ public class MyApplication extends Application implements IConstants{
                 } else if ("customUrlItem".equals(tag)) {
                     return new IconicsDrawable(ctx).iconText(" ").backgroundColorRes(R.color.md_red_500).sizeDp(56);
                 }
-                //we use the default one for
-                //DrawerImageLoader.Tags.PROFILE_DRAWER_ITEM.name()
                 return super.placeholder(ctx, tag);
             }
         });
     }
-
-    public String getCurrentBeaconId(){
-        if(currentExhibitBean!=null){
-            currentBeaconId=currentExhibitBean.getBeaconId();
-            return currentBeaconId;
-        }else{
-            return "";
-        }
-    }
-
     public  static Context getAppContext(){
         return myApplication.getApplicationContext();
-    }
-
-    public void refreshData(){
-        if(currentExhibitBean!=null){
-            currentExhibitId=currentExhibitBean.getId();
-            currentMuseumId=currentExhibitBean.getMuseumId();
-            currentBeaconId=currentExhibitBean.getBeaconId();
-        }
-    }
-
-    public  String getCurrentLyricDir(){
-        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_LYRIC+"/";
-    }
-
-    public String getCurrentAudioDir(){
-        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_AUDIO+"/";
-    }
-    public  String getCurrentMuseumId(){
-        if(currentExhibitBean!=null){
-            return currentExhibitBean.getMuseumId();
-        }else{
-            return "";
-        }
-    }
-    public  String getCurrentImgDir(){
-        return LOCAL_ASSETS_PATH+currentExhibitBean.getMuseumId()+"/"+LOCAL_FILE_TYPE_IMAGE+"/";
     }
 
     public void registerNetWorkReceiver(){
@@ -218,5 +153,53 @@ public class MyApplication extends Application implements IConstants{
     public static MyApplication get() {
         return myApplication;
     }
+
+    /*public String getCurrentBeaconId(){
+        if(currentExhibitBean!=null){
+            currentBeaconId=currentExhibitBean.getBeaconId();
+            return currentBeaconId;
+        }else{
+            return "";
+        }
+    }*/
+
+
+   /* public void refreshData(){
+        if(currentExhibitBean!=null){
+            currentExhibitId=currentExhibitBean.getId();
+            currentMuseumId=currentExhibitBean.getMuseumId();
+            currentBeaconId=currentExhibitBean.getBeaconId();
+        }
+    }*/
+
+    /*public  String getCurrentLyricDir(){
+        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_LYRIC+"/";
+    }*/
+
+    /*public String getCurrentAudioDir(){
+        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_AUDIO+"/";
+    }*/
+   /* public  String getCurrentMuseumId(){
+        if(currentExhibitBean!=null){
+            return currentExhibitBean.getMuseumId();
+        }else{
+            return "";
+        }
+    }*/
+    /*public  String getCurrentImgDir(){
+        return LOCAL_ASSETS_PATH+currentExhibitBean.getMuseumId()+"/"+LOCAL_FILE_TYPE_IMAGE+"/";
+    }
+
+    //public ExhibitBean currentExhibitBean;/
+    //public MuseumBean currentMuseum; /**当前博物馆*/
+    /*public String currentBeaconId;
+    public String currentExhibitId;
+    public static final int GUIDE_MODEL_AUTO=2;
+     public static final int GUIDE_MODEL_HAND=3;
+     public static int guideModel=GUIDE_MODEL_HAND;
+    public List<ExhibitBean> everSeenExhibitBeanList;*//**看过的展品集合*//*
+    public List<ExhibitBean> topicExhibitBeanList;*//**专题展品集合*//*
+    public List<ExhibitBean> recordExhibitBeanList;
+    public List<ExhibitBean> nearlyExhibitBeanList;*//**附近展品框中*/
 
 }

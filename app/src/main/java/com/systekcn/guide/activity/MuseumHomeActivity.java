@@ -64,21 +64,24 @@ public class MuseumHomeActivity extends BaseActivity {
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        init();
+        initDrawer();
+        initData();
+        initView();
+        addListener();
+        /**数据初始化好之前显示加载对话框*/
+        //showProgressDialog();
+    }
+
+    private void init() {
         setContentView(R.layout.activity_museum_home);
         WindowManager windowManager = getWindowManager();
         Display display = windowManager.getDefaultDisplay();
         screenWidth = display.getWidth();
         handler=new MyHandler();
-        initDrawer();
         Intent intent =getIntent();
         currentMuseumStr=intent.getStringExtra(INTENT_MUSEUM);
-        initData();
-        // TODO: 2016/1/3
-        application.currentMuseumId=currentMuseumId;
-        initView();
-        addListener();
-        /**数据初始化好之前显示加载对话框*/
-        //showProgressDialog();
+
     }
 
     @Override

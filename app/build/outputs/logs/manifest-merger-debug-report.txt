@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-136:12
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:2:1-140:12
 	package
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml
@@ -46,7 +46,7 @@ ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:13:5-84
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:13:22-81
 application
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:15:5-134:19
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:15:5-138:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -260,44 +260,50 @@ ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:113:9-115:54
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:115:13-51
 	android:name
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:114:13-54
-service#org.altbeacon.beacon.service.BeaconService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:9-121:38
+service#com.systekcn.guide.service.MediaPlayService
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:116:9-120:47
 	android:enabled
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:118:13-35
-	android:label
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:121:13-35
 	android:exported
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:119:13-37
 	android:isolatedProcess
 		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:120:13-44
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:13-70
-service#org.altbeacon.beacon.BeaconIntentProcessor
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:9-125:40
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:117:13-53
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:121:9-126:38
 	android:enabled
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:124:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:123:13-35
+	android:label
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:126:13-35
 	android:exported
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:125:13-37
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:124:13-37
+	android:isolatedProcess
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:125:13-44
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:123:13-70
-service#com.baidu.location.f
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:126:9-130:41
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:122:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:127:9-130:40
 	android:enabled
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:128:13-35
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:129:13-35
+	android:exported
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:130:13-37
+	android:name
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:128:13-70
+service#com.baidu.location.f
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:131:9-135:41
+	android:enabled
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:133:13-35
 	android:process
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:130:13-38
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:135:13-38
 	android:permission
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:129:13-75
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:134:13-75
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:127:13-48
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:132:13-48
 service#com.systekcn.guide.service.MuseumDownloadService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:131:9-66
+ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:136:9-66
 	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:131:18-63
-service#com.systekcn.guide.service.MediaPlayService
-ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:132:9-61
-	android:name
-		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:132:18-58
+		ADDED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml:136:18-63
 uses-sdk
 INJECTED from D:\Guide\MyOwnGuide\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [MyOwnGuide:library:unspecified] D:\Guide\MyOwnGuide\app\build\intermediates\exploded-aar\MyOwnGuide\library\unspecified\AndroidManifest.xml:8:5-10:41

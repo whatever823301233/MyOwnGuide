@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
+import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.MultiAngleImg;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.Tools;
@@ -46,7 +47,7 @@ public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdap
         String url = multiAngleImg.getUrl();
         String name = Tools.changePathToName(url);
         MyApplication application = MyApplication.get();
-        String currentMuseumId = application.getCurrentMuseumId();
+        String currentMuseumId = (String) DataBiz.getTempValue(context,SP_MUSEUM_ID,"");
         if (currentMuseumId != null) {
             String path = SDCARD_ROOT + "/Guide/" + currentMuseumId + "/" + LOCAL_FILE_TYPE_IMAGE + "/" + name;
             if (Tools.isFileExist(path)) {
