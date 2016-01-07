@@ -410,12 +410,12 @@ public class MapFragment extends Fragment implements IConstants, MapEventsListen
 		if(map.getZoomLevel()==14) {
 			//map.getLayerById(EXHIBITS_LAYER).setVisible(true);
             //展品列表
-            List<ExhibitBean> list =  application.totalExhibitBeanList;
+          /* // List<ExhibitBean> list =  application.totalExhibitBeanList;
             MapObjectModel objectModel;
             for(ExhibitBean e:list){
                 objectModel = new MapObjectModel(0, (int)e.getMapx(), (int)e.getMapy(), e.getName());
                 model.addObject(objectModel);
-            }
+            }*/// TODO: 2016/1/7
             // initModel();
             initMapObjects(map.getLayerById(EXHIBITS_LAYER));
         }

@@ -18,6 +18,7 @@
         <ListView
             android:id="@+id/lvLyric"
             android:layout_margin="30dp"
+            android:dividerHeight="0dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none" />

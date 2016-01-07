@@ -26,7 +26,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IConstan
         try {
             application=MyApplication.get();
             netState=MyApplication.currentNetworkType;
-            MyApplication.listActivity.add(this);
+            //MyApplication.listActivity.add(this);
         } catch (Exception e) {
             ExceptionUtil.handleException(e);
         }

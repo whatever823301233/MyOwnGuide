@@ -1,6 +1,5 @@
 package com.systekcn.guide;
 
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
@@ -16,15 +15,11 @@ import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.systekcn.guide.biz.DataBiz;
-import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.manager.MediaServiceManager;
 import com.systekcn.guide.receiver.NetworkStateChangedReceiver;
 import com.systekcn.guide.utils.ExceptionUtil;
-import com.systekcn.guide.utils.LogUtil;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 
 /**
@@ -35,14 +30,12 @@ public class MyApplication extends Application implements IConstants{
     private static MyApplication myApplication;
     /*软件是否开发完毕*/
     public static final boolean isRelease = false;
-    /*所有的activity都放入此集合中*/
-    public static ArrayList<Activity> listActivity = new ArrayList<>();
     public MediaServiceManager mServiceManager;
     /*当前网络状态*/
     public static int currentNetworkType= INTERNET_TYPE_NONE;
-    public List<ExhibitBean> totalExhibitBeanList; /**展品总集合*/
-    public List<ExhibitBean> currentExhibitBeanList;/**当前要加入展品（蓝牙扫描周边等）集合*/
-    public String currentMuseumId;
+    //public List<ExhibitBean> totalExhibitBeanList; /**展品总集合*/
+   // public List<ExhibitBean> currentExhibitBeanList;/**当前要加入展品（蓝牙扫描周边等）集合*/
+   // public String currentMuseumId;
 
     @Override
     public void onCreate() {
@@ -131,16 +124,6 @@ public class MyApplication extends Application implements IConstants{
     }
     /*退出程序*/
     public static void exit() {
-        for (Activity activity : listActivity) {
-            if(activity!=null){
-                try {
-                    activity.finish();
-                    LogUtil.i("退出", activity.toString() + "退出了");
-                } catch (Exception e) {
-                    ExceptionUtil.handleException(e);
-                }
-            }
-        }
         DataBiz.clearTempValues(getAppContext());
         System.exit(0);
     }
@@ -153,53 +136,5 @@ public class MyApplication extends Application implements IConstants{
     public static MyApplication get() {
         return myApplication;
     }
-
-    /*public String getCurrentBeaconId(){
-        if(currentExhibitBean!=null){
-            currentBeaconId=currentExhibitBean.getBeaconId();
-            return currentBeaconId;
-        }else{
-            return "";
-        }
-    }*/
-
-
-   /* public void refreshData(){
-        if(currentExhibitBean!=null){
-            currentExhibitId=currentExhibitBean.getId();
-            currentMuseumId=currentExhibitBean.getMuseumId();
-            currentBeaconId=currentExhibitBean.getBeaconId();
-        }
-    }*/
-
-    /*public  String getCurrentLyricDir(){
-        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_LYRIC+"/";
-    }*/
-
-    /*public String getCurrentAudioDir(){
-        return LOCAL_ASSETS_PATH+currentMuseumId+"/"+LOCAL_FILE_TYPE_AUDIO+"/";
-    }*/
-   /* public  String getCurrentMuseumId(){
-        if(currentExhibitBean!=null){
-            return currentExhibitBean.getMuseumId();
-        }else{
-            return "";
-        }
-    }*/
-    /*public  String getCurrentImgDir(){
-        return LOCAL_ASSETS_PATH+currentExhibitBean.getMuseumId()+"/"+LOCAL_FILE_TYPE_IMAGE+"/";
-    }
-
-    //public ExhibitBean currentExhibitBean;/
-    //public MuseumBean currentMuseum; /**当前博物馆*/
-    /*public String currentBeaconId;
-    public String currentExhibitId;
-    public static final int GUIDE_MODEL_AUTO=2;
-     public static final int GUIDE_MODEL_HAND=3;
-     public static int guideModel=GUIDE_MODEL_HAND;
-    public List<ExhibitBean> everSeenExhibitBeanList;*//**看过的展品集合*//*
-    public List<ExhibitBean> topicExhibitBeanList;*//**专题展品集合*//*
-    public List<ExhibitBean> recordExhibitBeanList;
-    public List<ExhibitBean> nearlyExhibitBeanList;*//**附近展品框中*/
 
 }

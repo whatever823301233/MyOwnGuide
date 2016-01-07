@@ -89,7 +89,6 @@ public class MuseumHomeActivity extends BaseActivity {
     protected void onNewIntent(Intent intent) {
         currentMuseumStr=intent.getStringExtra(INTENT_MUSEUM);
         initData();
-        application.currentMuseumId=currentMuseumId;
     }
 
     private void initDrawer() {

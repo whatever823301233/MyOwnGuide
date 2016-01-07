@@ -720,6 +720,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_profile.xml"
     },
     {
+        "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "D:\\MyOwnGuide\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_secondary_switch.xml",
         "source": "D:\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\MyOwnGuide\\library\\unspecified\\res\\layout\\material_drawer_item_secondary_switch.xml"
     },

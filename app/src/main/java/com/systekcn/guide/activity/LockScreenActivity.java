@@ -49,9 +49,9 @@ public class LockScreenActivity extends BaseActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recycleNearly.setLayoutManager(linearLayoutManager);
-        nearlyGalleryAdapter=new NearlyGalleryAdapter(this,application.currentExhibitBeanList);
+       /* nearlyGalleryAdapter=new NearlyGalleryAdapter(this,application.currentExhibitBeanList);
         recycleNearly.setAdapter(nearlyGalleryAdapter);
-        registerReceiver();
+        registerReceiver();*/// TODO: 2016/1/7
         ivPlayCtrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,7 +112,7 @@ public class LockScreenActivity extends BaseActivity {
         public void handleMessage(Message msg) {
             if(msg.what==MSG_WHAT_UPDATE_DATA_SUCCESS){
                 if(nearlyGalleryAdapter!=null){
-                    nearlyGalleryAdapter.updateData(application.currentExhibitBeanList);
+                    //nearlyGalleryAdapter.updateData(application.currentExhibitBeanList);
                 }
             }
         }

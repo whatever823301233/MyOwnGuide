@@ -32,6 +32,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\menu\\drawer_menu.xml"
     },
     {
+        "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawer_menu.xml",
+        "source": "D:\\MyOwnGuide\\app\\src\\main\\res\\menu\\drawer_menu.xml"
+    },
+    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\menu\\fragment_menu.xml",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\menu\\fragment_menu.xml"
     },
