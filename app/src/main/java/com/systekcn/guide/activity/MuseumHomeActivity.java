@@ -23,7 +23,6 @@ import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.biz.DataBiz;
@@ -32,6 +31,7 @@ import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.Tools;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.io.IOException;
 
@@ -74,6 +74,7 @@ public class MuseumHomeActivity extends BaseActivity {
     }
 
     private void init() {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_museum_home);
         WindowManager windowManager = getWindowManager();
         Display display = windowManager.getDefaultDisplay();
@@ -96,18 +97,33 @@ public class MuseumHomeActivity extends BaseActivity {
                 .withActivity(this)
                 .withFullscreen(true)
                 .withHeader(R.layout.header)
-                .inflateMenu(R.menu.example_menu)
+                .inflateMenu(R.menu.drawer_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
                         }
+                        Intent intent=new Intent(MuseumHomeActivity.this,targetClass);
+                        startActivity(intent);
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        drawer.setSelection(5, false);
     }
 
     @Override
@@ -260,6 +276,9 @@ public class MuseumHomeActivity extends BaseActivity {
             tvMuseumIntroduce.setText("      " + currentMuseum.getTextUrl());
             initAudio();
             /*加载多个Icon图片*/
+            if(llMuseumLargestIcon.getChildCount()>0){
+                llMuseumLargestIcon.removeAllViews();
+            }
             String imgStr = currentMuseum.getImgUrl();
             String[] imgs = imgStr.split(",");
             for (int i = 0; i < imgs.length; i++) {

@@ -45,6 +45,7 @@ import com.systekcn.guide.beacon.NearestBeaconListener;
 import com.systekcn.guide.entity.BeaconBean;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.manager.BluetoothManager;
+import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.map.MapObjectContainer;
 import com.systekcn.guide.utils.map.MapObjectModel;
 import com.systekcn.guide.utils.map.TextPopup;
@@ -242,52 +243,61 @@ public class MapFragment extends Fragment implements IConstants, MapEventsListen
 
     //绘制不可扩展的地图对象(x,y)
     private void addNotScalableMapObject(int x, int y, Layer layer) {
-        // Getting the drawable of the map object
-        Drawable drawable = getResources().getDrawable(R.drawable.maps_blue_dot);
+        try{
+            // Getting the drawable of the map object
+            Drawable drawable = getResources().getDrawable(R.drawable.maps_blue_dot);
 
-        //绘制人员位置时，先清除改图层上的所有地图对象
-        if (map.getLayerById(PERSON_LAYER) == layer){
-            layer.clearAll();
-            drawable = getResources().getDrawable(R.drawable.icon_map_object);
-        }
+            //绘制人员位置时，先清除改图层上的所有地图对象
+            if (map.getLayerById(PERSON_LAYER) == layer){
+                layer.clearAll();
+                drawable = getResources().getDrawable(R.drawable.icon_map_object);
+            }
 
-        pinHeight = drawable.getIntrinsicHeight();
-        // Creating the map object
-        MapObject object1 = new MapObject(Integer.valueOf(nextObjectId), // id, will be passed to the listener when user clicks on it
-                drawable,
-                new Point(x, y), // coordinates in original map coordinate system.
-                // Pivot point of center of the drawable in the drawable's coordinate system.
-                PivotFactory.createPivotPoint(drawable, PivotFactory.PivotPosition.PIVOT_CENTER),
-                true, // This object will be passed to the listener
-                false); // is not scalable. It will have the same size on each zoom level
+            pinHeight = drawable.getIntrinsicHeight();
+            // Creating the map object
+            MapObject object1 = new MapObject(Integer.valueOf(nextObjectId), // id, will be passed to the listener when user clicks on it
+                    drawable,
+                    new Point(x, y), // coordinates in original map coordinate system.
+                    // Pivot point of center of the drawable in the drawable's coordinate system.
+                    PivotFactory.createPivotPoint(drawable, PivotFactory.PivotPosition.PIVOT_CENTER),
+                    true, // This object will be passed to the listener
+                    false); // is not scalable. It will have the same size on each zoom level
 
 
-        //绘制地图对象(图标点)到图层
-        layer.addMapObject(object1);
-        nextObjectId += 1;
+            //绘制地图对象(图标点)到图层
+            layer.addMapObject(object1);
+            nextObjectId += 1;
+        }catch (Exception e){
+            ExceptionUtil.handleException(e);}
+
     }
 
     //绘制不可扩展的地图对象(location)
     private void addNotScalableMapObject(Location location, Layer layer) {
-        if (location == null)
-            return;
+        try {
+            if (location == null)
+                return;
 
-        // Getting the drawable of the map object
-        //获取地图对象的绘制
-        Drawable drawable = getResources().getDrawable(R.drawable.icon_map_object);// TODO: 2016/1/1
-        // Creating the map object
-        MapObject object1 = new MapObject(Integer.valueOf(nextObjectId), // id, will be passed to the listener when user clicks on it
-                drawable,
-                new Point(0, 0), // coordinates in original map coordinate system.
-                // Pivot point of center of the drawable in the drawable's coordinate system.
-                PivotFactory.createPivotPoint(drawable, PivotFactory.PivotPosition.PIVOT_CENTER),
-                true, // This object will be passed to the listener
-                true); // is not scalable. It will have the same size on each zoom level
-        layer.addMapObject(object1);
+            // Getting the drawable of the map object
+            //获取地图对象的绘制
+            Drawable drawable = getResources().getDrawable(R.drawable.icon_map_object);// TODO: 2016/1/1
+            // Creating the map object
+            MapObject object1 = new MapObject(Integer.valueOf(nextObjectId), // id, will be passed to the listener when user clicks on it
+                    drawable,
+                    new Point(0, 0), // coordinates in original map coordinate system.
+                    // Pivot point of center of the drawable in the drawable's coordinate system.
+                    PivotFactory.createPivotPoint(drawable, PivotFactory.PivotPosition.PIVOT_CENTER),
+                    true, // This object will be passed to the listener
+                    true); // is not scalable. It will have the same size on each zoom level
+            layer.addMapObject(object1);
 
-        // Will crash if you try to move before adding to the layer.
-        object1.moveTo(location);
-        nextObjectId += 1;
+            // Will crash if you try to move before adding to the layer.
+            object1.moveTo(location);
+            nextObjectId += 1;
+        }catch (Exception e){
+            ExceptionUtil.handleException(e);
+        }
+
     }
 
 

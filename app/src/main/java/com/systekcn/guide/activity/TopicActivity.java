@@ -22,25 +22,26 @@ import com.lidroid.xutils.exception.DbException;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.ExhibitAdapter;
 import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TopicActivity extends BaseActivity {
 
-    private Drawer result;
+    private Drawer drawer;
     private String currentMuseumId;
     private Handler handler;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_topic);
         Intent intent=getIntent();
         currentMuseumId =intent.getStringExtra(INTENT_MUSEUM_ID);
@@ -95,23 +96,37 @@ public class TopicActivity extends BaseActivity {
     }
 
     private void initDrawer() {
-        result = new DrawerBuilder()
+        drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withFullscreen(true)
                 .withHeader(R.layout.header)
-                .inflateMenu(R.menu.example_menu)
+                .inflateMenu(R.menu.drawer_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
                         }
-
+                        Intent intent=new Intent(TopicActivity.this,targetClass);
+                        startActivity(intent);
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        result.setSelection(5, false);
     }
 
     private void addListener() {
@@ -119,10 +134,10 @@ public class TopicActivity extends BaseActivity {
         titleBarDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (result.isDrawerOpen()) {
-                    result.closeDrawer();
+                if (drawer.isDrawerOpen()) {
+                    drawer.closeDrawer();
                 } else {
-                    result.openDrawer();
+                    drawer.openDrawer();
                 }
             }
         });
@@ -188,8 +203,8 @@ public class TopicActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if(result.isDrawerOpen()){
-                result.closeDrawer();
+            if(drawer.isDrawerOpen()){
+                drawer.closeDrawer();
             }
         }
         return super.onKeyDown(keyCode, event);

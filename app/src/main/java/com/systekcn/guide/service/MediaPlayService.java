@@ -98,6 +98,10 @@ public class MediaPlayService extends Service implements IConstants {
             if(playMode==PLAY_MODE_AUTO){
                 toStartPlay();
             }
+            mp.pause();
+            Intent intent=new Intent();
+            intent.setAction(INTENT_CHANGE_PLAY_STOP);
+            sendBroadcast(intent);
         }
     };
 
@@ -125,7 +129,7 @@ public class MediaPlayService extends Service implements IConstants {
             isPlaying=true;
             addRecord(currentExhibit);
             duration = mediaPlayer.getDuration();
-            handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
+            //handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
             handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
             isSendProgress=true;
             flag=true;
@@ -276,14 +280,16 @@ public class MediaPlayService extends Service implements IConstants {
                 case MSG_WHAT_UPDATE_PROGRESS:
                     doUpdateProgress();
                     break;
-                case MSG_WHAT_UPDATE_DURATION:
-                    doUpdateDuration(duration);
-                    break;
+                /*case MSG_WHAT_UPDATE_DURATION:
+                    doUpdateDuration();
+                    break;*/
             }
         }
     }
 
-    private void doUpdateDuration(int duration){
+    private void doUpdateDuration(){
+        if(mediaPlayer==null||!isSendProgress){ return;}
+        duration=mediaPlayer.getDuration();
         Intent intent=new Intent();
         intent.setAction(INTENT_EXHIBIT_DURATION);
         intent.putExtra(INTENT_EXHIBIT_DURATION,duration);
@@ -293,9 +299,11 @@ public class MediaPlayService extends Service implements IConstants {
     private void doUpdateProgress() {
         if(mediaPlayer==null||!isSendProgress){ return;}
         currentPosition = mediaPlayer.getCurrentPosition();
+        duration=mediaPlayer.getDuration();
         Intent intent=new Intent();
         intent.setAction(INTENT_EXHIBIT_PROGRESS);
-        intent.putExtra(INTENT_EXHIBIT_PROGRESS,currentPosition);
+        intent.putExtra(INTENT_EXHIBIT_PROGRESS, currentPosition);
+        intent.putExtra(INTENT_EXHIBIT_DURATION,duration);
         sendBroadcast(intent);
         handler.sendEmptyMessageDelayed(MSG_WHAT_UPDATE_PROGRESS,800);
     }

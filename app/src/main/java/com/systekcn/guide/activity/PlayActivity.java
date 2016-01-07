@@ -18,6 +18,9 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MultiAngleImgAdapter;
 import com.systekcn.guide.entity.ExhibitBean;
@@ -30,6 +33,7 @@ import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.Tools;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -59,20 +63,72 @@ public class PlayActivity extends BaseActivity {
     private int currentDuration;
     private PlayStateReceiver playStateReceiver;
     private RecyclerView recycleMultiAngle;
+    private Drawer drawer;
+    private String currentExhibitStr;
+    private String currentIconUrl;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_play);
         handler =new MyHandler();
+        initDrawer();
         initView();
         addListener();
         registerReceiver();
-        initData();
-        refreshView();
+        Intent intent=getIntent();
+        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+        if(currentExhibitStr==null||!currentExhibitStr.equals(exhibitStr)){
+            currentExhibitStr=exhibitStr;
+            initData(currentExhibitStr);
+        }
+    }
+
+    private void initDrawer() {
+        drawer = new DrawerBuilder()
+                .withActivity(this)
+                .withFullscreen(true)
+                .withHeader(R.layout.header)
+                .inflateMenu(R.menu.drawer_menu)
+                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                    @Override
+                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
+                        }
+                        Intent intent=new Intent(PlayActivity.this,targetClass);
+                        startActivity(intent);
+                        return false;
+                    }
+                }).build();
     }
 
     private void addListener() {
         ivPlayCtrl.setOnClickListener(onClickListener);
+        seekBarProgress.setOnSeekBarChangeListener(onSeekBarChangeListener);
+        mulTiAngleImgAdapter.setOnItemClickListener(new MultiAngleImgAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                MultiAngleImg multiAngleImg=multiAngleImgs.get(position);
+                String url=multiAngleImg.getUrl();
+                initIcon(url);
+            }
+        });
     }
 
 
@@ -80,7 +136,10 @@ public class PlayActivity extends BaseActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         registerReceiver();
-        initData();
+        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+        if(currentExhibitStr==null||!currentExhibitStr.equals(exhibitStr)){
+            initData(currentExhibitStr);
+        }
 
     }
 
@@ -92,20 +151,21 @@ public class PlayActivity extends BaseActivity {
         filter.addAction(INTENT_EXHIBIT_DURATION);
         filter.addAction(INTENT_CHANGE_PLAY_PLAY);
         filter.addAction(INTENT_CHANGE_PLAY_STOP);
-        registerReceiver(playStateReceiver,filter);
+        registerReceiver(playStateReceiver, filter);
 
     }
 
     private void refreshView() {
-        initIcon();
+        LogUtil.i("ZHANG","执行了refreshView");
+        initIcon(currentExhibit.getIconurl());
         initMultiImgs();
         loadLyricByHand();
     }
 
-
-    private void initIcon() {
-        if(currentExhibit==null){return;}
-        String iconUrl=currentExhibit.getIconurl();
+    private void initIcon(String iconUrl) {
+        if(currentExhibit==null||TextUtils.isEmpty(iconUrl)){return;}
+        if(currentIconUrl!=null&&currentIconUrl.equals(iconUrl)){return;}
+        currentIconUrl=iconUrl;
         String imageName = Tools.changePathToName(iconUrl);
         String imgLocalUrl = LOCAL_ASSETS_PATH+currentMuseumId + "/" + LOCAL_FILE_TYPE_IMAGE+"/"+imageName;
         File file = new File(imgLocalUrl);
@@ -135,7 +195,6 @@ public class PlayActivity extends BaseActivity {
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recycleMultiAngle.setLayoutManager(linearLayoutManager);
         recycleMultiAngle.setAdapter(mulTiAngleImgAdapter);
-
         mLyricLoadHelper = new LyricLoadHelper();
         mLyricAdapter = new LyricAdapter(this);
         mLyricLoadHelper.setLyricListener(mLyricListener);
@@ -143,6 +202,27 @@ public class PlayActivity extends BaseActivity {
         imgWordCtrl.setOnClickListener(onClickListener);
     }
 
+
+    SeekBar.OnSeekBarChangeListener onSeekBarChangeListener=new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            if(!fromUser){return;}
+            Intent intent=new Intent();
+            intent.setAction(INTENT_SEEK_BAR_CHANG);
+            intent.putExtra(INTENT_SEEK_BAR_CHANG,progress);
+            sendBroadcast(intent);
+        }
+
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
+        }
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {
+
+        }
+    };
 
     View.OnClickListener onClickListener=new View.OnClickListener() {
 
@@ -188,10 +268,8 @@ public class PlayActivity extends BaseActivity {
     };
 
     /*加载数据*/
-    private void initData() {
-        Intent intent=getIntent();
-        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-        currentExhibit= JSON.parseObject(exhibitStr, ExhibitBean.class);
+    private void initData(String str) {
+        currentExhibit= JSON.parseObject(str, ExhibitBean.class);
         if(currentExhibit==null){return;}
         currentMuseumId=currentExhibit.getMuseumId();
         //*加载歌词
@@ -255,8 +333,9 @@ public class PlayActivity extends BaseActivity {
         imgsTimeList=new ArrayList<>();
         //获取多角度图片地址数组
         String[] imgs = imgStr.split(",");
-        if (imgs[0].equals("") && imgs.length != 0) {
-            //recycleMultiAngle.setVisibility(View.GONE);
+        if (imgs[0].equals("") || imgs.length == 0) {
+            recycleMultiAngle.setVisibility(View.GONE);
+            LogUtil.i("ZHANG","执行了recycleMultiAngle.setVisibility(View.GONE);");
             return;}
         for (String singleUrl : imgs) {
             String[] nameTime = singleUrl.split("\\*");
@@ -282,11 +361,9 @@ public class PlayActivity extends BaseActivity {
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case MSG_WHAT_UPDATE_PROGRESS:
+                    seekBarProgress.setMax(currentDuration);
                     seekBarProgress.setProgress(currentProgress);
                     mLyricLoadHelper.notifyTime(currentProgress);
-                    break;
-                case MSG_WHAT_UPDATE_DURATION:
-                    seekBarProgress.setMax(currentDuration);
                     break;
                 case MSG_WHAT_PAUSE_MUSIC:
                     break;
@@ -312,15 +389,11 @@ public class PlayActivity extends BaseActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            LogUtil.i("ZHANG",action);
             if(action.equals(INTENT_EXHIBIT_PROGRESS)){
+                currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
                 currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
                 handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
-            }else if(action.equals(INTENT_EXHIBIT_DURATION)){
-                currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
-                handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
             }else if(action.equals(INTENT_EXHIBIT)){
-                LogUtil.i("ZHANG","接收了INTENT_EXHIBIT");
                 String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
                 if(TextUtils.isEmpty(exhibitStr)){return;}
                 ExhibitBean exhibitBean=JSON.parseObject(exhibitStr, ExhibitBean.class);
@@ -333,6 +406,4 @@ public class PlayActivity extends BaseActivity {
             }
         }
     }
-
-
 }

@@ -89,4 +89,17 @@
         <item name="android:background">@drawable/tv_bg_topic_label</item>
     </style>
 
+    <style name="MyFullTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Here we setting appcompat’s actionBarStyle -->
+        <item name="drawerArrowStyle">@style/Material.DrawerArrowStyle</item>
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+        <!-- Material specific values -->
+    </style>
+
+
 </resources>

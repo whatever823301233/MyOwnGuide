@@ -30,6 +30,7 @@ public interface IConstants {
     /**关于URL*/
 
     String BASE_URL ="http://182.92.82.70";
+    //String BASE_URL ="http://192.168.1.108:8080";
     String URL_CITY_LIST="http://182.92.82.70/api/cityService/cityList"; //城市路径
     String URL_MUSEUM_LIST="http://182.92.82.70/api/museumService/museumList";//city下博物馆列表
     String URL_GET_MUSEUM_BY_ID="http://182.92.82.70/api/museumService/museumList?museumId="; //博物馆列表下博物馆*/
@@ -69,6 +70,7 @@ public interface IConstants {
     String INTENT_EXHIBIT_PROGRESS ="intent_exhibit_progress";//播放进度
     String INTENT_EXHIBIT_DURATION ="intent_exhibit_duration";//播放总时长
     String INTENT_EXHIBIT_CHANG ="intent_exhibit_chang";//切换展品
+    String INTENT_SEEK_BAR_CHANG ="intent_seek_bar_chang";//进度条拖动
 
     String INTENT_CHANGE_PLAY_STATE="intent_change_play_state";
     String INTENT_CHANGE_PLAY_STOP="intent_change_play_stop";

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.systekcn.guide.IConstants;
-import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.R;
 import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.MultiAngleImg;
@@ -20,12 +19,21 @@ import java.util.List;
 /**
  * Created by Qiang on 2015/12/25.
  */
-public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdapter.ViewHolder> implements IConstants {
+public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdapter.ViewHolder> implements IConstants{
 
     private Context context;
     private List<MultiAngleImg> list;
     private LayoutInflater inflater;
 
+    public OnItemClickListener getOnItemClickListener() {
+        return onItemClickListener;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    private OnItemClickListener onItemClickListener;
 
     public MultiAngleImgAdapter(Context c, List<MultiAngleImg> list) {
         this.context = c;
@@ -36,7 +44,7 @@ public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdap
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.item_multi_angle_img, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        ViewHolder viewHolder = new ViewHolder(view,onItemClickListener);
         viewHolder.ivMultiAngle = (ImageView) view.findViewById(R.id.ivMultiAngle);
         return viewHolder;
     }
@@ -46,7 +54,7 @@ public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdap
         MultiAngleImg multiAngleImg=list.get(position);
         String url = multiAngleImg.getUrl();
         String name = Tools.changePathToName(url);
-        MyApplication application = MyApplication.get();
+        //MyApplication application = MyApplication.get();
         String currentMuseumId = (String) DataBiz.getTempValue(context,SP_MUSEUM_ID,"");
         if (currentMuseumId != null) {
             String path = SDCARD_ROOT + "/Guide/" + currentMuseumId + "/" + LOCAL_FILE_TYPE_IMAGE + "/" + name;
@@ -68,22 +76,28 @@ public class MultiAngleImgAdapter extends RecyclerView.Adapter<MultiAngleImgAdap
         notifyDataSetChanged();
     }
 
+
     public interface OnItemClickListener
     {
         void onItemClick(View view, int position);
     }
 
-    private OnItemClickListener onItemClickListener;
 
-    public void setOnItemClickLitener(OnItemClickListener onItemClickListener)
-    {
-        this.onItemClickListener = onItemClickListener;
-    }
 
-    class ViewHolder extends RecyclerView.ViewHolder{
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        OnItemClickListener onItemClickListener;
         ImageView ivMultiAngle;
-        public ViewHolder(View itemView) {
+        public ViewHolder(View itemView,OnItemClickListener onItemClickListener) {
             super(itemView);
+            this.onItemClickListener=onItemClickListener;
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            if(onItemClickListener!=null){
+                onItemClickListener.onItemClick(v,getPosition());
+            }
         }
     }
 }

@@ -75,17 +75,14 @@ public class ImageLoaderUtil implements IConstants{
 					imageView.setImageBitmap(loadedImage);
                     try{
                         if(!imageUri.startsWith(BASE_URL)){return;}
-                        String path=imageUri.substring(imageUri.indexOf("182.92.82.70/") + 12);
+                        String path=imageUri.substring(imageUri.indexOf(BASE_URL) + BASE_URL.length());
                         String name=Tools.changePathToName(path);
-                        String museumId=DataBiz.getCurrentMuseumId();
+                        String museumId= DataBiz.getCurrentMuseumId();
                         if(TextUtils.isEmpty(museumId)){return;}
                         String savePath=APP_ASSETS_PATH+museumId+"/"+LOCAL_FILE_TYPE_IMAGE;
                         File dir=new File(savePath);
-                        if(!dir.exists()){
-                            dir.mkdirs();
-                        }
-                        boolean isSave=DataBiz.saveBitmap(savePath,name,loadedImage);
-                        LogUtil.i("ZHANG","onLoadingComplete 存储结果"+isSave);
+                        if(!dir.exists()){dir.mkdirs();}
+                        DataBiz.saveBitmap(savePath, name, loadedImage);
                     }catch (Exception e){ExceptionUtil.handleException(e);}
 				}
 				@Override

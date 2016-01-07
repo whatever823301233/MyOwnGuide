@@ -19,7 +19,6 @@ import com.baidu.location.LocationClient;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.CityAdapter;
@@ -31,6 +30,7 @@ import com.systekcn.guide.entity.CityBean;
 import com.systekcn.guide.parser.CharacterParser;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.PinyinComparator;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -38,7 +38,7 @@ import java.util.List;
 
 public class CityChooseActivity extends BaseActivity{
 
-    private Drawer result;
+    private Drawer drawer;
 
 
     private ListView cityListView;
@@ -57,6 +57,7 @@ public class CityChooseActivity extends BaseActivity{
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_city_choose);
         initDrawer();
         initView();
@@ -231,23 +232,37 @@ public class CityChooseActivity extends BaseActivity{
     }
 
     private void initDrawer() {
-        result = new DrawerBuilder()
+        drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withFullscreen(true)
                 .withHeader(R.layout.header)
-                .inflateMenu(R.menu.example_menu)
+                .inflateMenu(R.menu.drawer_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
                         }
-
+                        Intent intent=new Intent(CityChooseActivity.this,targetClass);
+                        startActivity(intent);
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        result.setSelection(5, false);
     }
 
     class MyHandler extends  Handler{

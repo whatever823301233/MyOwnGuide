@@ -43,6 +43,7 @@ public class MediaServiceManager implements IConstants {
         IntentFilter filter=new IntentFilter();
         filter.addAction(INTENT_EXHIBIT);
         filter.addAction(INTENT_CHANGE_PLAY_STATE);
+        filter.addAction(INTENT_SEEK_BAR_CHANG);
         mContext.registerReceiver(playCtrlReceiver, filter);
     }
 
@@ -178,6 +179,9 @@ public class MediaServiceManager implements IConstants {
                     intent1.setAction(INTENT_CHANGE_PLAY_PLAY);
                 }
                 context.sendBroadcast(intent1);
+            }else if(action.equals(INTENT_SEEK_BAR_CHANG)){
+                int progress=intent.getIntExtra(INTENT_SEEK_BAR_CHANG,0);
+                mediaServiceBinder.seekTo(progress);
             }
         }
     }

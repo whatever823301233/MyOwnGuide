@@ -21,7 +21,6 @@ import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.R;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.fragment.ExhibitListFragment;
@@ -29,15 +28,15 @@ import com.systekcn.guide.fragment.MapFragment;
 import com.systekcn.guide.manager.BluetoothManager;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.Tools;
+import com.systekcn.guide.utils.ViewUtils;
 
 public class ListAndMapActivity extends BaseActivity implements ExhibitListFragment.OnFragmentInteractionListener{
 
-    private Drawer result;
+    private Drawer drawer;
     private RadioButton radioButtonList;
     private RadioButton radioButtonMap;
     private RadioGroup radioGroupTitle;
     private ExhibitListFragment exhibitListFragment;
-    private View view;
     private TextView aaa;
     private MapFragment mapFragment;
     private ExhibitBean currentExhibit;
@@ -50,11 +49,12 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     private TextView exhibitName;
     private ImageView exhibitIcon;
     private ImageView ivPlayCtrl;
+    private BluetoothManager bluetoothManager;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_list_and_map);
-        view =getLayoutInflater().inflate(R.layout.layout_drawer,null);
         handler=new MyHandler();
         initBlueTooth();
         initDrawer();
@@ -73,33 +73,48 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     }
 
     private void initBlueTooth() {
-        BluetoothManager bluetoothManager = BluetoothManager.newInstance(this);
+        bluetoothManager = BluetoothManager.newInstance(this);
         bluetoothManager.initBeaconSearcher();
     }
 
     private void initDrawer() {
-        result = new DrawerBuilder()
+        drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withFullscreen(true)
-                .withCustomView(view)
                 .withHeader(R.layout.header)
-                        //.inflateMenu(R.menu.example_menu)
+                .inflateMenu(R.menu.drawer_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            showToast("item" + position + "被点击了");
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
                         }
+                        Intent intent=new Intent(ListAndMapActivity.this,targetClass);
+                        startActivity(intent);
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        result.setSelection(5, false);
     }
 
     private void addListener() {
         radioGroupTitle.setOnCheckedChangeListener(radioButtonCheckListener);
         ivPlayCtrl.setOnClickListener(onClickListener);
+        seekBarProgress.setOnSeekBarChangeListener(onSeekBarChangeListener);
     }
 
     private void initView() {
@@ -124,7 +139,26 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
             }
         }
     };
+    SeekBar.OnSeekBarChangeListener onSeekBarChangeListener=new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            if(!fromUser){return;}
+            Intent intent=new Intent();
+            intent.setAction(INTENT_SEEK_BAR_CHANG);
+            intent.putExtra(INTENT_SEEK_BAR_CHANG,progress);
+            sendBroadcast(intent);
+        }
 
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
+        }
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {
+
+        }
+    };
 
     private void setDefaultFragment() {
         String flag=getIntent().getStringExtra(INTENT_FLAG_GUIDE_MAP);
@@ -195,10 +229,8 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
                     refreshBottomTab();
                     break;
                 case MSG_WHAT_UPDATE_PROGRESS:
-                    seekBarProgress.setProgress(currentProgress);
-                    break;
-                case MSG_WHAT_UPDATE_DURATION:
                     seekBarProgress.setMax(currentDuration);
+                    seekBarProgress.setProgress(currentProgress);
                     break;
                 case MSG_WHAT_PAUSE_MUSIC:
                     break;
@@ -227,17 +259,23 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         }
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        bluetoothManager.disConnectBluetoothService();
+        finish();
+    }
+
     class PlayStateReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
             if(action.equals(INTENT_EXHIBIT_PROGRESS)){
+                currentDuration =intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
                 currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
                 handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
-            }else if(action.equals(INTENT_EXHIBIT_DURATION)){
-                currentDuration=intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
-                handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
             }else if(action.equals(INTENT_EXHIBIT)){
                 String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
                 if(TextUtils.isEmpty(exhibitStr)){return;}
@@ -255,6 +293,4 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
             }
         }
     }
-
-
 }

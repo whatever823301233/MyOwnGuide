@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import com.systekcn.guide.R;
 import com.systekcn.guide.utils.NetworkUtil;
 import com.systekcn.guide.utils.Tools;
+import com.systekcn.guide.utils.ViewUtils;
 
 public class BeginActivity extends BaseActivity {
 
@@ -17,6 +18,7 @@ public class BeginActivity extends BaseActivity {
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this,R.color.md_red_200);
         view = View.inflate(this, R.layout.activity_begin, null);
         NetworkUtil.checkNet(this);
         setContentView(view);

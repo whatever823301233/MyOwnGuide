@@ -4,12 +4,12 @@
         "source": "D:\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_compact_header.xml"
     },
     {
-        "merged": "D:\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines.xml",
-        "source": "D:\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_lines.xml"
-    },
-    {
         "merged": "D:\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_mini.xml",
         "source": "D:\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_mini.xml"
+    },
+    {
+        "merged": "D:\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines.xml",
+        "source": "D:\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
@@ -40,12 +40,12 @@
         "source": "D:\\MyOwnGuide\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_secondary_toggle.xml",
-        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_secondary_toggle.xml"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_divider.xml",
         "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_divider.xml"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\material_drawer_item_secondary_toggle.xml",
+        "source": "D:\\Android\\MyOwnGuide\\library\\src\\main\\res\\layout\\material_drawer_item_secondary_toggle.xml"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\library\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",

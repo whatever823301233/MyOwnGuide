@@ -252,6 +252,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\bg_progress_bar.png"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_museum_choose.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\drawer_museum_choose.png"
+    },
+    {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_word_ctrl_switch.png",
         "source": "D:\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_word_ctrl_switch.png"
     },
@@ -376,6 +380,10 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_collection.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\drawer_collection.png"
+    },
+    {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "D:\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -422,6 +430,10 @@
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_setting.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\drawer_setting.png"
     },
     {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_begin_activty.jpg",
@@ -818,6 +830,10 @@
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_play_state_stop_lock.png",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_play_state_stop_lock.png"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_city_choose.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\drawer_city_choose.png"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",

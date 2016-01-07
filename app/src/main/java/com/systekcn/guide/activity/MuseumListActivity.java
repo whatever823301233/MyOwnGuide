@@ -17,13 +17,13 @@ import com.alibaba.fastjson.JSON;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.MuseumAdapter;
 import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.entity.MuseumBean;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.LogUtil;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,12 +37,13 @@ public class MuseumListActivity extends BaseActivity {
     private List<MuseumBean> museumList;
     private MuseumAdapter adapter;
     private Handler handler;
-    private Drawer result;
+    private Drawer drawer;
     private Receiver receiver;
     private TextView titleBarTopic;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_museum_list);
         handler=new MyHandler();
         initView();
@@ -60,23 +61,37 @@ public class MuseumListActivity extends BaseActivity {
     }
 
     private void initDrawer() {
-        result = new DrawerBuilder()
+        drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withFullscreen(true)
                 .withHeader(R.layout.header)
-                .inflateMenu(R.menu.example_menu)
+                .inflateMenu(R.menu.drawer_menu)
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem instanceof Nameable) {
-                            //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
+                        Class<?>  targetClass=null;
+                        switch (position){
+                            case 1:
+                                targetClass=DownloadActivity.class;
+                                break;
+                            case 2:
+                                targetClass=CollectionActivity.class;
+                                break;
+                            case 3:
+                                targetClass=CityChooseActivity.class;
+                                break;
+                            case 4:
+                                targetClass=MuseumListActivity.class;
+                                break;
+                            case 5:
+                                targetClass=SettingActivity.class;
+                                break;
                         }
-
+                        Intent intent=new Intent(MuseumListActivity.this,targetClass);
+                        startActivity(intent);
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        //result.setSelection(5, false);
     }
 
     private void addListener() {
@@ -88,6 +103,7 @@ public class MuseumListActivity extends BaseActivity {
                 String museumStr=JSON.toJSONString(museumBean);
                 intent.putExtra(INTENT_MUSEUM,museumStr);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -133,7 +149,7 @@ public class MuseumListActivity extends BaseActivity {
         titleBarTopic=(TextView)findViewById(R.id.titleBarTopic);
         museumListView=(ListView)findViewById(R.id.museumListView);
         View header=getLayoutInflater().inflate(R.layout.header_museum_list,null);
-        museumListView.addHeaderView(header);
+        museumListView.addHeaderView(header,null,false);
         museumList=new ArrayList<>();
         adapter=new MuseumAdapter(this,museumList);
         museumListView.setAdapter(adapter);

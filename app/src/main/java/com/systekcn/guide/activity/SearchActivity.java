@@ -24,6 +24,7 @@ import com.systekcn.guide.adapter.ExhibitAdapter;
 import com.systekcn.guide.custom.ClearEditText;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.utils.ExceptionUtil;
+import com.systekcn.guide.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +40,7 @@ public class SearchActivity extends BaseActivity {
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_search);
         initDrawer();
         initView();
@@ -67,10 +69,15 @@ public class SearchActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ExhibitBean exhibitBean=exhibitBeanList.get(position);
-                String jsonStr= JSON.toJSONString(exhibitBean);
-                Intent intent=new Intent(SearchActivity.this,PlayActivity.class);
-                intent.putExtra(INTENT_EXHIBIT,jsonStr);
-                startActivity(intent);
+                String str= JSON.toJSONString(exhibitBean);
+                Intent intent =new Intent();
+                intent.setAction(INTENT_EXHIBIT);
+                intent.putExtra(INTENT_EXHIBIT, str);
+                sendBroadcast(intent);
+                Intent intent1 =new Intent(SearchActivity.this,PlayActivity.class);
+                intent1.putExtra(INTENT_EXHIBIT,str);
+                startActivity(intent1);
+                finish();
             }
         });
 
@@ -115,14 +122,11 @@ public class SearchActivity extends BaseActivity {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem instanceof Nameable) {
-                            //Toast.makeText(CityChooseActivity.this, ((Nameable) drawerItem).getName().getText(MenuDrawerActivity.this), Toast.LENGTH_SHORT).show();
                         }
 
                         return false;
                     }
                 }).build();
-        // set the selection to the item with the identifier 5
-        //result.setSelection(5, false);
     }
 
     private void initView() {

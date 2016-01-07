@@ -141,7 +141,21 @@ public class DataBiz implements IConstants{
 
 
 
-    public static List<ExhibitBean> getCollectionExhibitListFromDB(String museumId) {
+    public static List<ExhibitBean> getCollectionExhibitListFromDB() {
+        List<ExhibitBean> collectionList=null;
+        DbUtils db=DbUtils.create(MyApplication.get());
+        try {
+            collectionList= db.findAll(Selector.from(ExhibitBean.class).where(SAVE_FOR_PERSON,"=", true));
+        } catch (DbException e) {
+            ExceptionUtil.handleException(e);
+        }finally {
+            if(db!=null){
+                db.close();
+            }
+        }
+        return collectionList;
+    }
+    public static List<ExhibitBean> getCollectionExhibitListFromDBById(String museumId) {
         List<ExhibitBean> collectionList=null;
         DbUtils db=DbUtils.create(MyApplication.get());
         try {
@@ -162,7 +176,7 @@ public class DataBiz implements IConstants{
         List<ExhibitBean> exhibitList = getEntityListFromNet(ExhibitBean.class, URL_EXHIBIT_LIST + museumID);
         if(beaconList == null || labelList == null || exhibitList == null //|| mapList == null//|| mapList.size() == 0
                 || beaconList.size() == 0 || labelList.size() == 0 || exhibitList.size() == 0 ){return false;}
-        List<ExhibitBean> collectionList=getCollectionExhibitListFromDB(museumID);
+        List<ExhibitBean> collectionList= getCollectionExhibitListFromDBById(museumID);
         if(collectionList!=null&&collectionList.size()>0){
             exhibitList.removeAll(collectionList);
         }
