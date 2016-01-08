@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\maps_blue_dot.png",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\maps_blue_dot.png"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_museum_choose.png",
@@ -32,6 +32,10 @@
         "source": "D:\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_home_circle_nearly.png"
     },
     {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_tab.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_tab.png"
+    },
+    {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_heart_empty.png",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_heart_empty.png"
     },
@@ -56,12 +60,12 @@
         "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "D:\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_home_circle_collect.png",
@@ -124,12 +128,12 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "D:\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "D:\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
@@ -200,12 +204,12 @@
         "source": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_app_logo.png",
-        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_app_logo.png"
-    },
-    {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_home_circle_ticket.png",
         "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_home_circle_ticket.png"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_app_logo.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_app_logo.png"
     },
     {
         "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
@@ -718,6 +722,10 @@
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_play_state_stop.png",
         "source": "D:\\Android\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_play_state_stop.png"
+    },
+    {
+        "merged": "D:\\Guide\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_skip.png",
+        "source": "D:\\Guide\\MyOwnGuide\\app\\src\\main\\res\\drawable-xhdpi\\iv_skip.png"
     },
     {
         "merged": "D:\\Android\\MyOwnGuide\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\iv_sound_close.png",

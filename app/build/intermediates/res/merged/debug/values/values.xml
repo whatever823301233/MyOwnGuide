@@ -4656,7 +4656,7 @@ If the Library as you received it specifies that a proxy can decide whether futu
     <style name="MaterialTheme.Light.DarkToolbar.TranslucentStatus" parent="MaterialTheme.Light.DarkToolbar"/>
     <style name="MaterialTheme.Light.TranslucentStatus" parent="MaterialTheme.Light"/>
     <style name="MaterialTheme.TranslucentStatus" parent="MaterialTheme"/>
-    <style name="MyFullTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MyFullTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- Here we setting appcompat’s actionBarStyle -->

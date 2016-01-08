@@ -17,7 +17,6 @@ import com.systekcn.guide.entity.BeaconBean;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.entity.LabelBean;
 import com.systekcn.guide.utils.ExceptionUtil;
-import com.systekcn.guide.utils.LogUtil;
 import com.systekcn.guide.utils.MyHttpUtil;
 
 import java.io.File;
@@ -42,6 +41,19 @@ public class DataBiz implements IConstants{
         List<T> list= null;
         try {
             list = db.findAll(clazz);
+        } catch (DbException e) {
+            ExceptionUtil.handleException(e);
+        }finally {
+            if(db!=null){db.close();}
+        }
+        return list;
+    }
+
+    public  static<T> List<T> getEntityListLocalByColumn(String column,String value,Class<T> clazz){
+        DbUtils db=DbUtils.create(MyApplication.get());
+        List<T> list= null;
+        try {
+            list = db.findAll(Selector.from(clazz).where(column,"=",value));
         } catch (DbException e) {
             ExceptionUtil.handleException(e);
         }finally {
@@ -303,7 +315,6 @@ public class DataBiz implements IConstants{
                 }
             }
         }
-        LogUtil.i("ZHANG", isSave + "image 存储路径==" + isSave + path);
         return isSave;
     }
 

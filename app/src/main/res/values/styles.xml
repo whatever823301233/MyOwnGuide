@@ -89,7 +89,7 @@
         <item name="android:background">@drawable/tv_bg_topic_label</item>
     </style>
 
-    <style name="MyFullTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MyFullTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- Here we setting appcompat’s actionBarStyle -->

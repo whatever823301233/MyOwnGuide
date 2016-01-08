@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="72dp"
     android:background="@drawable/title_bar_bg">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"

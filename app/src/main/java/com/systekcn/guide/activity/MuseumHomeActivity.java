@@ -152,16 +152,17 @@ public class MuseumHomeActivity extends BaseActivity {
 
     }
 
+
     private View.OnClickListener onClickListener=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent=null;
             switch (v.getId()){
-                case R.id.rlNearlyHome:
+               /* case R.id.rlNearlyHome:
                     intent=new Intent(MuseumHomeActivity.this,DownloadActivity.class);
                     intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_GUIDE);
                     startActivity(intent);
-                    break;
+                    break;*/
                 case R.id.rlGuideHome:
                     intent=new Intent(MuseumHomeActivity.this,ListAndMapActivity.class);
                     intent.putExtra(INTENT_FLAG_GUIDE_MAP, INTENT_FLAG_GUIDE);
@@ -354,7 +355,8 @@ public class MuseumHomeActivity extends BaseActivity {
                     Toast.makeText(this, "在按一次退出", Toast.LENGTH_SHORT).show();
                     mExitTime = System.currentTimeMillis();
                 } else {
-                    MyApplication.exit();
+                    DataBiz.clearTempValues(this);
+                    MyApplication.get().exit();
                 }
             }
             return true;

@@ -73,16 +73,12 @@
             android:theme="@style/MaterialDrawerTheme"/>
 
 
-
-
         <activity
             android:name=".activity.BeginActivity"
-            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -93,32 +89,31 @@
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.MuseumListActivity"
-            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.MuseumHomeActivity"
-            android:launchMode="singleInstance"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.ListAndMapActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.TopicActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.PlayActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.LockScreenActivity"
-            android:launchMode="singleInstance"
+            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
@@ -128,22 +123,22 @@
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.CollectionActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.SearchActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.DownloadActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
         <activity
             android:name=".activity.SettingActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullTheme"/>
 

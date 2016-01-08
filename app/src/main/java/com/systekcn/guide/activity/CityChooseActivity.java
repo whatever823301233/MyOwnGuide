@@ -13,17 +13,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSON;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.systekcn.guide.IConstants;
 import com.systekcn.guide.R;
 import com.systekcn.guide.adapter.CityAdapter;
-import com.systekcn.guide.biz.BizFactory;
-import com.systekcn.guide.biz.GetDataBiz;
+import com.systekcn.guide.biz.DataBiz;
 import com.systekcn.guide.custom.ClearEditText;
 import com.systekcn.guide.custom.SideBar;
 import com.systekcn.guide.entity.CityBean;
@@ -81,15 +80,12 @@ public class CityChooseActivity extends BaseActivity{
         });
         cityListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                //这里要利用adapter.getItem(position)来获取当前position所对应的对象
-                Toast.makeText(getApplication(), ((CityBean) adapter.getItem(position)).getName(), Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 try {
-                    CityBean city = (CityBean) cityListView.getAdapter().getItem(position);
+                    CityBean city = adapter.getItem(position);
                     // 这里要利用adapter.getItem(position)来获取当前position所对应的对象
-                    currentCity = city.getName();
-                    Toast.makeText(getApplication(), currentCity, Toast.LENGTH_SHORT).show();
+                    currentCity = JSON.toJSONString(city);
+                    Toast.makeText(getApplication(), city.getName(), Toast.LENGTH_SHORT).show();
                     gotoMuseumActivity();
                     finish();
                 } catch (Exception e) {
@@ -122,7 +118,7 @@ public class CityChooseActivity extends BaseActivity{
 
     private void gotoMuseumActivity() {
         Intent intent = new Intent(CityChooseActivity.this, MuseumListActivity.class);
-        intent.putExtra("city", currentCity);
+        intent.putExtra(INTENT_CITY, currentCity);
         startActivity(intent);
         disConnectBaiduSDK();
         finish();
@@ -215,17 +211,15 @@ public class CityChooseActivity extends BaseActivity{
         new Thread(){
             @Override
             public void run() {
-                int msg=0;
-                long startTime=System.currentTimeMillis();
-                GetDataBiz biz= (GetDataBiz) BizFactory.getDataBiz();
-                cities= (List<CityBean>) biz.getAllBeans(CityChooseActivity.this, IConstants.URL_TYPE_GET_CITY,"");
-                while(cities==null){
-                    if(System.currentTimeMillis()-startTime>5){
-                        msg=MSG_WHAT_UPDATE_DATA_FAIL;
-                        break;
-                    }
+                cities=DataBiz.getEntityListLocal(CityBean.class);
+                if(cities==null||cities.size()==0){
+                    cities=DataBiz.getEntityListFromNet(CityBean.class,URL_CITY_LIST);
+                    if(cities!=null&&cities.size()>0){DataBiz.saveListToSQLite(cities);}
                 }
-                msg=MSG_WHAT_UPDATE_DATA_SUCCESS;
+                int msg=MSG_WHAT_UPDATE_DATA_SUCCESS;
+                if(cities==null||cities.size()==0){
+                    msg=MSG_WHAT_UPDATE_DATA_FAIL;
+                }
                 handler.sendEmptyMessage(msg);
             }
         }.start();

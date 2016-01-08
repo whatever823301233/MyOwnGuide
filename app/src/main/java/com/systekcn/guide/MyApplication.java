@@ -39,10 +39,10 @@ public class MyApplication extends Application implements IConstants{
 
     @Override
     public void onCreate() {
-        myApplication = this;
-        // 防止重启两次,非相同名字的则返回
-        if (!isSameAppName()) {return;}
         super.onCreate();
+        myApplication = this;
+        if (!isSameAppName()) {return;}
+        // 防止重启两次,非相同名字的则返回
         mServiceManager = new MediaServiceManager(getApplicationContext());
         mServiceManager.connectService();
         initDrawerImageLoader();
@@ -103,7 +103,7 @@ public class MyApplication extends Application implements IConstants{
         ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         Iterator<ActivityManager.RunningAppProcessInfo> iterator = activityManager.getRunningAppProcesses().iterator();
         while (iterator.hasNext()) {
-            ActivityManager.RunningAppProcessInfo runningAppProcessInfo = (ActivityManager.RunningAppProcessInfo) (iterator.next());
+            ActivityManager.RunningAppProcessInfo runningAppProcessInfo =iterator.next();
             try {
                 if (runningAppProcessInfo.pid == pid) {
                     return runningAppProcessInfo.processName;
@@ -123,7 +123,8 @@ public class MyApplication extends Application implements IConstants{
         }
     }
     /*退出程序*/
-    public static void exit() {
+    public  void exit() {
+        mServiceManager.disConnectService();
         DataBiz.clearTempValues(getAppContext());
         System.exit(0);
     }

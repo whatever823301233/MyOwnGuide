@@ -7,7 +7,6 @@ import android.util.DisplayMetrics;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.systekcn.guide.R;
 import com.systekcn.guide.manager.SystemBarTintManager;
 
 /**
@@ -30,7 +29,9 @@ public class ViewUtils {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window win = activity.getWindow();
             WindowManager.LayoutParams winParams = win.getAttributes();
+
             final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+            //final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION;
             if (on) {
                 winParams.flags |= bits;
             } else {
@@ -40,7 +41,7 @@ public class ViewUtils {
         }
         SystemBarTintManager tintManager = new SystemBarTintManager(activity);
         tintManager.setStatusBarTintEnabled(true);
-        tintManager.setStatusBarTintResource(R.color.md_red_400);
+        tintManager.setStatusBarTintResource(color);
     }
 
     /**

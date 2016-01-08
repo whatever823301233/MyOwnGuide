@@ -50,6 +50,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     private ImageView exhibitIcon;
     private ImageView ivPlayCtrl;
     private BluetoothManager bluetoothManager;
+    private ImageView titleBarDrawer;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
@@ -114,6 +115,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     private void addListener() {
         radioGroupTitle.setOnCheckedChangeListener(radioButtonCheckListener);
         ivPlayCtrl.setOnClickListener(onClickListener);
+        titleBarDrawer.setOnClickListener(onClickListener);
         seekBarProgress.setOnSeekBarChangeListener(onSeekBarChangeListener);
     }
 
@@ -125,6 +127,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         exhibitName=(TextView)findViewById(R.id.exhibitName);
         exhibitIcon=(ImageView)findViewById(R.id.exhibitIcon);
         ivPlayCtrl=(ImageView)findViewById(R.id.ivPlayCtrl);
+        titleBarDrawer=(ImageView)findViewById(R.id.titleBarDrawer);
     }
 
     View.OnClickListener onClickListener=new View.OnClickListener() {
@@ -135,6 +138,13 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
                     Intent intent=new Intent();
                     intent.setAction(INTENT_CHANGE_PLAY_STATE);
                     sendBroadcast(intent);
+                    break;
+                case R.id.titleBarDrawer:
+                    if (drawer.isDrawerOpen()) {
+                        drawer.closeDrawer();
+                    } else {
+                        drawer.openDrawer();
+                    }
                     break;
             }
         }

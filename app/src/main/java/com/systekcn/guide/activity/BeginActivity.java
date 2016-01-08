@@ -18,6 +18,10 @@ public class BeginActivity extends BaseActivity {
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
+        /*if( this.isTaskRoot()) {
+            finish();
+            return;
+        }*/
         ViewUtils.setStateBarColor(this,R.color.md_red_200);
         view = View.inflate(this, R.layout.activity_begin, null);
         NetworkUtil.checkNet(this);
@@ -32,6 +36,13 @@ public class BeginActivity extends BaseActivity {
         }
         initData();
     }
+
+
+
+
+
+
+
     private void initData() {
         AlphaAnimation startAnimation = new AlphaAnimation(1.0f, 1.0f);
         startAnimation.setDuration(2500);

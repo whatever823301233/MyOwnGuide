@@ -38,6 +38,7 @@ public class TopicActivity extends BaseActivity {
     private Drawer drawer;
     private String currentMuseumId;
     private Handler handler;
+    private ImageView titleBarSkip;
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
@@ -131,6 +132,8 @@ public class TopicActivity extends BaseActivity {
 
     private void addListener() {
 
+        titleBarDrawer.setOnClickListener(onClickListener);
+        lv_collection_listView.setOnScrollListener(onScrollListener);
         titleBarDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -200,6 +203,32 @@ public class TopicActivity extends BaseActivity {
         setManyBtnListener();
     }
 
+
+    private AbsListView.OnScrollListener onScrollListener=new AbsListView.OnScrollListener() {
+        @Override
+        public void onScrollStateChanged(AbsListView view, int scrollState) {
+            switch (scrollState){
+                case  AbsListView.OnScrollListener.SCROLL_STATE_IDLE://停止滚动
+                    exhibitAdapter.setScrollState(false);
+                    break;
+                case AbsListView.OnScrollListener.SCROLL_STATE_FLING://滚动做出了抛的动作
+                    //设置为正在滚动
+                    exhibitAdapter.setScrollState(true);
+                    break;
+                case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL://正在滚动
+                    //设置为正在滚动
+                    exhibitAdapter.setScrollState(true);
+                    break;
+
+            }
+        }
+
+        @Override
+        public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+
+        }
+    };
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -245,6 +274,22 @@ public class TopicActivity extends BaseActivity {
                 exhibitAdapter.updateData(disPlayCheckExhibitList);
             }catch (Exception e){
                 ExceptionUtil.handleException(e);
+            }
+
+        }
+    };
+
+    private View.OnClickListener onClickListener=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.titleBarDrawer:
+                    if (drawer.isDrawerOpen()) {
+                        drawer.closeDrawer();
+                    } else {
+                        drawer.openDrawer();
+                    }
+                    break;
             }
 
         }
@@ -311,7 +356,8 @@ public class TopicActivity extends BaseActivity {
     private void initViews() {
         tvList=new ArrayList<>();
         titleBarDrawer =(ImageView)findViewById(R.id.titleBarDrawer);
-
+        titleBarSkip =(ImageView)findViewById(R.id.titleBarRightImg);
+        titleBarSkip.setImageDrawable(getResources().getDrawable(R.drawable.iv_skip));
         ll_collection_has_choose=(LinearLayout)findViewById(R.id.ll_collection_has_choose);
         lv_collection_listView=(ListView)findViewById(R.id.lv_collection_listView);
         //iv_titleBar_toGuide =(TextView)findViewById(R.id.iv_titlebar_toGuide);

@@ -78,12 +78,22 @@ public class PlayActivity extends BaseActivity {
         registerReceiver();
         Intent intent=getIntent();
         String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-        if(currentExhibitStr==null||!currentExhibitStr.equals(exhibitStr)){
+        if(currentExhibitStr==null){
             currentExhibitStr=exhibitStr;
             initData(currentExhibitStr);
-        }
+        }else{refreshView();}
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
+        if(currentExhibitStr==null){
+            currentExhibitStr=exhibitStr;
+            initData(currentExhibitStr);
+        } else{refreshView();}
+
+    }
     private void initDrawer() {
         drawer = new DrawerBuilder()
                 .withActivity(this)
@@ -132,16 +142,6 @@ public class PlayActivity extends BaseActivity {
     }
 
 
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        registerReceiver();
-        String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-        if(currentExhibitStr==null||!currentExhibitStr.equals(exhibitStr)){
-            initData(currentExhibitStr);
-        }
-
-    }
 
     private void registerReceiver() {
         playStateReceiver=new PlayStateReceiver();

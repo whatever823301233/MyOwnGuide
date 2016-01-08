@@ -31,13 +31,18 @@ public class ExhibitAdapter extends BaseAdapter implements IConstants {
     private Context context;
     private List<ExhibitBean> list;
     private LayoutInflater inflater;
+    private  boolean scrollState=false;
 
+    public void setScrollState(boolean scrollState) {
+        this.scrollState = scrollState;
+    }
     public ExhibitAdapter(Context context, List<ExhibitBean> list) {
         super();
         this.context = context;
         this.list = list;
         inflater=LayoutInflater.from(context);
     }
+
     public void updateData(List<ExhibitBean> list){
         this.list=list;
         notifyDataSetChanged();
@@ -125,23 +130,24 @@ public class ExhibitAdapter extends BaseAdapter implements IConstants {
                 }
             }
         });
+        if (!scrollState){
+            // 显示图片
+            String iconUrl = exhibitBean.getIconurl();
 
-        // 显示图片
-        String iconUrl = exhibitBean.getIconurl();
+            //每个博物馆的资源以ID为目录
+            String museumId = exhibitBean.getMuseumId();
 
-        //每个博物馆的资源以ID为目录
-        String museumId = exhibitBean.getMuseumId();
-
-        String imageName = iconUrl.replaceAll("/", "_");
-        String imgLocalUrl = LOCAL_ASSETS_PATH+museumId + "/" + LOCAL_FILE_TYPE_IMAGE+"/"+imageName;
-        File file = new File(imgLocalUrl);
-        // 判断sdcard上有没有图片
-        if (file.exists()) {
-            // 显示sdcard
-            ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, viewHolder.ivExhibitIcon);
-        } else {
-            iconUrl = BASE_URL + iconUrl;
-            ImageLoaderUtil.displayNetworkImage(context, iconUrl, viewHolder.ivExhibitIcon);
+            String imageName = iconUrl.replaceAll("/", "_");
+            String imgLocalUrl = LOCAL_ASSETS_PATH+museumId + "/" + LOCAL_FILE_TYPE_IMAGE+"/"+imageName;
+            File file = new File(imgLocalUrl);
+            // 判断sdcard上有没有图片
+            if (file.exists()) {
+                // 显示sdcard
+                ImageLoaderUtil.displaySdcardImage(context, imgLocalUrl, viewHolder.ivExhibitIcon);
+            } else {
+                iconUrl = BASE_URL + iconUrl;
+                ImageLoaderUtil.displayNetworkImage(context, iconUrl, viewHolder.ivExhibitIcon);
+            }
         }
         return convertView;
     }

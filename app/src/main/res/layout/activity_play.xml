@@ -4,6 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:paddingTop="25dp"
               tools:context=".activity.PlayActivity">
     <FrameLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         <ListView
             android:id="@+id/lvLyric"
             android:layout_margin="30dp"
-            android:dividerHeight="0dp"
+            android:divider="@null"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none" />
