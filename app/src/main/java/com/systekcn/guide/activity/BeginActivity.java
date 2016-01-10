@@ -1,6 +1,7 @@
 package com.systekcn.guide.activity;
 
 import android.content.Intent;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -10,6 +11,7 @@ import com.systekcn.guide.R;
 import com.systekcn.guide.utils.NetworkUtil;
 import com.systekcn.guide.utils.Tools;
 import com.systekcn.guide.utils.ViewUtils;
+import com.systekcn.guide.utils.WifiUtils;
 
 public class BeginActivity extends BaseActivity {
 
@@ -18,10 +20,7 @@ public class BeginActivity extends BaseActivity {
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
-        /*if( this.isTaskRoot()) {
-            finish();
-            return;
-        }*/
+        connectWIFI();
         ViewUtils.setStateBarColor(this,R.color.md_red_200);
         view = View.inflate(this, R.layout.activity_begin, null);
         NetworkUtil.checkNet(this);
@@ -37,10 +36,31 @@ public class BeginActivity extends BaseActivity {
         initData();
     }
 
+    private void connectWIFI() {
+
+        new Thread(){
+            @Override
+            public void run() {
+                WifiUtils wifiUtils=new WifiUtils(BeginActivity.this);
+                if(wifiUtils.checkState()== WifiManager.WIFI_STATE_DISABLED){
+                    wifiUtils.openWifi();
+                }
+                wifiUtils.startScan();
+                wifiUtils.CreateWifiInfo("systek","systek2015",3);
+            }
+        }.start();
 
 
-
-
+       /* wifiUtils.startScan();
+        List<WifiConfiguration> configurations= wifiUtils.getConfiguration();
+        if(configurations.size()>0){
+           for(int i=0;i<configurations.size();i++){
+               if(configurations.get(i).SSID.equals("systek")){
+                   wifiUtils.connectConfiguration(i);
+               }
+           }
+        }*/
+    }
 
 
     private void initData() {

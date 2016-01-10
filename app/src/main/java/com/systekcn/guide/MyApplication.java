@@ -43,7 +43,7 @@ public class MyApplication extends Application implements IConstants{
         myApplication = this;
         if (!isSameAppName()) {return;}
         // 防止重启两次,非相同名字的则返回
-        mServiceManager = new MediaServiceManager(getApplicationContext());
+        mServiceManager = MediaServiceManager.getInstance(getApplicationContext());
         mServiceManager.connectService();
         initDrawerImageLoader();
         registerNetWorkReceiver();

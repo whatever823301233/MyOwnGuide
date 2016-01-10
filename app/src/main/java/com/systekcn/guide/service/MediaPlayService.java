@@ -129,7 +129,6 @@ public class MediaPlayService extends Service implements IConstants {
             isPlaying=true;
             addRecord(currentExhibit);
             duration = mediaPlayer.getDuration();
-            //handler.sendEmptyMessage(MSG_WHAT_UPDATE_DURATION);
             handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
             isSendProgress=true;
             flag=true;

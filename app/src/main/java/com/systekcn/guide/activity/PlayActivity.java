@@ -29,6 +29,7 @@ import com.systekcn.guide.lyric.LyricAdapter;
 import com.systekcn.guide.lyric.LyricDownloadManager;
 import com.systekcn.guide.lyric.LyricLoadHelper;
 import com.systekcn.guide.lyric.LyricSentence;
+import com.systekcn.guide.manager.MediaServiceManager;
 import com.systekcn.guide.utils.ExceptionUtil;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.LogUtil;
@@ -67,33 +68,74 @@ public class PlayActivity extends BaseActivity {
     private String currentExhibitStr;
     private String currentIconUrl;
 
+    private MediaServiceManager mediaServiceManager;
+
+
     @Override
     protected void initialize(Bundle savedInstanceState) {
         ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_play);
         handler =new MyHandler();
+        mediaServiceManager=MediaServiceManager.getInstance(this);
         initDrawer();
         initView();
         addListener();
         registerReceiver();
         Intent intent=getIntent();
         String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-        if(currentExhibitStr==null){
-            currentExhibitStr=exhibitStr;
-            initData(currentExhibitStr);
-        }else{refreshView();}
+        currentExhibit=mediaServiceManager.getCurrentExhibit();
+        if(currentExhibit==null){
+            if(currentExhibitStr!=null){
+                currentExhibitStr=exhibitStr;
+                ExhibitBean exhibitBean=JSON.parseObject(currentExhibitStr, ExhibitBean.class);
+                if(exhibitBean!=null&&currentExhibit!=null&&!exhibitBean.equals(currentExhibit)){
+                    currentExhibit=exhibitBean;
+                }
+            }
+        }
+        initData();
+        LogUtil.i("ZHANG","执行了initialize");
     }
+
 
     @Override
     protected void onNewIntent(Intent intent) {
+        LogUtil.i("ZHANG","执行了onNewIntent");
         super.onNewIntent(intent);
         String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-        if(currentExhibitStr==null){
+        if(TextUtils.isEmpty(exhibitStr)){
+            currentExhibit=mediaServiceManager.getCurrentExhibit();
+            refreshView();
+        }else{
             currentExhibitStr=exhibitStr;
-            initData(currentExhibitStr);
-        } else{refreshView();}
+            ExhibitBean exhibitBean=JSON.parseObject(currentExhibitStr, ExhibitBean.class);
+            if(exhibitBean!=null&&currentExhibit!=null&&!exhibitBean.equals(currentExhibit)){
+                currentExhibit=exhibitBean;
+                initData();
+            }else{
+                refreshView();
+            }
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        LogUtil.i("ZHANG", "执行了onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        LogUtil.i("ZHANG","执行了onResume");
+        super.onResume();
+        if(mediaServiceManager.isPlaying()){
+            handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+        }else{
+            handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
+        }
 
     }
+
     private void initDrawer() {
         drawer = new DrawerBuilder()
                 .withActivity(this)
@@ -157,9 +199,9 @@ public class PlayActivity extends BaseActivity {
 
     private void refreshView() {
         LogUtil.i("ZHANG","执行了refreshView");
-        initIcon(currentExhibit.getIconurl());
         initMultiImgs();
         loadLyricByHand();
+        initIcon(currentExhibit.getIconurl());
     }
 
     private void initIcon(String iconUrl) {
@@ -268,8 +310,7 @@ public class PlayActivity extends BaseActivity {
     };
 
     /*加载数据*/
-    private void initData(String str) {
-        currentExhibit= JSON.parseObject(str, ExhibitBean.class);
+    private void initData() {
         if(currentExhibit==null){return;}
         currentMuseumId=currentExhibit.getMuseumId();
         //*加载歌词
@@ -278,7 +319,6 @@ public class PlayActivity extends BaseActivity {
     }
 
     private void loadLyricByHand() {
-        long time =System.currentTimeMillis();
         try{
             String name = currentLyricUrl.replaceAll("/", "_");
             // 取得歌曲同目录下的歌词文件绝对路径
@@ -290,11 +330,9 @@ public class PlayActivity extends BaseActivity {
             } else {
                 mIsLyricDownloading = true;
                 // 尝试网络获取歌词
-                LogUtil.i("ZHANG", "loadLyric()--->本地无歌词，尝试从网络获取");
+                //LogUtil.i("ZHANG", "loadLyric()--->本地无歌词，尝试从网络获取");
                 new LyricDownloadAsyncTask().execute(currentLyricUrl);
             }
-            long costTime=System.currentTimeMillis()-time;
-            LogUtil.i("ZHANG", "GuideActivity_loadLyricByHand耗时" + costTime);
         }catch (Exception e){
             ExceptionUtil.handleException(e);
         }
@@ -325,6 +363,8 @@ public class PlayActivity extends BaseActivity {
 
     //加载多角度图片
     private void initMultiImgs() {
+        multiAngleImgs.clear();
+        mulTiAngleImgAdapter.updateData(multiAngleImgs);
         //当前展品为空，返回
         if(currentExhibit==null){return;}
         String imgStr=currentExhibit.getImgsurl();
@@ -334,8 +374,7 @@ public class PlayActivity extends BaseActivity {
         //获取多角度图片地址数组
         String[] imgs = imgStr.split(",");
         if (imgs[0].equals("") || imgs.length == 0) {
-            recycleMultiAngle.setVisibility(View.GONE);
-            LogUtil.i("ZHANG","执行了recycleMultiAngle.setVisibility(View.GONE);");
+            // TODO: 2016/1/10
             return;}
         for (String singleUrl : imgs) {
             String[] nameTime = singleUrl.split("\\*");

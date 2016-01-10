@@ -18,7 +18,7 @@ android {
     buildToolsVersion '23.0.2'
     defaultConfig {
         applicationId 'com.systekcn.guide'
-        minSdkVersion 19
+        minSdkVersion 18
         targetSdkVersion 23
         versionCode 462
         versionName "4.6.2"

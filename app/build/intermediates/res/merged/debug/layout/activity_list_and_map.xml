@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="双龙耳盘口壶"
+                    android:text="暂无展品"
                     android:textSize="@dimen/normal_textSize"
                     android:textColor="@color/md_red_400" />
                 <ImageView

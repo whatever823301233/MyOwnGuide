@@ -26,6 +26,7 @@ import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.fragment.ExhibitListFragment;
 import com.systekcn.guide.fragment.MapFragment;
 import com.systekcn.guide.manager.BluetoothManager;
+import com.systekcn.guide.manager.MediaServiceManager;
 import com.systekcn.guide.utils.ImageLoaderUtil;
 import com.systekcn.guide.utils.Tools;
 import com.systekcn.guide.utils.ViewUtils;
@@ -51,12 +52,15 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     private ImageView ivPlayCtrl;
     private BluetoothManager bluetoothManager;
     private ImageView titleBarDrawer;
+    private MediaServiceManager mediaServiceManager;
+
 
     @Override
     protected void initialize(Bundle savedInstanceState) {
         ViewUtils.setStateBarColor(this, R.color.md_red_400);
         setContentView(R.layout.activity_list_and_map);
         handler=new MyHandler();
+        mediaServiceManager=MediaServiceManager.getInstance(this);
         initBlueTooth();
         initDrawer();
         initView();
@@ -70,6 +74,8 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         IntentFilter filter=new IntentFilter();
         filter.addAction(INTENT_EXHIBIT_PROGRESS);
         filter.addAction(INTENT_EXHIBIT_DURATION);
+        filter.addAction(INTENT_CHANGE_PLAY_PLAY);
+        filter.addAction(INTENT_CHANGE_PLAY_STOP);
         registerReceiver(receiver,filter);
     }
 
@@ -117,6 +123,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         ivPlayCtrl.setOnClickListener(onClickListener);
         titleBarDrawer.setOnClickListener(onClickListener);
         seekBarProgress.setOnSeekBarChangeListener(onSeekBarChangeListener);
+        exhibitIcon.setOnClickListener(onClickListener);
     }
 
     private void initView() {
@@ -145,6 +152,10 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
                     } else {
                         drawer.openDrawer();
                     }
+                    break;
+                case R.id.exhibitIcon:
+                    Intent intent1=new Intent(ListAndMapActivity.this,PlayActivity.class);
+                    startActivity(intent1);
                     break;
             }
         }
@@ -216,6 +227,18 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     @Override
     protected void onResume() {
         super.onResume();
+        ExhibitBean exhibitBean=mediaServiceManager.getCurrentExhibit();
+        if(exhibitBean!=null){
+            exhibitName.setText(exhibitBean.getName());
+            refreshBottomTab(exhibitBean);
+        }
+
+        if(mediaServiceManager.isPlaying()){
+            handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+        }else{
+            handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
+        }
+
     }
 
     @Override
@@ -228,7 +251,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
     @Override
     public void onFragmentInteraction(ExhibitBean bean) {
         this.currentExhibit=bean;
-        refreshBottomTab();
+        refreshBottomTab(bean);
     }
 
     private class MyHandler extends Handler {
@@ -236,7 +259,7 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case MSG_WHAT_CHANGE_EXHIBIT:
-                    refreshBottomTab();
+                    refreshBottomTab(currentExhibit);
                     break;
                 case MSG_WHAT_UPDATE_PROGRESS:
                     seekBarProgress.setMax(currentDuration);
@@ -256,8 +279,9 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         }
     }
 
-    private void refreshBottomTab() {
-        if(currentExhibit==null){return;}
+    private void refreshBottomTab(ExhibitBean exhibitBean) {
+        if(exhibitBean==null){return;}
+        currentExhibit=exhibitBean;
         String iconPath=currentExhibit.getIconurl();
         String name= Tools.changePathToName(iconPath);
         exhibitName.setText(currentExhibit.getName());
@@ -277,30 +301,42 @@ public class ListAndMapActivity extends BaseActivity implements ExhibitListFragm
         finish();
     }
 
+
     class PlayStateReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            if(action.equals(INTENT_EXHIBIT_PROGRESS)){
-                currentDuration =intent.getIntExtra(INTENT_EXHIBIT_DURATION,0);
-                currentProgress =intent.getIntExtra(INTENT_EXHIBIT_PROGRESS,0);
-                handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
-            }else if(action.equals(INTENT_EXHIBIT)){
-                String exhibitStr=intent.getStringExtra(INTENT_EXHIBIT);
-                if(TextUtils.isEmpty(exhibitStr)){return;}
-                ExhibitBean exhibitBean= JSON.parseObject(exhibitStr, ExhibitBean.class);
-                if(exhibitBean==null){return;}
-                if(currentExhibit==null||!currentExhibit.equals(exhibitBean)){
-                    currentExhibit=exhibitBean;
-                    currentMuseumId=currentExhibit.getMuseumId();
-                    handler.sendEmptyMessage(MSG_WHAT_CHANGE_EXHIBIT);
-                }
-            }else if(action.equals(INTENT_CHANGE_PLAY_STOP)){
-                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
-            }else if(action.equals(INTENT_CHANGE_PLAY_PLAY)){
-                handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+            switch (action) {
+                case INTENT_EXHIBIT_PROGRESS:
+                    currentDuration = intent.getIntExtra(INTENT_EXHIBIT_DURATION, 0);
+                    currentProgress = intent.getIntExtra(INTENT_EXHIBIT_PROGRESS, 0);
+                    handler.sendEmptyMessage(MSG_WHAT_UPDATE_PROGRESS);
+                    break;
+                case INTENT_EXHIBIT:
+                    String exhibitStr = intent.getStringExtra(INTENT_EXHIBIT);
+                    if (TextUtils.isEmpty(exhibitStr)) {
+                        return;
+                    }
+                    ExhibitBean exhibitBean = JSON.parseObject(exhibitStr, ExhibitBean.class);
+                    if (exhibitBean == null) {
+                        return;
+                    }
+                    if (currentExhibit == null || !currentExhibit.equals(exhibitBean)) {
+                        currentExhibit = exhibitBean;
+                        currentMuseumId = currentExhibit.getMuseumId();
+                        handler.sendEmptyMessage(MSG_WHAT_CHANGE_EXHIBIT);
+                    }
+                    break;
+                case INTENT_CHANGE_PLAY_STOP:
+                    handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_STOP);
+                    break;
+                case INTENT_CHANGE_PLAY_PLAY:
+                    handler.sendEmptyMessage(MSG_WHAT_CHANGE_PLAY_START);
+                    break;
             }
         }
     }
+
+
 }

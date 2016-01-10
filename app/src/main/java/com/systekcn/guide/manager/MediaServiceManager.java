@@ -11,6 +11,7 @@ import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.systekcn.guide.IConstants;
+import com.systekcn.guide.MyApplication;
 import com.systekcn.guide.entity.ExhibitBean;
 import com.systekcn.guide.service.MediaPlayService;
 import com.systekcn.guide.utils.ExceptionUtil;
@@ -23,12 +24,25 @@ import java.util.List;
  */
 public class MediaServiceManager implements IConstants {
 
+
     private Context mContext;
     private ServiceConnection mConn;
     public MediaPlayService.MediaServiceBinder mediaServiceBinder;
     private PlayCtrlReceiver playCtrlReceiver;
+    private static MediaServiceManager instance;
 
-    public MediaServiceManager(Context context) {
+    public static MediaServiceManager getInstance(Context context){
+        if(instance==null){
+            synchronized (MyApplication.class){
+                if(instance==null){
+                    instance=new MediaServiceManager(context);
+                }
+            }
+        }
+        return instance;
+    }
+
+    private MediaServiceManager(Context context) {
         this.mContext = context.getApplicationContext();
         init();
     }

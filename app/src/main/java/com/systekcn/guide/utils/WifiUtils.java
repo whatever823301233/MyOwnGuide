@@ -204,6 +204,7 @@ public class WifiUtils {
     private WifiConfiguration IsExists(String SSID)
     {
         List<WifiConfiguration> existingConfigs = mWifiManager.getConfiguredNetworks();
+        if(existingConfigs==null){return null;}
         for (WifiConfiguration existingConfig : existingConfigs)
         {
             if (existingConfig.SSID.equals("/"+SSID+"/")){
