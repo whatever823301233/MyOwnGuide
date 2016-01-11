@@ -104,13 +104,10 @@ public interface IConstants {
     String LIKE="like";
     String BEACON_ID="beaconId";
 
+    /**WIFI SSID PASSWORD*/
 
-
-
-
-
-
-
+    String WIFI_SSID="systek";
+    String WIFI_PASSWORD="systek2015";
 
 
     /**以下准备废弃*/

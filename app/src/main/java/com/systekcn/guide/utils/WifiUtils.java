@@ -15,6 +15,7 @@ public class WifiUtils {
 
     // 定义WifiManager对象
     private WifiManager mWifiManager;
+
     // 定义WifiInfo对象
     private WifiInfo mWifiInfo;
     // 扫描出的网络连接列表
@@ -23,14 +24,17 @@ public class WifiUtils {
     private List<WifiConfiguration> mWifiConfiguration;
     // 定义一个WifiLock
     WifiManager.WifiLock mWifiLock;
-
-
     // 构造器
     public WifiUtils(Context context) {
         // 取得WifiManager对象
         mWifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         // 取得WifiInfo对象
         mWifiInfo = mWifiManager.getConnectionInfo();
+    }
+
+
+    public WifiManager getmWifiManager() {
+        return mWifiManager;
     }
 
     // 打开WIFI
@@ -205,8 +209,7 @@ public class WifiUtils {
     {
         List<WifiConfiguration> existingConfigs = mWifiManager.getConfiguredNetworks();
         if(existingConfigs==null){return null;}
-        for (WifiConfiguration existingConfig : existingConfigs)
-        {
+        for (WifiConfiguration existingConfig : existingConfigs) {
             if (existingConfig.SSID.equals("/"+SSID+"/")){
                 return existingConfig;
             }

@@ -1,6 +1,7 @@
 package com.systekcn.guide.activity;
 
 import android.content.Intent;
+import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,6 @@ import com.systekcn.guide.R;
 import com.systekcn.guide.utils.NetworkUtil;
 import com.systekcn.guide.utils.Tools;
 import com.systekcn.guide.utils.ViewUtils;
-import com.systekcn.guide.utils.WifiUtils;
 
 public class BeginActivity extends BaseActivity {
 
@@ -41,12 +41,29 @@ public class BeginActivity extends BaseActivity {
         new Thread(){
             @Override
             public void run() {
-                WifiUtils wifiUtils=new WifiUtils(BeginActivity.this);
-                if(wifiUtils.checkState()== WifiManager.WIFI_STATE_DISABLED){
-                    wifiUtils.openWifi();
-                }
-                wifiUtils.startScan();
-                wifiUtils.CreateWifiInfo("systek","systek2015",3);
+                WifiConfiguration wifiConfig = new WifiConfiguration();
+
+                wifiConfig . status =  WifiConfiguration . Status . DISABLED ;
+                wifiConfig . priority =  40 ;
+
+                wifiConfig.SSID = String.format("\"%s\"", WIFI_SSID);
+                wifiConfig.preSharedKey = String.format("\"%s\"", WIFI_PASSWORD);
+
+                wifiConfig . allowedProtocols . set ( WifiConfiguration . Protocol . RSN );
+                wifiConfig . allowedProtocols . set ( WifiConfiguration . Protocol . WPA );
+                wifiConfig . allowedKeyManagement . set ( WifiConfiguration . KeyMgmt . WPA_PSK );
+                wifiConfig . allowedPairwiseCiphers . set ( WifiConfiguration . PairwiseCipher . CCMP );
+                wifiConfig . allowedPairwiseCiphers . set ( WifiConfiguration . PairwiseCipher . TKIP );
+                wifiConfig . allowedGroupCiphers . set ( WifiConfiguration . GroupCipher . WEP40 );
+                wifiConfig . allowedGroupCiphers . set ( WifiConfiguration . GroupCipher . WEP104 );
+                wifiConfig . allowedGroupCiphers . set ( WifiConfiguration . GroupCipher . CCMP );
+                wifiConfig . allowedGroupCiphers . set ( WifiConfiguration . GroupCipher . TKIP );
+
+                WifiManager wifiManager = (WifiManager)getSystemService(WIFI_SERVICE);//remember id
+                int netId = wifiManager.addNetwork(wifiConfig);
+                wifiManager.disconnect();
+                wifiManager.enableNetwork(netId, true);
+                wifiManager.reconnect();
             }
         }.start();
 
